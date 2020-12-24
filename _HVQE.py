@@ -81,7 +81,7 @@ def infidelity_from_parameters(init_reg,layers,n,par_multiplicity,parameters,gs_
     inf=qem.infidelity(reg,gs_reg)
     return inf
 
-def run_VQE(cmd_args,run_args,init_reg):
+def run_VQE(cmd_args,run_args,init_reg,gs_reg):
     """
     Run the VQE.
     """
@@ -101,7 +101,7 @@ def run_VQE(cmd_args,run_args,init_reg):
         if cmd_args.cost_fn=='energy':
             cost=Heisenberg_energy_from_parameters(run_args.complete_graph,init_reg,run_args.layers,run_args.n,cmd_args.par_multiplicity,parameters)
         elif cmd_args.cost_fn=='infidelity':
-            cost=infidelity_from_parameters(init_reg,run_args.layers,run_args,run_args.n,cmd_args.par_multiplicity,parameters)
+            cost=infidelity_from_parameters(init_reg,run_args.layers,run_args.n,cmd_args.par_multiplicity,parameters,gs_reg)
         else:
             raise ValueError('Not a valid cost function')
         cost.backward()
@@ -155,7 +155,7 @@ def run_VQE(cmd_args,run_args,init_reg):
             vqe_out.opt_parameters=[]
             vqe_out.init_par=[]
         if cmd_args.cost_fn=='infidelity':
-            vqe_out.cost_VQE=infidelity_from_parameters(init_reg,run_args.layers,run_args.n,cmd_args.par_multiplicity,[])
+            vqe_out.cost_VQE=infidelity_from_parameters(init_reg,run_args.layers,run_args.n,cmd_args.par_multiplicity,[],gs_reg)
             vqe_out.cost_VQE=float(vqe_out.cost_VQE.array)
             vqe_out.opt_parameters=[]
             vqe_out.init_par=[]

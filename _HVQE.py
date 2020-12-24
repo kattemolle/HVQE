@@ -114,19 +114,23 @@ def run_VQE(cmd_args,run_args,init_reg):
         elif run_args.GPU==False:
             cost=cost.array
 
-        ### Dump state of the prograpm. Restart has to be done by hand by running another HVQE.py from the command line. 
-        if cmd_args.dump_interval!=None:
-            if vqe_out.n_fn_calls%cmd_args.dump_interval==0:
-                tmp=Name()
-                tmp.parameters=parameters.array.tolist()
-                tmp.cost=float(cost)
-                tmp.g=g.tolist()
-                date_dump=str(datetime.utcnow()) # Current time in UTC.
-                vqe_out.init_par=list(vqe_out.init_par)
-                dump=[vars(cmd_args),vars(run_args),vars(vqe_out),vars(tmp)]
-                with open(cmd_args.path+'/dump.txt', 'a') as file:
-                    file.write(str(dump)+'\n\n')
-                print('Data dump on', date_dump)
+        ### Dump state of the prograpm. Restart has to be done by hand by running another HVQE.py from the command line.
+        try:
+            if cmd_args.dump_interval!=None:
+                if vqe_out.n_fn_calls%cmd_args.dump_interval==0:
+                    tmp=Name()
+                    tmp.parameters=parameters.array.tolist()
+                    tmp.cost=float(cost)
+                    tmp.g=g.tolist()
+                    date_dump=str(datetime.utcnow()) # Current time in UTC.
+                    vqe_out.init_par=list(vqe_out.init_par)
+                    dump=[vars(cmd_args),vars(run_args),vars(vqe_out),vars(tmp)]
+                    with open(cmd_args.path+'/dump.txt', 'a') as file:
+                        file.write(str(dump)+'\n\n')
+                    print('Data dump on', date_dump)
+
+        except:
+            print("Dumping failed. Continuing without dumping.")
         ###
         return cost, g
 

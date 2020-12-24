@@ -53,7 +53,7 @@ del init_layer_input
 del layers_input
 
 # Get the number of qubits from the complete_graph.
-nodes=[node for edge in complete_graph for node in edge]
+nodes=[node for edge in run_args.complete_graph for node in edge]
 nodes=set(nodes)
 run_args.n=len(nodes)
 del nodes

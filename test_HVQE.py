@@ -113,7 +113,7 @@ for edge in init_layer:
 E=_HVQE.Heisenberg_energy_from_parameters(complete_graph,init_reg,layers,n,par_multiplicity,parameters)
 E.backward()
 grad_E=parameters.grad
-E=E.array
+E=float(E.array)
 
 parameters=ch.Variable(xp.array([0.5338210879053804,-4.861452010173478,3.749724997117319,1.027085088315441,-0.9003289468166109,1.2980981922608912,4.694974774263656,3.346625458188054, 2.3291749603764416]))
 
@@ -122,10 +122,10 @@ inf.backward()
 grad_inf=parameters.grad
 inf=inf.array
 
-assert xp.round(E,6)==xp.round(-1.55200433,6)
+assert numpy.round(E,6)==numpy.round(-1.55200433,6)
 qem.round_assert(grad_E,[-0.05005307,-0.45674392,-0.19267117,0.09687651,-0.27705326,-0.13248857,0.28196716,0.05205173,-0.56275853])
 
-assert xp.round(inf,6)==xp.round(0.58861091,6)
+assert numpy.round(inf,6)==numpy.round(0.58861091,6)
 qem.round_assert(grad_inf,[1.42404631e-02,-1.00988019e-01,-1.85871448e-01,1.10099342e-01,3.24262071e-02,3.55959076e-05,1.72662807e-01,9.54738481e-02,-9.31588180e-02]) 
 
 # test kagome 2x2 opg
@@ -167,7 +167,7 @@ for edge in init_layer:
 E=_HVQE.Heisenberg_energy_from_parameters(complete_graph,init_reg,layers,n,par_multiplicity,parameters)
 E.backward()
 grad_E=parameters.grad
-E=E.array
+E=float(E.array)
 
 parameters=ch.Variable(xp.array([-1.4590336907024906, 
 5.1676688121457985, 2.8216029812864107, -0.6880805233230696, 
@@ -182,13 +182,13 @@ inf.backward()
 grad_inf=parameters.grad
 inf=inf.array
 
-assert xp.round(E,6)==xp.round(-0.92843688,6)
+assert numpy.round(E,6)==numpy.round(-0.92843688,6)
 qem.round_assert(grad_E,[2.04644322e-01,-1.85569413e-01,2.46981435e-03,2.20623413e-01, -4.43852995e-01,1.88123420e-01,1.54393821e-01,-1.25588736e-01,
 1.12063086e-01,7.33843670e-02,2.54297895e-01,1.12838749e-01,
 -3.32148196e-04,1.29190901e-01,-1.10032142e-01,4.47627573e-01,
 5.18804549e-02,-8.73067841e-03])
 
-assert xp.round(inf,6)==xp.round(0.99028414,6)
+assert numpy.round(inf,6)==numpy.round(0.99028414,6)
 qem.round_assert(grad_inf,[-0.00276295,0.00047363,-0.00536181,0.00543681,-0.00161217,-0.00590244,0.0047045,0.00695224,-0.00433547,0.00531215,0.00109434,0.00244617,0.00066088,-0.0029838,0.00281999,0.00252471,0.00731822,-0.00318952])
 
 
@@ -231,7 +231,7 @@ for edge in init_layer:
 E=_HVQE.Heisenberg_energy_from_parameters(complete_graph,init_reg,layers,n,par_multiplicity,parameters)
 E.backward()
 grad_E=parameters.grad
-E=E.array
+E=float(E.array)
 
 parameters=ch.Variable(xp.array([0.049431159925426016,2.0971826881228175,1.9558443268702845,-3.879886900967808, 
 -0.7872929911255397,3.163342822710785,-0.10797123542461406, 
@@ -247,10 +247,10 @@ inf.backward()
 grad_inf=parameters.grad
 inf=inf.array
 
-assert xp.round(E,6)==xp.round(-1.51566624,6)
+assert numpy.round(E,6)==numpy.round(-1.51566624,6)
 qem.round_assert(grad_E,[-0.34729406,0.36146094,0.55695365,0.40899441,0.09194422,-0.00288493,0.34746347,-0.72713794,0.10300112,0.99149757,0.13769308,1.0337861,0.42087642,0.39651021,-0.61231673,0.44392543,-0.18680237,-0.41457531,0.53099271,-0.176059,0.10454044,-0.03501261,0.87023518,-0.34357893])
 
-assert xp.round(inf,6)==xp.round(0.99391333,6)
+assert numpy.round(inf,6)==numpy.round(0.99391333,6)
 qem.round_assert(grad_inf,[0.00290636,-0.00660732,0.01029193,-0.00503707,
 -0.00188473,0.00029818,-0.0009589,-0.00443722,0.00573339,-0.00717827,-0.00533586,0.00209591,-0.00158446,-0.00212844,-0.00598255,-0.01039361,0.00146131,-0.00012774,0.00447131,0.00702376,0.0047238,-0.00742065,-0.01433074,-0.00862076])
 
@@ -286,7 +286,7 @@ for edge in init_layer:
 E=_HVQE.Heisenberg_energy_from_parameters(complete_graph,init_reg,layers,n,par_multiplicity,parameters)
 E.backward()
 grad_E=parameters.grad
-E=E.array
+E=float(E.array)
 
 parameters=ch.Variable(xp.array([6.097430185765912,0.5166558411077276,
 -1.5384999770341423,-1.9514345193067513,-1.9078261812912594,-2.7691045498263342]))
@@ -296,10 +296,10 @@ inf.backward()
 grad_inf=parameters.grad
 inf=inf.array
 
-assert xp.round(E,6)==xp.round(-2.34581086,6)
+assert numpy.round(E,6)==numpy.round(-2.34581086,6)
 qem.round_assert(grad_E,[-0.41446951,0.079979,0.81810719,0.20887126,0.80076491,-0.28956556])
 
-assert xp.round(inf,6)==xp.round(0.99079512,6)
+assert numpy.round(inf,6)==numpy.round(0.99079512,6)
 qem.round_assert(grad_inf,[-0.01020546,-0.00552987,-0.00329207,0.02484425,-0.01589784,0.01016548])
 
 

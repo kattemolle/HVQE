@@ -169,7 +169,7 @@ def plot_VQE_data(path,fn,par_multiplicity,gates_per_cycle):
     with open(path+'/output.txt','r') as f:
         f.readline()
         data=f.readlines()
-        data=[line for line in data if line is not '\n']
+        data=[line for line in data if line != '\n']
         data=[eval(x.strip()) for x in data]
         
     E=0

@@ -39,6 +39,9 @@ def get_command_line_input():
     if cmd_args.path[-1]=='/':
         cmd_args.path=cmd_args.path[:-1]
 
+    if cmd_args.par_multiplicity==0:
+        cmd_args.par_multiplicity=1
+
     return cmd_args
 
 def Heisenberg_energy_from_parameters(complete_graph,init_reg,layers,n,par_multiplicity,parameters):
@@ -200,7 +203,8 @@ def plot_VQE_data(path,fn,par_multiplicity,gates_per_cycle):
             E_VQE_list=[-(E_VQE-E[0])/E[0] for E_VQE in E_VQE_list] # The relative error in the energy is going to be plotted.
             ax.semilogy(p_list,E_VQE_list,'-o')
         elif fn=='infidelity':
-            wall_clock_list=[line[1]['inf_VQE'] for line in n_iter_class]
+            inf_VQE_list=[line[1]['inf_VQE'] for line in n_iter_class]
+            ax.semilogy(p_list,inf_VQE_list,'-o')
         elif fn=='wall_clock':
             wall_clock_list=[line[1]['wall_clock'] for line in n_iter_class]
             ax.semilogy(p_list,wall_clock_list,'-o')

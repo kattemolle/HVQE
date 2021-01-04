@@ -199,10 +199,11 @@ def plot_VQE_data(path,fn,par_multiplicity,gates_per_cycle):
             E_VQE_list=[line[1]['E_VQE'] for line in n_iter_class]
             E_VQE_list=[-(E_VQE-E[0])/E[0] for E_VQE in E_VQE_list] # The relative error in the energy is going to be plotted.
             ax.semilogy(p_list,E_VQE_list,'-o')
+        elif fn=='infidelity':
+            wall_clock_list=[line[1]['inf_VQE'] for line in n_iter_class]
         elif fn=='wall_clock':
             wall_clock_list=[line[1]['wall_clock'] for line in n_iter_class]
             ax.semilogy(p_list,wall_clock_list,'-o')
-        
     if fn=='energy':
         ax.axhline(y=-(E[1]-E[0])/E[0]) # Plot a horizontal line at the first excited state.
         ax.axhline(y=-(E[1]-E[0])/E[0]/2,ls='--') # Plot a horizontal dashed line halfway the ground state and the first excited state.
@@ -221,5 +222,7 @@ def plot_VQE_data(path,fn,par_multiplicity,gates_per_cycle):
     plt.title(path)
     if fn=='energy':
         plt.savefig(path+'/E_VQE.pdf')
+    if fn=='infidelity':
+        plt.savefig(path+'/inf_VQE.pdf')    
     if fn=='wall_clock':
         plt.savefig(path+'/wall_clock.pdf')

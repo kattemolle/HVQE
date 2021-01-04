@@ -1,0 +1,144 @@
+No CuPy installation found, continuing without GPU acceleration.
+having the CPUs {8, 9, 12, 13} available.
+Started basinhopping at 2020-12-24 22:51:24.743467 UTC, with
+command line arguments = {'path': '/home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/energy/2x2', 'n_par': 8, 'par_multiplicity': 6, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+runtime variables =  {'GPU': False, 'date_start': '2020-12-24 22:51:24.743467', 'complete_graph': [(0, 4), (2, 6), (8, 7), (10, 5), (11, 1), (9, 3), (1, 4), (3, 6), (5, 8), (7, 10), (9, 0), (11, 2), (1, 2), (3, 0), (6, 8), (4, 10), (5, 9), (7, 11), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11)], 'layers': [[(0, 4), (2, 6), (8, 7), (10, 5), (11, 1), (9, 3)], [(1, 4), (3, 6), (5, 8), (7, 10), (9, 0), (11, 2)], [(1, 2), (3, 0), (6, 8), (4, 10), (5, 9), (7, 11)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11)]], 'n': 12}
+.......................................... 
+==========================================================================================
+Finished basinhopping of  /home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/energy/2x2 at 2020-12-24 23:05:18.370220 UTC, with
+ 
+{'path': '/home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/energy/2x2', 'n_par': 8, 'par_multiplicity': 6, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+init_par = [-7.102861369206028e-05, -0.0003627679106053804, 0.00044725506719006745, 2.8799105891822037e-05, 0.00042398779304133835, -0.0002173924545003948, -0.0004767715204266678, 0.00019145485078264147]
+ 
+RESULTS:
+--------
+E_VQE = -5.17246334019189
+inf_VQE = 0.7331076868794408
+n_fn_calls = 42
+Wall-clock time 0.2047575043969684 hours
+ 
+For more output, see /home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/energy/2x2/output.txt
+Plots of output saved in /home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/energy/2x2
+End of HVQE.py
+==========================================================================================
+No CuPy installation found, continuing without GPU acceleration.
+having the CPUs {8, 9, 12, 13} available.
+Started basinhopping at 2020-12-24 23:22:05.647217 UTC, with
+command line arguments = {'path': '/home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/energy/2x2', 'n_par': 12, 'par_multiplicity': 6, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+runtime variables =  {'GPU': False, 'date_start': '2020-12-24 23:22:05.647217', 'complete_graph': [(0, 4), (2, 6), (8, 7), (10, 5), (11, 1), (9, 3), (1, 4), (3, 6), (5, 8), (7, 10), (9, 0), (11, 2), (1, 2), (3, 0), (6, 8), (4, 10), (5, 9), (7, 11), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11)], 'layers': [[(0, 4), (2, 6), (8, 7), (10, 5), (11, 1), (9, 3)], [(1, 4), (3, 6), (5, 8), (7, 10), (9, 0), (11, 2)], [(1, 2), (3, 0), (6, 8), (4, 10), (5, 9), (7, 11)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11)]], 'n': 12}
+................................................... 
+==========================================================================================
+Finished basinhopping of  /home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/energy/2x2 at 2020-12-25 00:14:45.446204 UTC, with
+ 
+{'path': '/home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/energy/2x2', 'n_par': 12, 'par_multiplicity': 6, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+init_par = [-0.0004009383670972745, -6.059542214796555e-05, -0.00031976214156039233, -0.00012143258430025704, 0.00046264447798403344, 0.00048254847289350925, -0.0003955300015421941, -9.038501453275814e-05, 0.0003897676620224764, -0.0001750211783954946, -0.0003138733952334436, -0.00027285756499382684]
+ 
+RESULTS:
+--------
+E_VQE = -5.228497945880794
+inf_VQE = 0.6379799425178647
+n_fn_calls = 51
+Wall-clock time 0.8033480503824022 hours
+ 
+For more output, see /home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/energy/2x2/output.txt
+Plots of output saved in /home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/energy/2x2
+End of HVQE.py
+==========================================================================================
+No CuPy installation found, continuing without GPU acceleration.
+having the CPUs {8, 9, 12, 13} available.
+Started basinhopping at 2020-12-25 00:39:01.497216 UTC, with
+command line arguments = {'path': '/home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/energy/2x2', 'n_par': 16, 'par_multiplicity': 6, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+runtime variables =  {'GPU': False, 'date_start': '2020-12-25 00:39:01.497216', 'complete_graph': [(0, 4), (2, 6), (8, 7), (10, 5), (11, 1), (9, 3), (1, 4), (3, 6), (5, 8), (7, 10), (9, 0), (11, 2), (1, 2), (3, 0), (6, 8), (4, 10), (5, 9), (7, 11), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11)], 'layers': [[(0, 4), (2, 6), (8, 7), (10, 5), (11, 1), (9, 3)], [(1, 4), (3, 6), (5, 8), (7, 10), (9, 0), (11, 2)], [(1, 2), (3, 0), (6, 8), (4, 10), (5, 9), (7, 11)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11)]], 'n': 12}
+................................................................................. 
+==========================================================================================
+Finished basinhopping of  /home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/energy/2x2 at 2020-12-25 02:44:26.198729 UTC, with
+ 
+{'path': '/home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/energy/2x2', 'n_par': 16, 'par_multiplicity': 6, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+init_par = [0.00017707888929080994, 0.00031351175025385474, 0.00020583710567387194, 4.37393568757619e-05, -3.30962770484606e-06, -0.0004575795851950428, -0.0004515243207847445, -2.4286156217542744e-05, -0.00037364242046062436, 0.00044629503535505133, -0.0002330909966351109, 0.000398590208986633, -0.00023242557355048686, 0.00016213800299891843, -0.0002571793510435494, 0.0004035774021939574]
+ 
+RESULTS:
+--------
+E_VQE = -5.255131612254614
+inf_VQE = 0.5693342732162656
+n_fn_calls = 81
+Wall-clock time 1.9904741354783375 hours
+ 
+For more output, see /home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/energy/2x2/output.txt
+Plots of output saved in /home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/energy/2x2
+End of HVQE.py
+==========================================================================================
+No CuPy installation found, continuing without GPU acceleration.
+having the CPUs {8, 9, 12, 13} available.
+Started basinhopping at 2020-12-25 03:15:28.694906 UTC, with
+command line arguments = {'path': '/home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/energy/2x2', 'n_par': 20, 'par_multiplicity': 6, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+runtime variables =  {'GPU': False, 'date_start': '2020-12-25 03:15:28.694906', 'complete_graph': [(0, 4), (2, 6), (8, 7), (10, 5), (11, 1), (9, 3), (1, 4), (3, 6), (5, 8), (7, 10), (9, 0), (11, 2), (1, 2), (3, 0), (6, 8), (4, 10), (5, 9), (7, 11), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11)], 'layers': [[(0, 4), (2, 6), (8, 7), (10, 5), (11, 1), (9, 3)], [(1, 4), (3, 6), (5, 8), (7, 10), (9, 0), (11, 2)], [(1, 2), (3, 0), (6, 8), (4, 10), (5, 9), (7, 11)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11)]], 'n': 12}
+................................................................................................... 
+==========================================================================================
+Finished basinhopping of  /home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/energy/2x2 at 2020-12-25 06:49:09.341697 UTC, with
+ 
+{'path': '/home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/energy/2x2', 'n_par': 20, 'par_multiplicity': 6, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+init_par = [0.00040717755196008484, -0.00031061640257359555, 0.0002521557755839457, -0.0004112367938625848, 0.0002783789493735608, -3.856543587398676e-05, 0.00012484747600739299, -0.00021524631424122922, 0.00025226721988108234, 2.56558120098737e-05, -0.0004143258268818206, 0.00018164499619836437, -0.00011857226916395924, 0.00027136041274837194, 0.00019795569846388155, 0.00046492516857986755, -0.00019638169525963467, -0.0003872774250937685, -0.0002082425418660705, -0.00021118522507691361]
+ 
+RESULTS:
+--------
+E_VQE = -5.288064400181889
+inf_VQE = 0.47769578925116885
+n_fn_calls = 99
+Wall-clock time 3.4105802591641745 hours
+ 
+For more output, see /home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/energy/2x2/output.txt
+Plots of output saved in /home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/energy/2x2
+End of HVQE.py
+==========================================================================================
+No CuPy installation found, continuing without GPU acceleration.
+having the CPUs {8, 9, 12, 13} available.
+Started basinhopping at 2020-12-25 07:15:04.354978 UTC, with
+command line arguments = {'path': '/home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/energy/2x2', 'n_par': 24, 'par_multiplicity': 6, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+runtime variables =  {'GPU': False, 'date_start': '2020-12-25 07:15:04.354978', 'complete_graph': [(0, 4), (2, 6), (8, 7), (10, 5), (11, 1), (9, 3), (1, 4), (3, 6), (5, 8), (7, 10), (9, 0), (11, 2), (1, 2), (3, 0), (6, 8), (4, 10), (5, 9), (7, 11), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11)], 'layers': [[(0, 4), (2, 6), (8, 7), (10, 5), (11, 1), (9, 3)], [(1, 4), (3, 6), (5, 8), (7, 10), (9, 0), (11, 2)], [(1, 2), (3, 0), (6, 8), (4, 10), (5, 9), (7, 11)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11)]], 'n': 12}
+.......................................................................................................................... 
+==========================================================================================
+Finished basinhopping of  /home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/energy/2x2 at 2020-12-25 11:26:51.919223 UTC, with
+ 
+{'path': '/home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/energy/2x2', 'n_par': 24, 'par_multiplicity': 6, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+init_par = [0.00021558867370032866, -0.0001798561125203697, -0.00010283273673159502, 0.00018236964155204374, -0.0003269237367027975, -0.0002978432089578107, 0.00048673841004342653, 0.00032236756840705184, 0.00016948807017641392, 0.00023866753466734167, 0.00039492429261367065, -0.00026038118068416594, 0.0002767987784204107, 7.654282705205474e-05, -0.00023817615021631437, 0.0003475295387816086, 0.00030048789687780824, -0.00048374822356118187, -0.00015040953223827613, 4.2282846035228677e-05, 0.0003695874827513517, 0.0002631736503502553, -0.00023175794437703048, 0.0004861250592534177]
+ 
+RESULTS:
+--------
+E_VQE = -5.332064244517796
+inf_VQE = 0.43887315464952126
+n_fn_calls = 122
+Wall-clock time 4.003972353869014 hours
+ 
+For more output, see /home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/energy/2x2/output.txt
+Plots of output saved in /home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/energy/2x2
+End of HVQE.py
+==========================================================================================
+No CuPy installation found, continuing without GPU acceleration.
+having the CPUs {8, 9, 12, 13} available.
+Started basinhopping at 2020-12-25 11:44:08.773860 UTC, with
+command line arguments = {'path': '/home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/energy/2x2', 'n_par': 28, 'par_multiplicity': 6, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+runtime variables =  {'GPU': False, 'date_start': '2020-12-25 11:44:08.773860', 'complete_graph': [(0, 4), (2, 6), (8, 7), (10, 5), (11, 1), (9, 3), (1, 4), (3, 6), (5, 8), (7, 10), (9, 0), (11, 2), (1, 2), (3, 0), (6, 8), (4, 10), (5, 9), (7, 11), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11)], 'layers': [[(0, 4), (2, 6), (8, 7), (10, 5), (11, 1), (9, 3)], [(1, 4), (3, 6), (5, 8), (7, 10), (9, 0), (11, 2)], [(1, 2), (3, 0), (6, 8), (4, 10), (5, 9), (7, 11)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11)]], 'n': 12}
+..................................................................................................................................................................................... 
+==========================================================================================
+Finished basinhopping of  /home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/energy/2x2 at 2020-12-25 17:58:08.881149 UTC, with
+ 
+{'path': '/home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/energy/2x2', 'n_par': 28, 'par_multiplicity': 6, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+init_par = [-0.0003300020731076476, -0.0003104658360938103, 0.00016196726886857774, -0.0003361493657513362, 0.00029044059109263696, 0.0003344845564935354, -0.00015116657074375374, -0.0003561812202432964, -0.00020072186293595653, 0.000224279589668566, -7.819819777465752e-05, -0.00028983540214594264, -0.0003417434072642526, 0.00010428297055129257, -0.00023512681838308948, -8.365923338303727e-05, 4.231180090306973e-06, 0.00014931007140267234, 4.348929882588284e-05, -0.0004128423834145141, 8.800183516122402e-05, 0.0004055462391973324, 7.148962148144388e-05, 0.00034037237968422517, -4.6202438315163586e-05, -0.00045773772109390036, -3.962995580200667e-05, -0.00036234447925016555]
+ 
+RESULTS:
+--------
+E_VQE = -5.345992597830923
+inf_VQE = 0.4165758666299543
+n_fn_calls = 181
+Wall-clock time 6.168199981119898 hours
+ 
+For more output, see /home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/energy/2x2/output.txt
+Plots of output saved in /home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/energy/2x2
+End of HVQE.py
+==========================================================================================
+No CuPy installation found, continuing without GPU acceleration.
+having the CPUs {8, 9, 12, 13} available.
+Started basinhopping at 2020-12-25 18:22:21.208288 UTC, with
+command line arguments = {'path': '/home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/energy/2x2', 'n_par': 32, 'par_multiplicity': 6, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+runtime variables =  {'GPU': False, 'date_start': '2020-12-25 18:22:21.208288', 'complete_graph': [(0, 4), (2, 6), (8, 7), (10, 5), (11, 1), (9, 3), (1, 4), (3, 6), (5, 8), (7, 10), (9, 0), (11, 2), (1, 2), (3, 0), (6, 8), (4, 10), (5, 9), (7, 11), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11)], 'layers': [[(0, 4), (2, 6), (8, 7), (10, 5), (11, 1), (9, 3)], [(1, 4), (3, 6), (5, 8), (7, 10), (9, 0), (11, 2)], [(1, 2), (3, 0), (6, 8), (4, 10), (5, 9), (7, 11)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11)]], 'n': 12}
+........................................................................................................slurmstepd: error: *** JOB 7176080 ON r38n4 CANCELLED AT 2020-12-25T23:51:10 DUE TO TIME LIMIT ***

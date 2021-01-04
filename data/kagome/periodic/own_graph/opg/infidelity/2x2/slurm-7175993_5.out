@@ -1,0 +1,23 @@
+No CuPy installation found, continuing without GPU acceleration.
+having the CPUs {32, 33, 36, 37} available.
+Started basinhopping at 2020-12-24 22:29:37.005591 UTC, with
+command line arguments = {'path': '/home/jorisk2/HVQE/data/kagome/periodic/own_graph/opg/infidelity/2x2', 'n_par': 24, 'par_multiplicity': 1, 'n_iter': 0, 'cost_fn': 'infidelity', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+runtime variables =  {'GPU': False, 'date_start': '2020-12-24 22:29:37.005591', 'complete_graph': [(0, 4), (2, 6), (8, 7), (10, 5), (11, 1), (9, 3), (1, 4), (3, 6), (5, 8), (7, 10), (9, 0), (11, 2), (1, 2), (3, 0), (6, 8), (4, 10), (5, 9), (7, 11), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11)], 'layers': [[(0, 4), (2, 6), (8, 7), (10, 5), (11, 1), (9, 3)], [(1, 4), (3, 6), (5, 8), (7, 10), (9, 0), (11, 2)], [(1, 2), (3, 0), (6, 8), (4, 10), (5, 9), (7, 11)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11)]], 'n': 12}
+......................................................................................................................... 
+==========================================================================================
+Finished basinhopping of  /home/jorisk2/HVQE/data/kagome/periodic/own_graph/opg/infidelity/2x2 at 2020-12-24 22:33:48.022153 UTC, with
+ 
+{'path': '/home/jorisk2/HVQE/data/kagome/periodic/own_graph/opg/infidelity/2x2', 'n_par': 24, 'par_multiplicity': 1, 'n_iter': 0, 'cost_fn': 'infidelity', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+init_par = [0.00025254387642040157, 0.0002769845434501555, 0.00010481883421941285, 0.00027395502096793094, -0.00034658005742412647, 0.00043314659422241317, 0.00036112274880275414, 0.00023335969718500747, -0.00011795942372216787, -6.204220709084642e-05, -5.935289331070702e-05, -0.0003043204540929788, 1.5559158657291682e-05, 5.047387159691258e-05, -0.0003955028558049593, -0.00022132415866940792, -0.0001087517643599514, 0.0002714024630944766, -0.0004588140952316681, 0.000498257395836852, -0.00034023351257898957, -0.0003928966719263646, -4.5926214924394966e-05, -0.0004454079594473912]
+ 
+RESULTS:
+--------
+E_VQE = -4.549982352162712
+inf_VQE = 0.5281354817417083
+n_fn_calls = 121
+Wall-clock time 0.05259480641947852 hours
+ 
+For more output, see /home/jorisk2/HVQE/data/kagome/periodic/own_graph/opg/infidelity/2x2/output.txt
+Plots of output saved in /home/jorisk2/HVQE/data/kagome/periodic/own_graph/opg/infidelity/2x2
+End of HVQE.py
+==========================================================================================

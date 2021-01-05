@@ -75,7 +75,7 @@ for edge in run_args.init_layer:
 
 ###### RUN THE VQE #####
 run_args.start=time()
-vqe_out=_HVQE.run_VQE(cmd_args,run_args,init_reg)
+vqe_out=_HVQE.run_VQE(cmd_args,run_args,init_reg,gs_reg)
 if run_args.GPU==True:
     qem.sync()
 run_args.end=time() 

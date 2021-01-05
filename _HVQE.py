@@ -39,6 +39,9 @@ def get_command_line_input():
     if cmd_args.path[-1]=='/':
         cmd_args.path=cmd_args.path[:-1]
 
+    if cmd_args.par_multiplicity==0:
+        cmd_args.par_multiplicity=1
+
     return cmd_args
 
 def Heisenberg_energy_from_parameters(complete_graph,init_reg,layers,n,par_multiplicity,parameters):
@@ -81,7 +84,7 @@ def infidelity_from_parameters(init_reg,layers,n,par_multiplicity,parameters,gs_
     inf=qem.infidelity(reg,gs_reg)
     return inf
 
-def run_VQE(cmd_args,run_args,init_reg):
+def run_VQE(cmd_args,run_args,init_reg,gs_reg):
     """
     Run the VQE.
     """
@@ -101,7 +104,7 @@ def run_VQE(cmd_args,run_args,init_reg):
         if cmd_args.cost_fn=='energy':
             cost=Heisenberg_energy_from_parameters(run_args.complete_graph,init_reg,run_args.layers,run_args.n,cmd_args.par_multiplicity,parameters)
         elif cmd_args.cost_fn=='infidelity':
-            cost=infidelity_from_parameters(init_reg,run_args.layers,run_args,run_args.n,cmd_args.par_multiplicity,parameters)
+            cost=infidelity_from_parameters(init_reg,run_args.layers,run_args.n,cmd_args.par_multiplicity,parameters,gs_reg)
         else:
             raise ValueError('Not a valid cost function')
         cost.backward()
@@ -151,7 +154,7 @@ def run_VQE(cmd_args,run_args,init_reg):
             vqe_out.opt_parameters=[]
             vqe_out.init_par=[]
         if cmd_args.cost_fn=='infidelity':
-            vqe_out.cost_VQE=infidelity_from_parameters(init_reg,run_args.layers,run_args.n,cmd_args.par_multiplicity,[])
+            vqe_out.cost_VQE=infidelity_from_parameters(init_reg,run_args.layers,run_args.n,cmd_args.par_multiplicity,[],gs_reg)
             vqe_out.cost_VQE=float(vqe_out.cost_VQE.array)
             vqe_out.opt_parameters=[]
             vqe_out.init_par=[]
@@ -199,10 +202,12 @@ def plot_VQE_data(path,fn,par_multiplicity,gates_per_cycle):
             E_VQE_list=[line[1]['E_VQE'] for line in n_iter_class]
             E_VQE_list=[-(E_VQE-E[0])/E[0] for E_VQE in E_VQE_list] # The relative error in the energy is going to be plotted.
             ax.semilogy(p_list,E_VQE_list,'-o')
+        elif fn=='infidelity':
+            inf_VQE_list=[line[1]['inf_VQE'] for line in n_iter_class]
+            ax.semilogy(p_list,inf_VQE_list,'-o')
         elif fn=='wall_clock':
             wall_clock_list=[line[1]['wall_clock'] for line in n_iter_class]
             ax.semilogy(p_list,wall_clock_list,'-o')
-        
     if fn=='energy':
         ax.axhline(y=-(E[1]-E[0])/E[0]) # Plot a horizontal line at the first excited state.
         ax.axhline(y=-(E[1]-E[0])/E[0]/2,ls='--') # Plot a horizontal dashed line halfway the ground state and the first excited state.
@@ -221,5 +226,7 @@ def plot_VQE_data(path,fn,par_multiplicity,gates_per_cycle):
     plt.title(path)
     if fn=='energy':
         plt.savefig(path+'/E_VQE.pdf')
+    if fn=='infidelity':
+        plt.savefig(path+'/inf_VQE.pdf')    
     if fn=='wall_clock':
         plt.savefig(path+'/wall_clock.pdf')

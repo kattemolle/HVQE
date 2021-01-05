@@ -6,7 +6,7 @@
 #SBATCH --mem=1GB
 #SBATCH --gres=gpu:1
 
-for n_par in {36..500..36}
+for n_par in {468..468}
 do
 	 python3 ~/HVQE/HVQE.py $PWD $n_par 1  
 done

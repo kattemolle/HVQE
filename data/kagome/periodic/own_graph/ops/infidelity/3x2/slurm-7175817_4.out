@@ -1,0 +1,1080 @@
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/backends/cuda.py:142: UserWarning: cuDNN is not enabled.
+Please reinstall CuPy after you install cudnn
+(see https://docs-cupy.chainer.org/en/stable/install.html#install-cudnn).
+  warnings.warn(
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/_environment_check.py:70: UserWarning: 
+--------------------------------------------------------------------------------
+CuPy (cupy) version 8.0.0 may not be compatible with this version of Chainer.
+Please consider installing the supported version by running:
+  $ pip install 'cupy>=6.3.0,<7.0.0'
+
+See the following page for more details:
+  https://docs-cupy.chainer.org/en/latest/install.html
+--------------------------------------------------------------------------------
+
+  warnings.warn(msg.format(
+CuPy installation found, continuing using GPU acceleration.
+having the CPUs {1, 3, 5, 7} available.
+Started basinhopping at 2020-12-25 04:22:53.237853 UTC, with
+command line arguments = {'path': '/home/jkgpu/HVQE/data/kagome/periodic/own_graph/ops/infidelity/3x2', 'n_par': 12, 'par_multiplicity': 3, 'n_iter': 0, 'cost_fn': 'infidelity', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+runtime variables =  {'GPU': True, 'date_start': '2020-12-25 04:22:53.237853', 'complete_graph': [(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5), (1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4), (1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'layers': [[(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5)], [(1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4)], [(1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)]], 'n': 18}
+Traceback (most recent call last):
+  File "/home/jkgpu/HVQE/HVQE.py", line 78, in <module>
+    vqe_out=_HVQE.run_VQE(cmd_args,run_args,init_reg)
+  File "/home/jkgpu/HVQE/_HVQE.py", line 160, in run_VQE
+    sol=scipy.optimize.basinhopping(calc_cost,vqe_out.init_par,stepsize=cmd_args.stepsize,minimizer_kwargs={'jac':True, 'options':{'gtol':0.5e-05}},niter=cmd_args.n_iter,interval=25,callback=callback,T=cmd_args.temperature)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_basinhopping.py", line 678, in basinhopping
+    bh = BasinHoppingRunner(x0, wrapped_minimizer, take_step_wrapped,
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_basinhopping.py", line 72, in __init__
+    minres = minimizer(self.x)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_basinhopping.py", line 284, in __call__
+    return self.minimizer(self.func, x0, **self.kwargs)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_minimize.py", line 612, in minimize
+    return _minimize_bfgs(fun, x0, args, jac, callback, **options)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 1101, in _minimize_bfgs
+    sf = _prepare_scalar_function(fun, x0, jac, args=args, epsilon=eps,
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 261, in _prepare_scalar_function
+    sf = ScalarFunction(fun, x0, args, grad, hess,
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 76, in __init__
+    self._update_fun()
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 166, in _update_fun
+    self._update_fun_impl()
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 73, in update_fun
+    self.f = fun_wrapped(self.x)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 70, in fun_wrapped
+    return fun(x, *args)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 74, in __call__
+    self._compute_if_needed(x, *args)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 68, in _compute_if_needed
+    fg = self.fun(x, *args)
+  File "/home/jkgpu/HVQE/_HVQE.py", line 104, in calc_cost
+    cost=infidelity_from_parameters(init_reg,run_args.layers,run_args,run_args.n,cmd_args.par_multiplicity,parameters)
+  File "/home/jkgpu/HVQE/_HVQE.py", line 74, in infidelity_from_parameters
+    for i in range(len(parameters)):
+TypeError: object of type 'int' has no len()
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/backends/cuda.py:142: UserWarning: cuDNN is not enabled.
+Please reinstall CuPy after you install cudnn
+(see https://docs-cupy.chainer.org/en/stable/install.html#install-cudnn).
+  warnings.warn(
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/_environment_check.py:70: UserWarning: 
+--------------------------------------------------------------------------------
+CuPy (cupy) version 8.0.0 may not be compatible with this version of Chainer.
+Please consider installing the supported version by running:
+  $ pip install 'cupy>=6.3.0,<7.0.0'
+
+See the following page for more details:
+  https://docs-cupy.chainer.org/en/latest/install.html
+--------------------------------------------------------------------------------
+
+  warnings.warn(msg.format(
+CuPy installation found, continuing using GPU acceleration.
+having the CPUs {1, 3, 5, 7} available.
+Started basinhopping at 2020-12-25 04:22:55.957205 UTC, with
+command line arguments = {'path': '/home/jkgpu/HVQE/data/kagome/periodic/own_graph/ops/infidelity/3x2', 'n_par': 24, 'par_multiplicity': 3, 'n_iter': 0, 'cost_fn': 'infidelity', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+runtime variables =  {'GPU': True, 'date_start': '2020-12-25 04:22:55.957205', 'complete_graph': [(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5), (1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4), (1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'layers': [[(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5)], [(1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4)], [(1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)]], 'n': 18}
+Traceback (most recent call last):
+  File "/home/jkgpu/HVQE/HVQE.py", line 78, in <module>
+    vqe_out=_HVQE.run_VQE(cmd_args,run_args,init_reg)
+  File "/home/jkgpu/HVQE/_HVQE.py", line 160, in run_VQE
+    sol=scipy.optimize.basinhopping(calc_cost,vqe_out.init_par,stepsize=cmd_args.stepsize,minimizer_kwargs={'jac':True, 'options':{'gtol':0.5e-05}},niter=cmd_args.n_iter,interval=25,callback=callback,T=cmd_args.temperature)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_basinhopping.py", line 678, in basinhopping
+    bh = BasinHoppingRunner(x0, wrapped_minimizer, take_step_wrapped,
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_basinhopping.py", line 72, in __init__
+    minres = minimizer(self.x)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_basinhopping.py", line 284, in __call__
+    return self.minimizer(self.func, x0, **self.kwargs)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_minimize.py", line 612, in minimize
+    return _minimize_bfgs(fun, x0, args, jac, callback, **options)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 1101, in _minimize_bfgs
+    sf = _prepare_scalar_function(fun, x0, jac, args=args, epsilon=eps,
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 261, in _prepare_scalar_function
+    sf = ScalarFunction(fun, x0, args, grad, hess,
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 76, in __init__
+    self._update_fun()
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 166, in _update_fun
+    self._update_fun_impl()
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 73, in update_fun
+    self.f = fun_wrapped(self.x)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 70, in fun_wrapped
+    return fun(x, *args)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 74, in __call__
+    self._compute_if_needed(x, *args)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 68, in _compute_if_needed
+    fg = self.fun(x, *args)
+  File "/home/jkgpu/HVQE/_HVQE.py", line 104, in calc_cost
+    cost=infidelity_from_parameters(init_reg,run_args.layers,run_args,run_args.n,cmd_args.par_multiplicity,parameters)
+  File "/home/jkgpu/HVQE/_HVQE.py", line 74, in infidelity_from_parameters
+    for i in range(len(parameters)):
+TypeError: object of type 'int' has no len()
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/backends/cuda.py:142: UserWarning: cuDNN is not enabled.
+Please reinstall CuPy after you install cudnn
+(see https://docs-cupy.chainer.org/en/stable/install.html#install-cudnn).
+  warnings.warn(
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/_environment_check.py:70: UserWarning: 
+--------------------------------------------------------------------------------
+CuPy (cupy) version 8.0.0 may not be compatible with this version of Chainer.
+Please consider installing the supported version by running:
+  $ pip install 'cupy>=6.3.0,<7.0.0'
+
+See the following page for more details:
+  https://docs-cupy.chainer.org/en/latest/install.html
+--------------------------------------------------------------------------------
+
+  warnings.warn(msg.format(
+CuPy installation found, continuing using GPU acceleration.
+having the CPUs {1, 3, 5, 7} available.
+Started basinhopping at 2020-12-25 04:22:58.662274 UTC, with
+command line arguments = {'path': '/home/jkgpu/HVQE/data/kagome/periodic/own_graph/ops/infidelity/3x2', 'n_par': 36, 'par_multiplicity': 3, 'n_iter': 0, 'cost_fn': 'infidelity', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+runtime variables =  {'GPU': True, 'date_start': '2020-12-25 04:22:58.662274', 'complete_graph': [(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5), (1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4), (1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'layers': [[(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5)], [(1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4)], [(1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)]], 'n': 18}
+Traceback (most recent call last):
+  File "/home/jkgpu/HVQE/HVQE.py", line 78, in <module>
+    vqe_out=_HVQE.run_VQE(cmd_args,run_args,init_reg)
+  File "/home/jkgpu/HVQE/_HVQE.py", line 160, in run_VQE
+    sol=scipy.optimize.basinhopping(calc_cost,vqe_out.init_par,stepsize=cmd_args.stepsize,minimizer_kwargs={'jac':True, 'options':{'gtol':0.5e-05}},niter=cmd_args.n_iter,interval=25,callback=callback,T=cmd_args.temperature)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_basinhopping.py", line 678, in basinhopping
+    bh = BasinHoppingRunner(x0, wrapped_minimizer, take_step_wrapped,
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_basinhopping.py", line 72, in __init__
+    minres = minimizer(self.x)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_basinhopping.py", line 284, in __call__
+    return self.minimizer(self.func, x0, **self.kwargs)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_minimize.py", line 612, in minimize
+    return _minimize_bfgs(fun, x0, args, jac, callback, **options)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 1101, in _minimize_bfgs
+    sf = _prepare_scalar_function(fun, x0, jac, args=args, epsilon=eps,
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 261, in _prepare_scalar_function
+    sf = ScalarFunction(fun, x0, args, grad, hess,
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 76, in __init__
+    self._update_fun()
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 166, in _update_fun
+    self._update_fun_impl()
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 73, in update_fun
+    self.f = fun_wrapped(self.x)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 70, in fun_wrapped
+    return fun(x, *args)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 74, in __call__
+    self._compute_if_needed(x, *args)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 68, in _compute_if_needed
+    fg = self.fun(x, *args)
+  File "/home/jkgpu/HVQE/_HVQE.py", line 104, in calc_cost
+    cost=infidelity_from_parameters(init_reg,run_args.layers,run_args,run_args.n,cmd_args.par_multiplicity,parameters)
+  File "/home/jkgpu/HVQE/_HVQE.py", line 74, in infidelity_from_parameters
+    for i in range(len(parameters)):
+TypeError: object of type 'int' has no len()
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/backends/cuda.py:142: UserWarning: cuDNN is not enabled.
+Please reinstall CuPy after you install cudnn
+(see https://docs-cupy.chainer.org/en/stable/install.html#install-cudnn).
+  warnings.warn(
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/_environment_check.py:70: UserWarning: 
+--------------------------------------------------------------------------------
+CuPy (cupy) version 8.0.0 may not be compatible with this version of Chainer.
+Please consider installing the supported version by running:
+  $ pip install 'cupy>=6.3.0,<7.0.0'
+
+See the following page for more details:
+  https://docs-cupy.chainer.org/en/latest/install.html
+--------------------------------------------------------------------------------
+
+  warnings.warn(msg.format(
+CuPy installation found, continuing using GPU acceleration.
+having the CPUs {1, 3, 5, 7} available.
+Started basinhopping at 2020-12-25 04:23:04.792453 UTC, with
+command line arguments = {'path': '/home/jkgpu/HVQE/data/kagome/periodic/own_graph/ops/infidelity/3x2', 'n_par': 48, 'par_multiplicity': 3, 'n_iter': 0, 'cost_fn': 'infidelity', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+runtime variables =  {'GPU': True, 'date_start': '2020-12-25 04:23:04.792453', 'complete_graph': [(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5), (1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4), (1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'layers': [[(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5)], [(1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4)], [(1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)]], 'n': 18}
+Traceback (most recent call last):
+  File "/home/jkgpu/HVQE/HVQE.py", line 78, in <module>
+    vqe_out=_HVQE.run_VQE(cmd_args,run_args,init_reg)
+  File "/home/jkgpu/HVQE/_HVQE.py", line 160, in run_VQE
+    sol=scipy.optimize.basinhopping(calc_cost,vqe_out.init_par,stepsize=cmd_args.stepsize,minimizer_kwargs={'jac':True, 'options':{'gtol':0.5e-05}},niter=cmd_args.n_iter,interval=25,callback=callback,T=cmd_args.temperature)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_basinhopping.py", line 678, in basinhopping
+    bh = BasinHoppingRunner(x0, wrapped_minimizer, take_step_wrapped,
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_basinhopping.py", line 72, in __init__
+    minres = minimizer(self.x)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_basinhopping.py", line 284, in __call__
+    return self.minimizer(self.func, x0, **self.kwargs)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_minimize.py", line 612, in minimize
+    return _minimize_bfgs(fun, x0, args, jac, callback, **options)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 1101, in _minimize_bfgs
+    sf = _prepare_scalar_function(fun, x0, jac, args=args, epsilon=eps,
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 261, in _prepare_scalar_function
+    sf = ScalarFunction(fun, x0, args, grad, hess,
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 76, in __init__
+    self._update_fun()
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 166, in _update_fun
+    self._update_fun_impl()
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 73, in update_fun
+    self.f = fun_wrapped(self.x)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 70, in fun_wrapped
+    return fun(x, *args)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 74, in __call__
+    self._compute_if_needed(x, *args)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 68, in _compute_if_needed
+    fg = self.fun(x, *args)
+  File "/home/jkgpu/HVQE/_HVQE.py", line 104, in calc_cost
+    cost=infidelity_from_parameters(init_reg,run_args.layers,run_args,run_args.n,cmd_args.par_multiplicity,parameters)
+  File "/home/jkgpu/HVQE/_HVQE.py", line 74, in infidelity_from_parameters
+    for i in range(len(parameters)):
+TypeError: object of type 'int' has no len()
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/backends/cuda.py:142: UserWarning: cuDNN is not enabled.
+Please reinstall CuPy after you install cudnn
+(see https://docs-cupy.chainer.org/en/stable/install.html#install-cudnn).
+  warnings.warn(
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/_environment_check.py:70: UserWarning: 
+--------------------------------------------------------------------------------
+CuPy (cupy) version 8.0.0 may not be compatible with this version of Chainer.
+Please consider installing the supported version by running:
+  $ pip install 'cupy>=6.3.0,<7.0.0'
+
+See the following page for more details:
+  https://docs-cupy.chainer.org/en/latest/install.html
+--------------------------------------------------------------------------------
+
+  warnings.warn(msg.format(
+CuPy installation found, continuing using GPU acceleration.
+having the CPUs {1, 3, 5, 7} available.
+Started basinhopping at 2020-12-25 04:23:07.717161 UTC, with
+command line arguments = {'path': '/home/jkgpu/HVQE/data/kagome/periodic/own_graph/ops/infidelity/3x2', 'n_par': 60, 'par_multiplicity': 3, 'n_iter': 0, 'cost_fn': 'infidelity', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+runtime variables =  {'GPU': True, 'date_start': '2020-12-25 04:23:07.717161', 'complete_graph': [(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5), (1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4), (1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'layers': [[(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5)], [(1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4)], [(1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)]], 'n': 18}
+Traceback (most recent call last):
+  File "/home/jkgpu/HVQE/HVQE.py", line 78, in <module>
+    vqe_out=_HVQE.run_VQE(cmd_args,run_args,init_reg)
+  File "/home/jkgpu/HVQE/_HVQE.py", line 160, in run_VQE
+    sol=scipy.optimize.basinhopping(calc_cost,vqe_out.init_par,stepsize=cmd_args.stepsize,minimizer_kwargs={'jac':True, 'options':{'gtol':0.5e-05}},niter=cmd_args.n_iter,interval=25,callback=callback,T=cmd_args.temperature)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_basinhopping.py", line 678, in basinhopping
+    bh = BasinHoppingRunner(x0, wrapped_minimizer, take_step_wrapped,
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_basinhopping.py", line 72, in __init__
+    minres = minimizer(self.x)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_basinhopping.py", line 284, in __call__
+    return self.minimizer(self.func, x0, **self.kwargs)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_minimize.py", line 612, in minimize
+    return _minimize_bfgs(fun, x0, args, jac, callback, **options)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 1101, in _minimize_bfgs
+    sf = _prepare_scalar_function(fun, x0, jac, args=args, epsilon=eps,
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 261, in _prepare_scalar_function
+    sf = ScalarFunction(fun, x0, args, grad, hess,
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 76, in __init__
+    self._update_fun()
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 166, in _update_fun
+    self._update_fun_impl()
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 73, in update_fun
+    self.f = fun_wrapped(self.x)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 70, in fun_wrapped
+    return fun(x, *args)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 74, in __call__
+    self._compute_if_needed(x, *args)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 68, in _compute_if_needed
+    fg = self.fun(x, *args)
+  File "/home/jkgpu/HVQE/_HVQE.py", line 104, in calc_cost
+    cost=infidelity_from_parameters(init_reg,run_args.layers,run_args,run_args.n,cmd_args.par_multiplicity,parameters)
+  File "/home/jkgpu/HVQE/_HVQE.py", line 74, in infidelity_from_parameters
+    for i in range(len(parameters)):
+TypeError: object of type 'int' has no len()
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/backends/cuda.py:142: UserWarning: cuDNN is not enabled.
+Please reinstall CuPy after you install cudnn
+(see https://docs-cupy.chainer.org/en/stable/install.html#install-cudnn).
+  warnings.warn(
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/_environment_check.py:70: UserWarning: 
+--------------------------------------------------------------------------------
+CuPy (cupy) version 8.0.0 may not be compatible with this version of Chainer.
+Please consider installing the supported version by running:
+  $ pip install 'cupy>=6.3.0,<7.0.0'
+
+See the following page for more details:
+  https://docs-cupy.chainer.org/en/latest/install.html
+--------------------------------------------------------------------------------
+
+  warnings.warn(msg.format(
+CuPy installation found, continuing using GPU acceleration.
+having the CPUs {1, 3, 5, 7} available.
+Started basinhopping at 2020-12-25 04:23:10.656241 UTC, with
+command line arguments = {'path': '/home/jkgpu/HVQE/data/kagome/periodic/own_graph/ops/infidelity/3x2', 'n_par': 72, 'par_multiplicity': 3, 'n_iter': 0, 'cost_fn': 'infidelity', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+runtime variables =  {'GPU': True, 'date_start': '2020-12-25 04:23:10.656241', 'complete_graph': [(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5), (1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4), (1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'layers': [[(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5)], [(1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4)], [(1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)]], 'n': 18}
+Traceback (most recent call last):
+  File "/home/jkgpu/HVQE/HVQE.py", line 78, in <module>
+    vqe_out=_HVQE.run_VQE(cmd_args,run_args,init_reg)
+  File "/home/jkgpu/HVQE/_HVQE.py", line 160, in run_VQE
+    sol=scipy.optimize.basinhopping(calc_cost,vqe_out.init_par,stepsize=cmd_args.stepsize,minimizer_kwargs={'jac':True, 'options':{'gtol':0.5e-05}},niter=cmd_args.n_iter,interval=25,callback=callback,T=cmd_args.temperature)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_basinhopping.py", line 678, in basinhopping
+    bh = BasinHoppingRunner(x0, wrapped_minimizer, take_step_wrapped,
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_basinhopping.py", line 72, in __init__
+    minres = minimizer(self.x)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_basinhopping.py", line 284, in __call__
+    return self.minimizer(self.func, x0, **self.kwargs)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_minimize.py", line 612, in minimize
+    return _minimize_bfgs(fun, x0, args, jac, callback, **options)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 1101, in _minimize_bfgs
+    sf = _prepare_scalar_function(fun, x0, jac, args=args, epsilon=eps,
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 261, in _prepare_scalar_function
+    sf = ScalarFunction(fun, x0, args, grad, hess,
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 76, in __init__
+    self._update_fun()
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 166, in _update_fun
+    self._update_fun_impl()
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 73, in update_fun
+    self.f = fun_wrapped(self.x)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 70, in fun_wrapped
+    return fun(x, *args)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 74, in __call__
+    self._compute_if_needed(x, *args)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 68, in _compute_if_needed
+    fg = self.fun(x, *args)
+  File "/home/jkgpu/HVQE/_HVQE.py", line 104, in calc_cost
+    cost=infidelity_from_parameters(init_reg,run_args.layers,run_args,run_args.n,cmd_args.par_multiplicity,parameters)
+  File "/home/jkgpu/HVQE/_HVQE.py", line 74, in infidelity_from_parameters
+    for i in range(len(parameters)):
+TypeError: object of type 'int' has no len()
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/backends/cuda.py:142: UserWarning: cuDNN is not enabled.
+Please reinstall CuPy after you install cudnn
+(see https://docs-cupy.chainer.org/en/stable/install.html#install-cudnn).
+  warnings.warn(
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/_environment_check.py:70: UserWarning: 
+--------------------------------------------------------------------------------
+CuPy (cupy) version 8.0.0 may not be compatible with this version of Chainer.
+Please consider installing the supported version by running:
+  $ pip install 'cupy>=6.3.0,<7.0.0'
+
+See the following page for more details:
+  https://docs-cupy.chainer.org/en/latest/install.html
+--------------------------------------------------------------------------------
+
+  warnings.warn(msg.format(
+CuPy installation found, continuing using GPU acceleration.
+having the CPUs {1, 3, 5, 7} available.
+Started basinhopping at 2020-12-25 04:23:13.560584 UTC, with
+command line arguments = {'path': '/home/jkgpu/HVQE/data/kagome/periodic/own_graph/ops/infidelity/3x2', 'n_par': 84, 'par_multiplicity': 3, 'n_iter': 0, 'cost_fn': 'infidelity', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+runtime variables =  {'GPU': True, 'date_start': '2020-12-25 04:23:13.560584', 'complete_graph': [(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5), (1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4), (1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'layers': [[(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5)], [(1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4)], [(1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)]], 'n': 18}
+Traceback (most recent call last):
+  File "/home/jkgpu/HVQE/HVQE.py", line 78, in <module>
+    vqe_out=_HVQE.run_VQE(cmd_args,run_args,init_reg)
+  File "/home/jkgpu/HVQE/_HVQE.py", line 160, in run_VQE
+    sol=scipy.optimize.basinhopping(calc_cost,vqe_out.init_par,stepsize=cmd_args.stepsize,minimizer_kwargs={'jac':True, 'options':{'gtol':0.5e-05}},niter=cmd_args.n_iter,interval=25,callback=callback,T=cmd_args.temperature)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_basinhopping.py", line 678, in basinhopping
+    bh = BasinHoppingRunner(x0, wrapped_minimizer, take_step_wrapped,
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_basinhopping.py", line 72, in __init__
+    minres = minimizer(self.x)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_basinhopping.py", line 284, in __call__
+    return self.minimizer(self.func, x0, **self.kwargs)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_minimize.py", line 612, in minimize
+    return _minimize_bfgs(fun, x0, args, jac, callback, **options)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 1101, in _minimize_bfgs
+    sf = _prepare_scalar_function(fun, x0, jac, args=args, epsilon=eps,
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 261, in _prepare_scalar_function
+    sf = ScalarFunction(fun, x0, args, grad, hess,
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 76, in __init__
+    self._update_fun()
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 166, in _update_fun
+    self._update_fun_impl()
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 73, in update_fun
+    self.f = fun_wrapped(self.x)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 70, in fun_wrapped
+    return fun(x, *args)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 74, in __call__
+    self._compute_if_needed(x, *args)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 68, in _compute_if_needed
+    fg = self.fun(x, *args)
+  File "/home/jkgpu/HVQE/_HVQE.py", line 104, in calc_cost
+    cost=infidelity_from_parameters(init_reg,run_args.layers,run_args,run_args.n,cmd_args.par_multiplicity,parameters)
+  File "/home/jkgpu/HVQE/_HVQE.py", line 74, in infidelity_from_parameters
+    for i in range(len(parameters)):
+TypeError: object of type 'int' has no len()
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/backends/cuda.py:142: UserWarning: cuDNN is not enabled.
+Please reinstall CuPy after you install cudnn
+(see https://docs-cupy.chainer.org/en/stable/install.html#install-cudnn).
+  warnings.warn(
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/_environment_check.py:70: UserWarning: 
+--------------------------------------------------------------------------------
+CuPy (cupy) version 8.0.0 may not be compatible with this version of Chainer.
+Please consider installing the supported version by running:
+  $ pip install 'cupy>=6.3.0,<7.0.0'
+
+See the following page for more details:
+  https://docs-cupy.chainer.org/en/latest/install.html
+--------------------------------------------------------------------------------
+
+  warnings.warn(msg.format(
+CuPy installation found, continuing using GPU acceleration.
+having the CPUs {1, 3, 5, 7} available.
+Started basinhopping at 2020-12-25 04:23:16.445031 UTC, with
+command line arguments = {'path': '/home/jkgpu/HVQE/data/kagome/periodic/own_graph/ops/infidelity/3x2', 'n_par': 96, 'par_multiplicity': 3, 'n_iter': 0, 'cost_fn': 'infidelity', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+runtime variables =  {'GPU': True, 'date_start': '2020-12-25 04:23:16.445031', 'complete_graph': [(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5), (1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4), (1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'layers': [[(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5)], [(1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4)], [(1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)]], 'n': 18}
+Traceback (most recent call last):
+  File "/home/jkgpu/HVQE/HVQE.py", line 78, in <module>
+    vqe_out=_HVQE.run_VQE(cmd_args,run_args,init_reg)
+  File "/home/jkgpu/HVQE/_HVQE.py", line 160, in run_VQE
+    sol=scipy.optimize.basinhopping(calc_cost,vqe_out.init_par,stepsize=cmd_args.stepsize,minimizer_kwargs={'jac':True, 'options':{'gtol':0.5e-05}},niter=cmd_args.n_iter,interval=25,callback=callback,T=cmd_args.temperature)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_basinhopping.py", line 678, in basinhopping
+    bh = BasinHoppingRunner(x0, wrapped_minimizer, take_step_wrapped,
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_basinhopping.py", line 72, in __init__
+    minres = minimizer(self.x)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_basinhopping.py", line 284, in __call__
+    return self.minimizer(self.func, x0, **self.kwargs)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_minimize.py", line 612, in minimize
+    return _minimize_bfgs(fun, x0, args, jac, callback, **options)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 1101, in _minimize_bfgs
+    sf = _prepare_scalar_function(fun, x0, jac, args=args, epsilon=eps,
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 261, in _prepare_scalar_function
+    sf = ScalarFunction(fun, x0, args, grad, hess,
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 76, in __init__
+    self._update_fun()
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 166, in _update_fun
+    self._update_fun_impl()
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 73, in update_fun
+    self.f = fun_wrapped(self.x)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 70, in fun_wrapped
+    return fun(x, *args)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 74, in __call__
+    self._compute_if_needed(x, *args)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 68, in _compute_if_needed
+    fg = self.fun(x, *args)
+  File "/home/jkgpu/HVQE/_HVQE.py", line 104, in calc_cost
+    cost=infidelity_from_parameters(init_reg,run_args.layers,run_args,run_args.n,cmd_args.par_multiplicity,parameters)
+  File "/home/jkgpu/HVQE/_HVQE.py", line 74, in infidelity_from_parameters
+    for i in range(len(parameters)):
+TypeError: object of type 'int' has no len()
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/backends/cuda.py:142: UserWarning: cuDNN is not enabled.
+Please reinstall CuPy after you install cudnn
+(see https://docs-cupy.chainer.org/en/stable/install.html#install-cudnn).
+  warnings.warn(
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/_environment_check.py:70: UserWarning: 
+--------------------------------------------------------------------------------
+CuPy (cupy) version 8.0.0 may not be compatible with this version of Chainer.
+Please consider installing the supported version by running:
+  $ pip install 'cupy>=6.3.0,<7.0.0'
+
+See the following page for more details:
+  https://docs-cupy.chainer.org/en/latest/install.html
+--------------------------------------------------------------------------------
+
+  warnings.warn(msg.format(
+CuPy installation found, continuing using GPU acceleration.
+having the CPUs {1, 3, 5, 7} available.
+Started basinhopping at 2020-12-25 04:23:19.435651 UTC, with
+command line arguments = {'path': '/home/jkgpu/HVQE/data/kagome/periodic/own_graph/ops/infidelity/3x2', 'n_par': 108, 'par_multiplicity': 3, 'n_iter': 0, 'cost_fn': 'infidelity', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+runtime variables =  {'GPU': True, 'date_start': '2020-12-25 04:23:19.435651', 'complete_graph': [(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5), (1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4), (1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'layers': [[(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5)], [(1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4)], [(1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)]], 'n': 18}
+Traceback (most recent call last):
+  File "/home/jkgpu/HVQE/HVQE.py", line 78, in <module>
+    vqe_out=_HVQE.run_VQE(cmd_args,run_args,init_reg)
+  File "/home/jkgpu/HVQE/_HVQE.py", line 160, in run_VQE
+    sol=scipy.optimize.basinhopping(calc_cost,vqe_out.init_par,stepsize=cmd_args.stepsize,minimizer_kwargs={'jac':True, 'options':{'gtol':0.5e-05}},niter=cmd_args.n_iter,interval=25,callback=callback,T=cmd_args.temperature)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_basinhopping.py", line 678, in basinhopping
+    bh = BasinHoppingRunner(x0, wrapped_minimizer, take_step_wrapped,
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_basinhopping.py", line 72, in __init__
+    minres = minimizer(self.x)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_basinhopping.py", line 284, in __call__
+    return self.minimizer(self.func, x0, **self.kwargs)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_minimize.py", line 612, in minimize
+    return _minimize_bfgs(fun, x0, args, jac, callback, **options)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 1101, in _minimize_bfgs
+    sf = _prepare_scalar_function(fun, x0, jac, args=args, epsilon=eps,
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 261, in _prepare_scalar_function
+    sf = ScalarFunction(fun, x0, args, grad, hess,
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 76, in __init__
+    self._update_fun()
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 166, in _update_fun
+    self._update_fun_impl()
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 73, in update_fun
+    self.f = fun_wrapped(self.x)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 70, in fun_wrapped
+    return fun(x, *args)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 74, in __call__
+    self._compute_if_needed(x, *args)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 68, in _compute_if_needed
+    fg = self.fun(x, *args)
+  File "/home/jkgpu/HVQE/_HVQE.py", line 104, in calc_cost
+    cost=infidelity_from_parameters(init_reg,run_args.layers,run_args,run_args.n,cmd_args.par_multiplicity,parameters)
+  File "/home/jkgpu/HVQE/_HVQE.py", line 74, in infidelity_from_parameters
+    for i in range(len(parameters)):
+TypeError: object of type 'int' has no len()
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/backends/cuda.py:142: UserWarning: cuDNN is not enabled.
+Please reinstall CuPy after you install cudnn
+(see https://docs-cupy.chainer.org/en/stable/install.html#install-cudnn).
+  warnings.warn(
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/_environment_check.py:70: UserWarning: 
+--------------------------------------------------------------------------------
+CuPy (cupy) version 8.0.0 may not be compatible with this version of Chainer.
+Please consider installing the supported version by running:
+  $ pip install 'cupy>=6.3.0,<7.0.0'
+
+See the following page for more details:
+  https://docs-cupy.chainer.org/en/latest/install.html
+--------------------------------------------------------------------------------
+
+  warnings.warn(msg.format(
+CuPy installation found, continuing using GPU acceleration.
+having the CPUs {1, 3, 5, 7} available.
+Started basinhopping at 2020-12-25 04:23:22.320874 UTC, with
+command line arguments = {'path': '/home/jkgpu/HVQE/data/kagome/periodic/own_graph/ops/infidelity/3x2', 'n_par': 120, 'par_multiplicity': 3, 'n_iter': 0, 'cost_fn': 'infidelity', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+runtime variables =  {'GPU': True, 'date_start': '2020-12-25 04:23:22.320874', 'complete_graph': [(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5), (1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4), (1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'layers': [[(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5)], [(1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4)], [(1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)]], 'n': 18}
+Traceback (most recent call last):
+  File "/home/jkgpu/HVQE/HVQE.py", line 78, in <module>
+    vqe_out=_HVQE.run_VQE(cmd_args,run_args,init_reg)
+  File "/home/jkgpu/HVQE/_HVQE.py", line 160, in run_VQE
+    sol=scipy.optimize.basinhopping(calc_cost,vqe_out.init_par,stepsize=cmd_args.stepsize,minimizer_kwargs={'jac':True, 'options':{'gtol':0.5e-05}},niter=cmd_args.n_iter,interval=25,callback=callback,T=cmd_args.temperature)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_basinhopping.py", line 678, in basinhopping
+    bh = BasinHoppingRunner(x0, wrapped_minimizer, take_step_wrapped,
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_basinhopping.py", line 72, in __init__
+    minres = minimizer(self.x)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_basinhopping.py", line 284, in __call__
+    return self.minimizer(self.func, x0, **self.kwargs)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_minimize.py", line 612, in minimize
+    return _minimize_bfgs(fun, x0, args, jac, callback, **options)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 1101, in _minimize_bfgs
+    sf = _prepare_scalar_function(fun, x0, jac, args=args, epsilon=eps,
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 261, in _prepare_scalar_function
+    sf = ScalarFunction(fun, x0, args, grad, hess,
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 76, in __init__
+    self._update_fun()
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 166, in _update_fun
+    self._update_fun_impl()
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 73, in update_fun
+    self.f = fun_wrapped(self.x)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 70, in fun_wrapped
+    return fun(x, *args)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 74, in __call__
+    self._compute_if_needed(x, *args)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 68, in _compute_if_needed
+    fg = self.fun(x, *args)
+  File "/home/jkgpu/HVQE/_HVQE.py", line 104, in calc_cost
+    cost=infidelity_from_parameters(init_reg,run_args.layers,run_args,run_args.n,cmd_args.par_multiplicity,parameters)
+  File "/home/jkgpu/HVQE/_HVQE.py", line 74, in infidelity_from_parameters
+    for i in range(len(parameters)):
+TypeError: object of type 'int' has no len()
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/backends/cuda.py:142: UserWarning: cuDNN is not enabled.
+Please reinstall CuPy after you install cudnn
+(see https://docs-cupy.chainer.org/en/stable/install.html#install-cudnn).
+  warnings.warn(
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/_environment_check.py:70: UserWarning: 
+--------------------------------------------------------------------------------
+CuPy (cupy) version 8.0.0 may not be compatible with this version of Chainer.
+Please consider installing the supported version by running:
+  $ pip install 'cupy>=6.3.0,<7.0.0'
+
+See the following page for more details:
+  https://docs-cupy.chainer.org/en/latest/install.html
+--------------------------------------------------------------------------------
+
+  warnings.warn(msg.format(
+CuPy installation found, continuing using GPU acceleration.
+having the CPUs {1, 3, 5, 7} available.
+Started basinhopping at 2020-12-25 04:23:25.057889 UTC, with
+command line arguments = {'path': '/home/jkgpu/HVQE/data/kagome/periodic/own_graph/ops/infidelity/3x2', 'n_par': 132, 'par_multiplicity': 3, 'n_iter': 0, 'cost_fn': 'infidelity', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+runtime variables =  {'GPU': True, 'date_start': '2020-12-25 04:23:25.057889', 'complete_graph': [(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5), (1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4), (1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'layers': [[(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5)], [(1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4)], [(1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)]], 'n': 18}
+Traceback (most recent call last):
+  File "/home/jkgpu/HVQE/HVQE.py", line 78, in <module>
+    vqe_out=_HVQE.run_VQE(cmd_args,run_args,init_reg)
+  File "/home/jkgpu/HVQE/_HVQE.py", line 160, in run_VQE
+    sol=scipy.optimize.basinhopping(calc_cost,vqe_out.init_par,stepsize=cmd_args.stepsize,minimizer_kwargs={'jac':True, 'options':{'gtol':0.5e-05}},niter=cmd_args.n_iter,interval=25,callback=callback,T=cmd_args.temperature)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_basinhopping.py", line 678, in basinhopping
+    bh = BasinHoppingRunner(x0, wrapped_minimizer, take_step_wrapped,
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_basinhopping.py", line 72, in __init__
+    minres = minimizer(self.x)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_basinhopping.py", line 284, in __call__
+    return self.minimizer(self.func, x0, **self.kwargs)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_minimize.py", line 612, in minimize
+    return _minimize_bfgs(fun, x0, args, jac, callback, **options)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 1101, in _minimize_bfgs
+    sf = _prepare_scalar_function(fun, x0, jac, args=args, epsilon=eps,
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 261, in _prepare_scalar_function
+    sf = ScalarFunction(fun, x0, args, grad, hess,
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 76, in __init__
+    self._update_fun()
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 166, in _update_fun
+    self._update_fun_impl()
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 73, in update_fun
+    self.f = fun_wrapped(self.x)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 70, in fun_wrapped
+    return fun(x, *args)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 74, in __call__
+    self._compute_if_needed(x, *args)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 68, in _compute_if_needed
+    fg = self.fun(x, *args)
+  File "/home/jkgpu/HVQE/_HVQE.py", line 104, in calc_cost
+    cost=infidelity_from_parameters(init_reg,run_args.layers,run_args,run_args.n,cmd_args.par_multiplicity,parameters)
+  File "/home/jkgpu/HVQE/_HVQE.py", line 74, in infidelity_from_parameters
+    for i in range(len(parameters)):
+TypeError: object of type 'int' has no len()
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/backends/cuda.py:142: UserWarning: cuDNN is not enabled.
+Please reinstall CuPy after you install cudnn
+(see https://docs-cupy.chainer.org/en/stable/install.html#install-cudnn).
+  warnings.warn(
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/_environment_check.py:70: UserWarning: 
+--------------------------------------------------------------------------------
+CuPy (cupy) version 8.0.0 may not be compatible with this version of Chainer.
+Please consider installing the supported version by running:
+  $ pip install 'cupy>=6.3.0,<7.0.0'
+
+See the following page for more details:
+  https://docs-cupy.chainer.org/en/latest/install.html
+--------------------------------------------------------------------------------
+
+  warnings.warn(msg.format(
+CuPy installation found, continuing using GPU acceleration.
+having the CPUs {1, 3, 5, 7} available.
+Started basinhopping at 2020-12-25 04:23:27.748213 UTC, with
+command line arguments = {'path': '/home/jkgpu/HVQE/data/kagome/periodic/own_graph/ops/infidelity/3x2', 'n_par': 144, 'par_multiplicity': 3, 'n_iter': 0, 'cost_fn': 'infidelity', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+runtime variables =  {'GPU': True, 'date_start': '2020-12-25 04:23:27.748213', 'complete_graph': [(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5), (1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4), (1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'layers': [[(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5)], [(1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4)], [(1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)]], 'n': 18}
+Traceback (most recent call last):
+  File "/home/jkgpu/HVQE/HVQE.py", line 78, in <module>
+    vqe_out=_HVQE.run_VQE(cmd_args,run_args,init_reg)
+  File "/home/jkgpu/HVQE/_HVQE.py", line 160, in run_VQE
+    sol=scipy.optimize.basinhopping(calc_cost,vqe_out.init_par,stepsize=cmd_args.stepsize,minimizer_kwargs={'jac':True, 'options':{'gtol':0.5e-05}},niter=cmd_args.n_iter,interval=25,callback=callback,T=cmd_args.temperature)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_basinhopping.py", line 678, in basinhopping
+    bh = BasinHoppingRunner(x0, wrapped_minimizer, take_step_wrapped,
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_basinhopping.py", line 72, in __init__
+    minres = minimizer(self.x)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_basinhopping.py", line 284, in __call__
+    return self.minimizer(self.func, x0, **self.kwargs)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_minimize.py", line 612, in minimize
+    return _minimize_bfgs(fun, x0, args, jac, callback, **options)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 1101, in _minimize_bfgs
+    sf = _prepare_scalar_function(fun, x0, jac, args=args, epsilon=eps,
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 261, in _prepare_scalar_function
+    sf = ScalarFunction(fun, x0, args, grad, hess,
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 76, in __init__
+    self._update_fun()
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 166, in _update_fun
+    self._update_fun_impl()
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 73, in update_fun
+    self.f = fun_wrapped(self.x)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 70, in fun_wrapped
+    return fun(x, *args)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 74, in __call__
+    self._compute_if_needed(x, *args)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 68, in _compute_if_needed
+    fg = self.fun(x, *args)
+  File "/home/jkgpu/HVQE/_HVQE.py", line 104, in calc_cost
+    cost=infidelity_from_parameters(init_reg,run_args.layers,run_args,run_args.n,cmd_args.par_multiplicity,parameters)
+  File "/home/jkgpu/HVQE/_HVQE.py", line 74, in infidelity_from_parameters
+    for i in range(len(parameters)):
+TypeError: object of type 'int' has no len()
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/backends/cuda.py:142: UserWarning: cuDNN is not enabled.
+Please reinstall CuPy after you install cudnn
+(see https://docs-cupy.chainer.org/en/stable/install.html#install-cudnn).
+  warnings.warn(
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/_environment_check.py:70: UserWarning: 
+--------------------------------------------------------------------------------
+CuPy (cupy) version 8.0.0 may not be compatible with this version of Chainer.
+Please consider installing the supported version by running:
+  $ pip install 'cupy>=6.3.0,<7.0.0'
+
+See the following page for more details:
+  https://docs-cupy.chainer.org/en/latest/install.html
+--------------------------------------------------------------------------------
+
+  warnings.warn(msg.format(
+CuPy installation found, continuing using GPU acceleration.
+having the CPUs {1, 3, 5, 7} available.
+Started basinhopping at 2020-12-25 04:23:30.420119 UTC, with
+command line arguments = {'path': '/home/jkgpu/HVQE/data/kagome/periodic/own_graph/ops/infidelity/3x2', 'n_par': 156, 'par_multiplicity': 3, 'n_iter': 0, 'cost_fn': 'infidelity', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+runtime variables =  {'GPU': True, 'date_start': '2020-12-25 04:23:30.420119', 'complete_graph': [(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5), (1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4), (1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'layers': [[(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5)], [(1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4)], [(1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)]], 'n': 18}
+Traceback (most recent call last):
+  File "/home/jkgpu/HVQE/HVQE.py", line 78, in <module>
+    vqe_out=_HVQE.run_VQE(cmd_args,run_args,init_reg)
+  File "/home/jkgpu/HVQE/_HVQE.py", line 160, in run_VQE
+    sol=scipy.optimize.basinhopping(calc_cost,vqe_out.init_par,stepsize=cmd_args.stepsize,minimizer_kwargs={'jac':True, 'options':{'gtol':0.5e-05}},niter=cmd_args.n_iter,interval=25,callback=callback,T=cmd_args.temperature)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_basinhopping.py", line 678, in basinhopping
+    bh = BasinHoppingRunner(x0, wrapped_minimizer, take_step_wrapped,
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_basinhopping.py", line 72, in __init__
+    minres = minimizer(self.x)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_basinhopping.py", line 284, in __call__
+    return self.minimizer(self.func, x0, **self.kwargs)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_minimize.py", line 612, in minimize
+    return _minimize_bfgs(fun, x0, args, jac, callback, **options)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 1101, in _minimize_bfgs
+    sf = _prepare_scalar_function(fun, x0, jac, args=args, epsilon=eps,
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 261, in _prepare_scalar_function
+    sf = ScalarFunction(fun, x0, args, grad, hess,
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 76, in __init__
+    self._update_fun()
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 166, in _update_fun
+    self._update_fun_impl()
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 73, in update_fun
+    self.f = fun_wrapped(self.x)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 70, in fun_wrapped
+    return fun(x, *args)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 74, in __call__
+    self._compute_if_needed(x, *args)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 68, in _compute_if_needed
+    fg = self.fun(x, *args)
+  File "/home/jkgpu/HVQE/_HVQE.py", line 104, in calc_cost
+    cost=infidelity_from_parameters(init_reg,run_args.layers,run_args,run_args.n,cmd_args.par_multiplicity,parameters)
+  File "/home/jkgpu/HVQE/_HVQE.py", line 74, in infidelity_from_parameters
+    for i in range(len(parameters)):
+TypeError: object of type 'int' has no len()
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/backends/cuda.py:142: UserWarning: cuDNN is not enabled.
+Please reinstall CuPy after you install cudnn
+(see https://docs-cupy.chainer.org/en/stable/install.html#install-cudnn).
+  warnings.warn(
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/_environment_check.py:70: UserWarning: 
+--------------------------------------------------------------------------------
+CuPy (cupy) version 8.0.0 may not be compatible with this version of Chainer.
+Please consider installing the supported version by running:
+  $ pip install 'cupy>=6.3.0,<7.0.0'
+
+See the following page for more details:
+  https://docs-cupy.chainer.org/en/latest/install.html
+--------------------------------------------------------------------------------
+
+  warnings.warn(msg.format(
+CuPy installation found, continuing using GPU acceleration.
+having the CPUs {1, 3, 5, 7} available.
+Started basinhopping at 2020-12-25 04:23:33.137543 UTC, with
+command line arguments = {'path': '/home/jkgpu/HVQE/data/kagome/periodic/own_graph/ops/infidelity/3x2', 'n_par': 168, 'par_multiplicity': 3, 'n_iter': 0, 'cost_fn': 'infidelity', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+runtime variables =  {'GPU': True, 'date_start': '2020-12-25 04:23:33.137543', 'complete_graph': [(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5), (1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4), (1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'layers': [[(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5)], [(1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4)], [(1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)]], 'n': 18}
+Traceback (most recent call last):
+  File "/home/jkgpu/HVQE/HVQE.py", line 78, in <module>
+    vqe_out=_HVQE.run_VQE(cmd_args,run_args,init_reg)
+  File "/home/jkgpu/HVQE/_HVQE.py", line 160, in run_VQE
+    sol=scipy.optimize.basinhopping(calc_cost,vqe_out.init_par,stepsize=cmd_args.stepsize,minimizer_kwargs={'jac':True, 'options':{'gtol':0.5e-05}},niter=cmd_args.n_iter,interval=25,callback=callback,T=cmd_args.temperature)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_basinhopping.py", line 678, in basinhopping
+    bh = BasinHoppingRunner(x0, wrapped_minimizer, take_step_wrapped,
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_basinhopping.py", line 72, in __init__
+    minres = minimizer(self.x)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_basinhopping.py", line 284, in __call__
+    return self.minimizer(self.func, x0, **self.kwargs)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_minimize.py", line 612, in minimize
+    return _minimize_bfgs(fun, x0, args, jac, callback, **options)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 1101, in _minimize_bfgs
+    sf = _prepare_scalar_function(fun, x0, jac, args=args, epsilon=eps,
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 261, in _prepare_scalar_function
+    sf = ScalarFunction(fun, x0, args, grad, hess,
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 76, in __init__
+    self._update_fun()
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 166, in _update_fun
+    self._update_fun_impl()
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 73, in update_fun
+    self.f = fun_wrapped(self.x)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 70, in fun_wrapped
+    return fun(x, *args)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 74, in __call__
+    self._compute_if_needed(x, *args)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 68, in _compute_if_needed
+    fg = self.fun(x, *args)
+  File "/home/jkgpu/HVQE/_HVQE.py", line 104, in calc_cost
+    cost=infidelity_from_parameters(init_reg,run_args.layers,run_args,run_args.n,cmd_args.par_multiplicity,parameters)
+  File "/home/jkgpu/HVQE/_HVQE.py", line 74, in infidelity_from_parameters
+    for i in range(len(parameters)):
+TypeError: object of type 'int' has no len()
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/backends/cuda.py:142: UserWarning: cuDNN is not enabled.
+Please reinstall CuPy after you install cudnn
+(see https://docs-cupy.chainer.org/en/stable/install.html#install-cudnn).
+  warnings.warn(
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/_environment_check.py:70: UserWarning: 
+--------------------------------------------------------------------------------
+CuPy (cupy) version 8.0.0 may not be compatible with this version of Chainer.
+Please consider installing the supported version by running:
+  $ pip install 'cupy>=6.3.0,<7.0.0'
+
+See the following page for more details:
+  https://docs-cupy.chainer.org/en/latest/install.html
+--------------------------------------------------------------------------------
+
+  warnings.warn(msg.format(
+CuPy installation found, continuing using GPU acceleration.
+having the CPUs {1, 3, 5, 7} available.
+Started basinhopping at 2020-12-25 04:23:35.817713 UTC, with
+command line arguments = {'path': '/home/jkgpu/HVQE/data/kagome/periodic/own_graph/ops/infidelity/3x2', 'n_par': 180, 'par_multiplicity': 3, 'n_iter': 0, 'cost_fn': 'infidelity', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+runtime variables =  {'GPU': True, 'date_start': '2020-12-25 04:23:35.817713', 'complete_graph': [(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5), (1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4), (1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'layers': [[(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5)], [(1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4)], [(1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)]], 'n': 18}
+Traceback (most recent call last):
+  File "/home/jkgpu/HVQE/HVQE.py", line 78, in <module>
+    vqe_out=_HVQE.run_VQE(cmd_args,run_args,init_reg)
+  File "/home/jkgpu/HVQE/_HVQE.py", line 160, in run_VQE
+    sol=scipy.optimize.basinhopping(calc_cost,vqe_out.init_par,stepsize=cmd_args.stepsize,minimizer_kwargs={'jac':True, 'options':{'gtol':0.5e-05}},niter=cmd_args.n_iter,interval=25,callback=callback,T=cmd_args.temperature)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_basinhopping.py", line 678, in basinhopping
+    bh = BasinHoppingRunner(x0, wrapped_minimizer, take_step_wrapped,
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_basinhopping.py", line 72, in __init__
+    minres = minimizer(self.x)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_basinhopping.py", line 284, in __call__
+    return self.minimizer(self.func, x0, **self.kwargs)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_minimize.py", line 612, in minimize
+    return _minimize_bfgs(fun, x0, args, jac, callback, **options)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 1101, in _minimize_bfgs
+    sf = _prepare_scalar_function(fun, x0, jac, args=args, epsilon=eps,
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 261, in _prepare_scalar_function
+    sf = ScalarFunction(fun, x0, args, grad, hess,
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 76, in __init__
+    self._update_fun()
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 166, in _update_fun
+    self._update_fun_impl()
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 73, in update_fun
+    self.f = fun_wrapped(self.x)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 70, in fun_wrapped
+    return fun(x, *args)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 74, in __call__
+    self._compute_if_needed(x, *args)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 68, in _compute_if_needed
+    fg = self.fun(x, *args)
+  File "/home/jkgpu/HVQE/_HVQE.py", line 104, in calc_cost
+    cost=infidelity_from_parameters(init_reg,run_args.layers,run_args,run_args.n,cmd_args.par_multiplicity,parameters)
+  File "/home/jkgpu/HVQE/_HVQE.py", line 74, in infidelity_from_parameters
+    for i in range(len(parameters)):
+TypeError: object of type 'int' has no len()
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/backends/cuda.py:142: UserWarning: cuDNN is not enabled.
+Please reinstall CuPy after you install cudnn
+(see https://docs-cupy.chainer.org/en/stable/install.html#install-cudnn).
+  warnings.warn(
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/_environment_check.py:70: UserWarning: 
+--------------------------------------------------------------------------------
+CuPy (cupy) version 8.0.0 may not be compatible with this version of Chainer.
+Please consider installing the supported version by running:
+  $ pip install 'cupy>=6.3.0,<7.0.0'
+
+See the following page for more details:
+  https://docs-cupy.chainer.org/en/latest/install.html
+--------------------------------------------------------------------------------
+
+  warnings.warn(msg.format(
+CuPy installation found, continuing using GPU acceleration.
+having the CPUs {1, 3, 5, 7} available.
+Started basinhopping at 2020-12-25 04:23:38.447863 UTC, with
+command line arguments = {'path': '/home/jkgpu/HVQE/data/kagome/periodic/own_graph/ops/infidelity/3x2', 'n_par': 192, 'par_multiplicity': 3, 'n_iter': 0, 'cost_fn': 'infidelity', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+runtime variables =  {'GPU': True, 'date_start': '2020-12-25 04:23:38.447863', 'complete_graph': [(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5), (1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4), (1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'layers': [[(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5)], [(1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4)], [(1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)]], 'n': 18}
+Traceback (most recent call last):
+  File "/home/jkgpu/HVQE/HVQE.py", line 78, in <module>
+    vqe_out=_HVQE.run_VQE(cmd_args,run_args,init_reg)
+  File "/home/jkgpu/HVQE/_HVQE.py", line 160, in run_VQE
+    sol=scipy.optimize.basinhopping(calc_cost,vqe_out.init_par,stepsize=cmd_args.stepsize,minimizer_kwargs={'jac':True, 'options':{'gtol':0.5e-05}},niter=cmd_args.n_iter,interval=25,callback=callback,T=cmd_args.temperature)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_basinhopping.py", line 678, in basinhopping
+    bh = BasinHoppingRunner(x0, wrapped_minimizer, take_step_wrapped,
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_basinhopping.py", line 72, in __init__
+    minres = minimizer(self.x)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_basinhopping.py", line 284, in __call__
+    return self.minimizer(self.func, x0, **self.kwargs)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_minimize.py", line 612, in minimize
+    return _minimize_bfgs(fun, x0, args, jac, callback, **options)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 1101, in _minimize_bfgs
+    sf = _prepare_scalar_function(fun, x0, jac, args=args, epsilon=eps,
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 261, in _prepare_scalar_function
+    sf = ScalarFunction(fun, x0, args, grad, hess,
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 76, in __init__
+    self._update_fun()
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 166, in _update_fun
+    self._update_fun_impl()
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 73, in update_fun
+    self.f = fun_wrapped(self.x)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 70, in fun_wrapped
+    return fun(x, *args)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 74, in __call__
+    self._compute_if_needed(x, *args)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 68, in _compute_if_needed
+    fg = self.fun(x, *args)
+  File "/home/jkgpu/HVQE/_HVQE.py", line 104, in calc_cost
+    cost=infidelity_from_parameters(init_reg,run_args.layers,run_args,run_args.n,cmd_args.par_multiplicity,parameters)
+  File "/home/jkgpu/HVQE/_HVQE.py", line 74, in infidelity_from_parameters
+    for i in range(len(parameters)):
+TypeError: object of type 'int' has no len()
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/backends/cuda.py:142: UserWarning: cuDNN is not enabled.
+Please reinstall CuPy after you install cudnn
+(see https://docs-cupy.chainer.org/en/stable/install.html#install-cudnn).
+  warnings.warn(
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/_environment_check.py:70: UserWarning: 
+--------------------------------------------------------------------------------
+CuPy (cupy) version 8.0.0 may not be compatible with this version of Chainer.
+Please consider installing the supported version by running:
+  $ pip install 'cupy>=6.3.0,<7.0.0'
+
+See the following page for more details:
+  https://docs-cupy.chainer.org/en/latest/install.html
+--------------------------------------------------------------------------------
+
+  warnings.warn(msg.format(
+CuPy installation found, continuing using GPU acceleration.
+having the CPUs {1, 3, 5, 7} available.
+Started basinhopping at 2020-12-25 04:23:41.138958 UTC, with
+command line arguments = {'path': '/home/jkgpu/HVQE/data/kagome/periodic/own_graph/ops/infidelity/3x2', 'n_par': 204, 'par_multiplicity': 3, 'n_iter': 0, 'cost_fn': 'infidelity', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+runtime variables =  {'GPU': True, 'date_start': '2020-12-25 04:23:41.138958', 'complete_graph': [(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5), (1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4), (1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'layers': [[(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5)], [(1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4)], [(1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)]], 'n': 18}
+Traceback (most recent call last):
+  File "/home/jkgpu/HVQE/HVQE.py", line 78, in <module>
+    vqe_out=_HVQE.run_VQE(cmd_args,run_args,init_reg)
+  File "/home/jkgpu/HVQE/_HVQE.py", line 160, in run_VQE
+    sol=scipy.optimize.basinhopping(calc_cost,vqe_out.init_par,stepsize=cmd_args.stepsize,minimizer_kwargs={'jac':True, 'options':{'gtol':0.5e-05}},niter=cmd_args.n_iter,interval=25,callback=callback,T=cmd_args.temperature)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_basinhopping.py", line 678, in basinhopping
+    bh = BasinHoppingRunner(x0, wrapped_minimizer, take_step_wrapped,
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_basinhopping.py", line 72, in __init__
+    minres = minimizer(self.x)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_basinhopping.py", line 284, in __call__
+    return self.minimizer(self.func, x0, **self.kwargs)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_minimize.py", line 612, in minimize
+    return _minimize_bfgs(fun, x0, args, jac, callback, **options)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 1101, in _minimize_bfgs
+    sf = _prepare_scalar_function(fun, x0, jac, args=args, epsilon=eps,
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 261, in _prepare_scalar_function
+    sf = ScalarFunction(fun, x0, args, grad, hess,
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 76, in __init__
+    self._update_fun()
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 166, in _update_fun
+    self._update_fun_impl()
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 73, in update_fun
+    self.f = fun_wrapped(self.x)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 70, in fun_wrapped
+    return fun(x, *args)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 74, in __call__
+    self._compute_if_needed(x, *args)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 68, in _compute_if_needed
+    fg = self.fun(x, *args)
+  File "/home/jkgpu/HVQE/_HVQE.py", line 104, in calc_cost
+    cost=infidelity_from_parameters(init_reg,run_args.layers,run_args,run_args.n,cmd_args.par_multiplicity,parameters)
+  File "/home/jkgpu/HVQE/_HVQE.py", line 74, in infidelity_from_parameters
+    for i in range(len(parameters)):
+TypeError: object of type 'int' has no len()
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/backends/cuda.py:142: UserWarning: cuDNN is not enabled.
+Please reinstall CuPy after you install cudnn
+(see https://docs-cupy.chainer.org/en/stable/install.html#install-cudnn).
+  warnings.warn(
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/_environment_check.py:70: UserWarning: 
+--------------------------------------------------------------------------------
+CuPy (cupy) version 8.0.0 may not be compatible with this version of Chainer.
+Please consider installing the supported version by running:
+  $ pip install 'cupy>=6.3.0,<7.0.0'
+
+See the following page for more details:
+  https://docs-cupy.chainer.org/en/latest/install.html
+--------------------------------------------------------------------------------
+
+  warnings.warn(msg.format(
+CuPy installation found, continuing using GPU acceleration.
+having the CPUs {1, 3, 5, 7} available.
+Started basinhopping at 2020-12-25 04:23:43.814021 UTC, with
+command line arguments = {'path': '/home/jkgpu/HVQE/data/kagome/periodic/own_graph/ops/infidelity/3x2', 'n_par': 216, 'par_multiplicity': 3, 'n_iter': 0, 'cost_fn': 'infidelity', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+runtime variables =  {'GPU': True, 'date_start': '2020-12-25 04:23:43.814021', 'complete_graph': [(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5), (1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4), (1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'layers': [[(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5)], [(1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4)], [(1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)]], 'n': 18}
+Traceback (most recent call last):
+  File "/home/jkgpu/HVQE/HVQE.py", line 78, in <module>
+    vqe_out=_HVQE.run_VQE(cmd_args,run_args,init_reg)
+  File "/home/jkgpu/HVQE/_HVQE.py", line 160, in run_VQE
+    sol=scipy.optimize.basinhopping(calc_cost,vqe_out.init_par,stepsize=cmd_args.stepsize,minimizer_kwargs={'jac':True, 'options':{'gtol':0.5e-05}},niter=cmd_args.n_iter,interval=25,callback=callback,T=cmd_args.temperature)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_basinhopping.py", line 678, in basinhopping
+    bh = BasinHoppingRunner(x0, wrapped_minimizer, take_step_wrapped,
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_basinhopping.py", line 72, in __init__
+    minres = minimizer(self.x)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_basinhopping.py", line 284, in __call__
+    return self.minimizer(self.func, x0, **self.kwargs)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_minimize.py", line 612, in minimize
+    return _minimize_bfgs(fun, x0, args, jac, callback, **options)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 1101, in _minimize_bfgs
+    sf = _prepare_scalar_function(fun, x0, jac, args=args, epsilon=eps,
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 261, in _prepare_scalar_function
+    sf = ScalarFunction(fun, x0, args, grad, hess,
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 76, in __init__
+    self._update_fun()
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 166, in _update_fun
+    self._update_fun_impl()
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 73, in update_fun
+    self.f = fun_wrapped(self.x)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 70, in fun_wrapped
+    return fun(x, *args)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 74, in __call__
+    self._compute_if_needed(x, *args)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 68, in _compute_if_needed
+    fg = self.fun(x, *args)
+  File "/home/jkgpu/HVQE/_HVQE.py", line 104, in calc_cost
+    cost=infidelity_from_parameters(init_reg,run_args.layers,run_args,run_args.n,cmd_args.par_multiplicity,parameters)
+  File "/home/jkgpu/HVQE/_HVQE.py", line 74, in infidelity_from_parameters
+    for i in range(len(parameters)):
+TypeError: object of type 'int' has no len()
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/backends/cuda.py:142: UserWarning: cuDNN is not enabled.
+Please reinstall CuPy after you install cudnn
+(see https://docs-cupy.chainer.org/en/stable/install.html#install-cudnn).
+  warnings.warn(
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/_environment_check.py:70: UserWarning: 
+--------------------------------------------------------------------------------
+CuPy (cupy) version 8.0.0 may not be compatible with this version of Chainer.
+Please consider installing the supported version by running:
+  $ pip install 'cupy>=6.3.0,<7.0.0'
+
+See the following page for more details:
+  https://docs-cupy.chainer.org/en/latest/install.html
+--------------------------------------------------------------------------------
+
+  warnings.warn(msg.format(
+CuPy installation found, continuing using GPU acceleration.
+having the CPUs {1, 3, 5, 7} available.
+Started basinhopping at 2020-12-25 04:23:46.459118 UTC, with
+command line arguments = {'path': '/home/jkgpu/HVQE/data/kagome/periodic/own_graph/ops/infidelity/3x2', 'n_par': 228, 'par_multiplicity': 3, 'n_iter': 0, 'cost_fn': 'infidelity', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+runtime variables =  {'GPU': True, 'date_start': '2020-12-25 04:23:46.459118', 'complete_graph': [(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5), (1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4), (1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'layers': [[(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5)], [(1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4)], [(1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)]], 'n': 18}
+Traceback (most recent call last):
+  File "/home/jkgpu/HVQE/HVQE.py", line 78, in <module>
+    vqe_out=_HVQE.run_VQE(cmd_args,run_args,init_reg)
+  File "/home/jkgpu/HVQE/_HVQE.py", line 160, in run_VQE
+    sol=scipy.optimize.basinhopping(calc_cost,vqe_out.init_par,stepsize=cmd_args.stepsize,minimizer_kwargs={'jac':True, 'options':{'gtol':0.5e-05}},niter=cmd_args.n_iter,interval=25,callback=callback,T=cmd_args.temperature)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_basinhopping.py", line 678, in basinhopping
+    bh = BasinHoppingRunner(x0, wrapped_minimizer, take_step_wrapped,
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_basinhopping.py", line 72, in __init__
+    minres = minimizer(self.x)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_basinhopping.py", line 284, in __call__
+    return self.minimizer(self.func, x0, **self.kwargs)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_minimize.py", line 612, in minimize
+    return _minimize_bfgs(fun, x0, args, jac, callback, **options)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 1101, in _minimize_bfgs
+    sf = _prepare_scalar_function(fun, x0, jac, args=args, epsilon=eps,
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 261, in _prepare_scalar_function
+    sf = ScalarFunction(fun, x0, args, grad, hess,
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 76, in __init__
+    self._update_fun()
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 166, in _update_fun
+    self._update_fun_impl()
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 73, in update_fun
+    self.f = fun_wrapped(self.x)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 70, in fun_wrapped
+    return fun(x, *args)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 74, in __call__
+    self._compute_if_needed(x, *args)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 68, in _compute_if_needed
+    fg = self.fun(x, *args)
+  File "/home/jkgpu/HVQE/_HVQE.py", line 104, in calc_cost
+    cost=infidelity_from_parameters(init_reg,run_args.layers,run_args,run_args.n,cmd_args.par_multiplicity,parameters)
+  File "/home/jkgpu/HVQE/_HVQE.py", line 74, in infidelity_from_parameters
+    for i in range(len(parameters)):
+TypeError: object of type 'int' has no len()
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/backends/cuda.py:142: UserWarning: cuDNN is not enabled.
+Please reinstall CuPy after you install cudnn
+(see https://docs-cupy.chainer.org/en/stable/install.html#install-cudnn).
+  warnings.warn(
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/_environment_check.py:70: UserWarning: 
+--------------------------------------------------------------------------------
+CuPy (cupy) version 8.0.0 may not be compatible with this version of Chainer.
+Please consider installing the supported version by running:
+  $ pip install 'cupy>=6.3.0,<7.0.0'
+
+See the following page for more details:
+  https://docs-cupy.chainer.org/en/latest/install.html
+--------------------------------------------------------------------------------
+
+  warnings.warn(msg.format(
+CuPy installation found, continuing using GPU acceleration.
+having the CPUs {1, 3, 5, 7} available.
+Started basinhopping at 2020-12-25 04:23:49.130271 UTC, with
+command line arguments = {'path': '/home/jkgpu/HVQE/data/kagome/periodic/own_graph/ops/infidelity/3x2', 'n_par': 240, 'par_multiplicity': 3, 'n_iter': 0, 'cost_fn': 'infidelity', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+runtime variables =  {'GPU': True, 'date_start': '2020-12-25 04:23:49.130271', 'complete_graph': [(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5), (1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4), (1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'layers': [[(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5)], [(1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4)], [(1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)]], 'n': 18}
+Traceback (most recent call last):
+  File "/home/jkgpu/HVQE/HVQE.py", line 78, in <module>
+    vqe_out=_HVQE.run_VQE(cmd_args,run_args,init_reg)
+  File "/home/jkgpu/HVQE/_HVQE.py", line 160, in run_VQE
+    sol=scipy.optimize.basinhopping(calc_cost,vqe_out.init_par,stepsize=cmd_args.stepsize,minimizer_kwargs={'jac':True, 'options':{'gtol':0.5e-05}},niter=cmd_args.n_iter,interval=25,callback=callback,T=cmd_args.temperature)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_basinhopping.py", line 678, in basinhopping
+    bh = BasinHoppingRunner(x0, wrapped_minimizer, take_step_wrapped,
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_basinhopping.py", line 72, in __init__
+    minres = minimizer(self.x)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_basinhopping.py", line 284, in __call__
+    return self.minimizer(self.func, x0, **self.kwargs)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_minimize.py", line 612, in minimize
+    return _minimize_bfgs(fun, x0, args, jac, callback, **options)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 1101, in _minimize_bfgs
+    sf = _prepare_scalar_function(fun, x0, jac, args=args, epsilon=eps,
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 261, in _prepare_scalar_function
+    sf = ScalarFunction(fun, x0, args, grad, hess,
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 76, in __init__
+    self._update_fun()
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 166, in _update_fun
+    self._update_fun_impl()
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 73, in update_fun
+    self.f = fun_wrapped(self.x)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 70, in fun_wrapped
+    return fun(x, *args)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 74, in __call__
+    self._compute_if_needed(x, *args)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 68, in _compute_if_needed
+    fg = self.fun(x, *args)
+  File "/home/jkgpu/HVQE/_HVQE.py", line 104, in calc_cost
+    cost=infidelity_from_parameters(init_reg,run_args.layers,run_args,run_args.n,cmd_args.par_multiplicity,parameters)
+  File "/home/jkgpu/HVQE/_HVQE.py", line 74, in infidelity_from_parameters
+    for i in range(len(parameters)):
+TypeError: object of type 'int' has no len()

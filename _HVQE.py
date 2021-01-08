@@ -161,7 +161,7 @@ def run_VQE(cmd_args,run_args,init_reg,gs_reg):
             vqe_out.init_par=[]
             
     else:
-        sol=scipy.optimize.basinhopping(calc_cost,vqe_out.init_par,stepsize=cmd_args.stepsize,minimizer_kwargs={'jac':True, 'options':{'gtol':0.5e-05}},niter=cmd_args.n_iter,interval=25,callback=callback,T=cmd_args.temperature)
+        sol=scipy.optimize.basinhopping(calc_cost,vqe_out.init_par,stepsize=cmd_args.stepsize,minimizer_kwargs={'jac':True},niter=cmd_args.n_iter,interval=25,callback=callback,T=cmd_args.temperature)
         vqe_out.cost_VQE=float(sol.fun)
         vqe_out.opt_parameters=sol.x.tolist()
         vqe_out.init_par=list(vqe_out.init_par)

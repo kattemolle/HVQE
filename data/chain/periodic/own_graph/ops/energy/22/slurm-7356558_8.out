@@ -1,0 +1,423 @@
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/backends/cuda.py:142: UserWarning: cuDNN is not enabled.
+Please reinstall CuPy after you install cudnn
+(see https://docs-cupy.chainer.org/en/stable/install.html#install-cudnn).
+  warnings.warn(
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/_environment_check.py:70: UserWarning: 
+--------------------------------------------------------------------------------
+CuPy (cupy) version 8.0.0 may not be compatible with this version of Chainer.
+Please consider installing the supported version by running:
+  $ pip install 'cupy>=6.3.0,<7.0.0'
+
+See the following page for more details:
+  https://docs-cupy.chainer.org/en/latest/install.html
+--------------------------------------------------------------------------------
+
+  warnings.warn(msg.format(
+CuPy installation found, continuing using GPU acceleration.
+having the CPUs {1, 3, 5} available.
+Started basinhopping at 2021-01-16 20:01:49.707373 UTC, with
+command line arguments = {'path': '/home/jkgpu/HVQE/data/chain/periodic/own_graph/ops/energy/22', 'n_par': 0, 'par_multiplicity': 11, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+runtime variables =  {'GPU': True, 'date_start': '2021-01-16 20:01:49.707373', 'complete_graph': [(1, 2), (3, 4), (5, 6), (7, 8), (9, 10), (11, 12), (13, 14), (15, 16), (17, 18), (19, 20), (21, 0), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17), (18, 19), (20, 21)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17), (18, 19), (20, 21)], 'layers': [[(1, 2), (3, 4), (5, 6), (7, 8), (9, 10), (11, 12), (13, 14), (15, 16), (17, 18), (19, 20), (21, 0)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17), (18, 19), (20, 21)]], 'n': 22}
+ 
+==========================================================================================
+Finished basinhopping of  /home/jkgpu/HVQE/data/chain/periodic/own_graph/ops/energy/22 at 2021-01-16 20:01:50.487673 UTC, with
+ 
+{'path': '/home/jkgpu/HVQE/data/chain/periodic/own_graph/ops/energy/22', 'n_par': 0, 'par_multiplicity': 11, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+init_par = []
+ 
+RESULTS:
+--------
+E_VQE = -8.249999999999993
+inf_VQE = 0.8389825318259914
+n_fn_calls = 0
+Wall-clock time 8.567538526323108e-05 hours
+ 
+For more output, see /home/jkgpu/HVQE/data/chain/periodic/own_graph/ops/energy/22/output.txt
+Plots of output saved in /home/jkgpu/HVQE/data/chain/periodic/own_graph/ops/energy/22
+End of HVQE.py
+==========================================================================================
+CuPy installation found, continuing using GPU acceleration.
+having the CPUs {1, 3, 5} available.
+Started basinhopping at 2021-01-16 20:01:55.601661 UTC, with
+command line arguments = {'path': '/home/jkgpu/HVQE/data/chain/periodic/own_graph/ops/energy/22', 'n_par': 2, 'par_multiplicity': 11, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+runtime variables =  {'GPU': True, 'date_start': '2021-01-16 20:01:55.601661', 'complete_graph': [(1, 2), (3, 4), (5, 6), (7, 8), (9, 10), (11, 12), (13, 14), (15, 16), (17, 18), (19, 20), (21, 0), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17), (18, 19), (20, 21)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17), (18, 19), (20, 21)], 'layers': [[(1, 2), (3, 4), (5, 6), (7, 8), (9, 10), (11, 12), (13, 14), (15, 16), (17, 18), (19, 20), (21, 0)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17), (18, 19), (20, 21)]], 'n': 22}
+............................../home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/backends/cuda.py:142: UserWarning: cuDNN is not enabled.
+Please reinstall CuPy after you install cudnn
+(see https://docs-cupy.chainer.org/en/stable/install.html#install-cudnn).
+  warnings.warn(
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/_environment_check.py:70: UserWarning: 
+--------------------------------------------------------------------------------
+CuPy (cupy) version 8.0.0 may not be compatible with this version of Chainer.
+Please consider installing the supported version by running:
+  $ pip install 'cupy>=6.3.0,<7.0.0'
+
+See the following page for more details:
+  https://docs-cupy.chainer.org/en/latest/install.html
+--------------------------------------------------------------------------------
+
+  warnings.warn(msg.format(
+ 
+==========================================================================================
+Finished basinhopping of  /home/jkgpu/HVQE/data/chain/periodic/own_graph/ops/energy/22 at 2021-01-16 20:05:01.881068 UTC, with
+ 
+{'path': '/home/jkgpu/HVQE/data/chain/periodic/own_graph/ops/energy/22', 'n_par': 2, 'par_multiplicity': 11, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+init_par = [-0.00039999389905088156, -0.00019703518733494462]
+ 
+RESULTS:
+--------
+E_VQE = -9.405203096260587
+inf_VQE = 0.5756415185120374
+n_fn_calls = 30
+Wall-clock time 0.05162275102403428 hours
+ 
+For more output, see /home/jkgpu/HVQE/data/chain/periodic/own_graph/ops/energy/22/output.txt
+Plots of output saved in /home/jkgpu/HVQE/data/chain/periodic/own_graph/ops/energy/22
+End of HVQE.py
+==========================================================================================
+CuPy installation found, continuing using GPU acceleration.
+having the CPUs {1, 3, 5} available.
+Started basinhopping at 2021-01-16 20:05:06.478530 UTC, with
+command line arguments = {'path': '/home/jkgpu/HVQE/data/chain/periodic/own_graph/ops/energy/22', 'n_par': 4, 'par_multiplicity': 11, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+runtime variables =  {'GPU': True, 'date_start': '2021-01-16 20:05:06.478530', 'complete_graph': [(1, 2), (3, 4), (5, 6), (7, 8), (9, 10), (11, 12), (13, 14), (15, 16), (17, 18), (19, 20), (21, 0), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17), (18, 19), (20, 21)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17), (18, 19), (20, 21)], 'layers': [[(1, 2), (3, 4), (5, 6), (7, 8), (9, 10), (11, 12), (13, 14), (15, 16), (17, 18), (19, 20), (21, 0)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17), (18, 19), (20, 21)]], 'n': 22}
+.........................................../home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/backends/cuda.py:142: UserWarning: cuDNN is not enabled.
+Please reinstall CuPy after you install cudnn
+(see https://docs-cupy.chainer.org/en/stable/install.html#install-cudnn).
+  warnings.warn(
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/_environment_check.py:70: UserWarning: 
+--------------------------------------------------------------------------------
+CuPy (cupy) version 8.0.0 may not be compatible with this version of Chainer.
+Please consider installing the supported version by running:
+  $ pip install 'cupy>=6.3.0,<7.0.0'
+
+See the following page for more details:
+  https://docs-cupy.chainer.org/en/latest/install.html
+--------------------------------------------------------------------------------
+
+  warnings.warn(msg.format(
+ 
+==========================================================================================
+Finished basinhopping of  /home/jkgpu/HVQE/data/chain/periodic/own_graph/ops/energy/22 at 2021-01-16 20:13:48.628985 UTC, with
+ 
+{'path': '/home/jkgpu/HVQE/data/chain/periodic/own_graph/ops/energy/22', 'n_par': 4, 'par_multiplicity': 11, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+init_par = [3.600056929255603e-05, 8.2921210111139e-05, -0.0003469897006760413, 0.0004322449686564217]
+ 
+RESULTS:
+--------
+E_VQE = -9.596803766001962
+inf_VQE = 0.4321923686895933
+n_fn_calls = 43
+Wall-clock time 0.14490870707564882 hours
+ 
+For more output, see /home/jkgpu/HVQE/data/chain/periodic/own_graph/ops/energy/22/output.txt
+Plots of output saved in /home/jkgpu/HVQE/data/chain/periodic/own_graph/ops/energy/22
+End of HVQE.py
+==========================================================================================
+CuPy installation found, continuing using GPU acceleration.
+having the CPUs {1, 3, 5} available.
+Started basinhopping at 2021-01-16 20:13:52.807589 UTC, with
+command line arguments = {'path': '/home/jkgpu/HVQE/data/chain/periodic/own_graph/ops/energy/22', 'n_par': 6, 'par_multiplicity': 11, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+runtime variables =  {'GPU': True, 'date_start': '2021-01-16 20:13:52.807589', 'complete_graph': [(1, 2), (3, 4), (5, 6), (7, 8), (9, 10), (11, 12), (13, 14), (15, 16), (17, 18), (19, 20), (21, 0), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17), (18, 19), (20, 21)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17), (18, 19), (20, 21)], 'layers': [[(1, 2), (3, 4), (5, 6), (7, 8), (9, 10), (11, 12), (13, 14), (15, 16), (17, 18), (19, 20), (21, 0)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17), (18, 19), (20, 21)]], 'n': 22}
+............................................................................./home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/backends/cuda.py:142: UserWarning: cuDNN is not enabled.
+Please reinstall CuPy after you install cudnn
+(see https://docs-cupy.chainer.org/en/stable/install.html#install-cudnn).
+  warnings.warn(
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/_environment_check.py:70: UserWarning: 
+--------------------------------------------------------------------------------
+CuPy (cupy) version 8.0.0 may not be compatible with this version of Chainer.
+Please consider installing the supported version by running:
+  $ pip install 'cupy>=6.3.0,<7.0.0'
+
+See the following page for more details:
+  https://docs-cupy.chainer.org/en/latest/install.html
+--------------------------------------------------------------------------------
+
+  warnings.warn(msg.format(
+ 
+==========================================================================================
+Finished basinhopping of  /home/jkgpu/HVQE/data/chain/periodic/own_graph/ops/energy/22 at 2021-01-16 20:37:00.586851 UTC, with
+ 
+{'path': '/home/jkgpu/HVQE/data/chain/periodic/own_graph/ops/energy/22', 'n_par': 6, 'par_multiplicity': 11, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+init_par = [0.00024596753933341054, -0.00022287600178707222, -5.710546070051935e-05, -0.00031954072585469655, 0.00019150945445189384, 0.00036007545005137893]
+ 
+RESULTS:
+--------
+E_VQE = -9.542636832927363
+inf_VQE = 0.47385959236966824
+n_fn_calls = 77
+Wall-clock time 0.3853363072209888 hours
+ 
+For more output, see /home/jkgpu/HVQE/data/chain/periodic/own_graph/ops/energy/22/output.txt
+Plots of output saved in /home/jkgpu/HVQE/data/chain/periodic/own_graph/ops/energy/22
+End of HVQE.py
+==========================================================================================
+CuPy installation found, continuing using GPU acceleration.
+having the CPUs {1, 3, 5} available.
+Started basinhopping at 2021-01-16 20:37:08.695537 UTC, with
+command line arguments = {'path': '/home/jkgpu/HVQE/data/chain/periodic/own_graph/ops/energy/22', 'n_par': 8, 'par_multiplicity': 11, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+runtime variables =  {'GPU': True, 'date_start': '2021-01-16 20:37:08.695537', 'complete_graph': [(1, 2), (3, 4), (5, 6), (7, 8), (9, 10), (11, 12), (13, 14), (15, 16), (17, 18), (19, 20), (21, 0), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17), (18, 19), (20, 21)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17), (18, 19), (20, 21)], 'layers': [[(1, 2), (3, 4), (5, 6), (7, 8), (9, 10), (11, 12), (13, 14), (15, 16), (17, 18), (19, 20), (21, 0)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17), (18, 19), (20, 21)]], 'n': 22}
+..................................................................................................................................../home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/backends/cuda.py:142: UserWarning: cuDNN is not enabled.
+Please reinstall CuPy after you install cudnn
+(see https://docs-cupy.chainer.org/en/stable/install.html#install-cudnn).
+  warnings.warn(
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/_environment_check.py:70: UserWarning: 
+--------------------------------------------------------------------------------
+CuPy (cupy) version 8.0.0 may not be compatible with this version of Chainer.
+Please consider installing the supported version by running:
+  $ pip install 'cupy>=6.3.0,<7.0.0'
+
+See the following page for more details:
+  https://docs-cupy.chainer.org/en/latest/install.html
+--------------------------------------------------------------------------------
+
+  warnings.warn(msg.format(
+ 
+==========================================================================================
+Finished basinhopping of  /home/jkgpu/HVQE/data/chain/periodic/own_graph/ops/energy/22 at 2021-01-16 21:29:42.865343 UTC, with
+ 
+{'path': '/home/jkgpu/HVQE/data/chain/periodic/own_graph/ops/energy/22', 'n_par': 8, 'par_multiplicity': 11, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+init_par = [0.0001256716462647655, -0.00036332599777943336, -0.0004948487416648364, -0.00048407624701933506, 0.00014627691938264562, 0.0004991018395923395, -0.00012641495912394377, -0.00010979639162662192]
+ 
+RESULTS:
+--------
+E_VQE = -9.62599994293412
+inf_VQE = 0.3941252924931328
+n_fn_calls = 132
+Wall-clock time 0.8759709077411227 hours
+ 
+For more output, see /home/jkgpu/HVQE/data/chain/periodic/own_graph/ops/energy/22/output.txt
+Plots of output saved in /home/jkgpu/HVQE/data/chain/periodic/own_graph/ops/energy/22
+End of HVQE.py
+==========================================================================================
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/backends/cuda.py:142: UserWarning: cuDNN is not enabled.
+Please reinstall CuPy after you install cudnn
+(see https://docs-cupy.chainer.org/en/stable/install.html#install-cudnn).
+  warnings.warn(
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/_environment_check.py:70: UserWarning: 
+--------------------------------------------------------------------------------
+CuPy (cupy) version 8.0.0 may not be compatible with this version of Chainer.
+Please consider installing the supported version by running:
+  $ pip install 'cupy>=6.3.0,<7.0.0'
+
+See the following page for more details:
+  https://docs-cupy.chainer.org/en/latest/install.html
+--------------------------------------------------------------------------------
+
+  warnings.warn(msg.format(
+CuPy installation found, continuing using GPU acceleration.
+having the CPUs {1, 3, 5} available.
+Started basinhopping at 2021-01-16 21:29:50.850615 UTC, with
+command line arguments = {'path': '/home/jkgpu/HVQE/data/chain/periodic/own_graph/ops/energy/22', 'n_par': 10, 'par_multiplicity': 11, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+runtime variables =  {'GPU': True, 'date_start': '2021-01-16 21:29:50.850615', 'complete_graph': [(1, 2), (3, 4), (5, 6), (7, 8), (9, 10), (11, 12), (13, 14), (15, 16), (17, 18), (19, 20), (21, 0), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17), (18, 19), (20, 21)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17), (18, 19), (20, 21)], 'layers': [[(1, 2), (3, 4), (5, 6), (7, 8), (9, 10), (11, 12), (13, 14), (15, 16), (17, 18), (19, 20), (21, 0)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17), (18, 19), (20, 21)]], 'n': 22}
+Traceback (most recent call last):
+  File "/home/jkgpu/HVQE/HVQE.py", line 78, in <module>
+    vqe_out=_HVQE.run_VQE(cmd_args,run_args,init_reg,gs_reg)
+  File "/home/jkgpu/HVQE/_HVQE.py", line 163, in run_VQE
+    sol=scipy.optimize.basinhopping(calc_cost,vqe_out.init_par,stepsize=cmd_args.stepsize,minimizer_kwargs={'jac':True, 'options':{'gtol':0.5e-05}},niter=cmd_args.n_iter,interval=25,callback=callback,T=cmd_args.temperature)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_basinhopping.py", line 678, in basinhopping
+    bh = BasinHoppingRunner(x0, wrapped_minimizer, take_step_wrapped,
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_basinhopping.py", line 72, in __init__
+    minres = minimizer(self.x)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_basinhopping.py", line 284, in __call__
+    return self.minimizer(self.func, x0, **self.kwargs)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_minimize.py", line 612, in minimize
+    return _minimize_bfgs(fun, x0, args, jac, callback, **options)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 1101, in _minimize_bfgs
+    sf = _prepare_scalar_function(fun, x0, jac, args=args, epsilon=eps,
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 261, in _prepare_scalar_function
+    sf = ScalarFunction(fun, x0, args, grad, hess,
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 76, in __init__
+    self._update_fun()
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 166, in _update_fun
+    self._update_fun_impl()
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 73, in update_fun
+    self.f = fun_wrapped(self.x)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 70, in fun_wrapped
+    return fun(x, *args)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 74, in __call__
+    self._compute_if_needed(x, *args)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 68, in _compute_if_needed
+    fg = self.fun(x, *args)
+  File "/home/jkgpu/HVQE/_HVQE.py", line 110, in calc_cost
+    cost.backward()
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/variable.py", line 1438, in backward
+    _backprop_to_all([(node, grad_var)], retain_grad, loss_scale)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/variable.py", line 1653, in _backprop_to_all
+    _backprop_utils.backprop_step(
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/_backprop_utils.py", line 140, in backprop_step
+    _reraise_with_stack(func, e)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/_backprop_utils.py", line 137, in backprop_step
+    gxs = func.backward(
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/functions/math/basic_math.py", line 381, in backward
+    return self.value * g,
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/functions/math/basic_math.py", line 391, in mul
+    return MulConstant(rhs).apply((self,))[0]
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/function_node.py", line 321, in apply
+    outputs = self.forward(in_data)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/functions/math/basic_math.py", line 377, in forward
+    return utils.force_array(value * x[0]),
+  File "cupy/core/core.pyx", line 1426, in cupy.core.core.ndarray.__array_ufunc__
+  File "cupy/core/_kernel.pyx", line 1063, in cupy.core._kernel.ufunc.__call__
+  File "cupy/core/_kernel.pyx", line 565, in cupy.core._kernel._get_out_args
+  File "cupy/core/core.pyx", line 3018, in cupy.core.core._ndarray_init
+  File "cupy/core/core.pyx", line 223, in cupy.core.core.ndarray._init_fast
+  File "cupy/cuda/memory.pyx", line 574, in cupy.cuda.memory.alloc
+  File "cupy/cuda/memory.pyx", line 1246, in cupy.cuda.memory.MemoryPool.malloc
+  File "cupy/cuda/memory.pyx", line 1267, in cupy.cuda.memory.MemoryPool.malloc
+  File "cupy/cuda/memory.pyx", line 935, in cupy.cuda.memory.SingleDeviceMemoryPool.malloc
+  File "cupy/cuda/memory.pyx", line 955, in cupy.cuda.memory.SingleDeviceMemoryPool._malloc
+  File "cupy/cuda/memory.pyx", line 1206, in cupy.cuda.memory.SingleDeviceMemoryPool._try_malloc
+cupy.cuda.memory.OutOfMemoryError: Out of memory allocating 33,554,432 bytes (allocated so far: 11,475,623,424 bytes).
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/backends/cuda.py:142: UserWarning: cuDNN is not enabled.
+Please reinstall CuPy after you install cudnn
+(see https://docs-cupy.chainer.org/en/stable/install.html#install-cudnn).
+  warnings.warn(
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/_environment_check.py:70: UserWarning: 
+--------------------------------------------------------------------------------
+CuPy (cupy) version 8.0.0 may not be compatible with this version of Chainer.
+Please consider installing the supported version by running:
+  $ pip install 'cupy>=6.3.0,<7.0.0'
+
+See the following page for more details:
+  https://docs-cupy.chainer.org/en/latest/install.html
+--------------------------------------------------------------------------------
+
+  warnings.warn(msg.format(
+CuPy installation found, continuing using GPU acceleration.
+having the CPUs {1, 3, 5} available.
+Started basinhopping at 2021-01-16 21:29:54.417068 UTC, with
+command line arguments = {'path': '/home/jkgpu/HVQE/data/chain/periodic/own_graph/ops/energy/22', 'n_par': 12, 'par_multiplicity': 11, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+runtime variables =  {'GPU': True, 'date_start': '2021-01-16 21:29:54.417068', 'complete_graph': [(1, 2), (3, 4), (5, 6), (7, 8), (9, 10), (11, 12), (13, 14), (15, 16), (17, 18), (19, 20), (21, 0), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17), (18, 19), (20, 21)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17), (18, 19), (20, 21)], 'layers': [[(1, 2), (3, 4), (5, 6), (7, 8), (9, 10), (11, 12), (13, 14), (15, 16), (17, 18), (19, 20), (21, 0)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17), (18, 19), (20, 21)]], 'n': 22}
+Traceback (most recent call last):
+  File "/home/jkgpu/HVQE/HVQE.py", line 78, in <module>
+    vqe_out=_HVQE.run_VQE(cmd_args,run_args,init_reg,gs_reg)
+  File "/home/jkgpu/HVQE/_HVQE.py", line 163, in run_VQE
+    sol=scipy.optimize.basinhopping(calc_cost,vqe_out.init_par,stepsize=cmd_args.stepsize,minimizer_kwargs={'jac':True, 'options':{'gtol':0.5e-05}},niter=cmd_args.n_iter,interval=25,callback=callback,T=cmd_args.temperature)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_basinhopping.py", line 678, in basinhopping
+    bh = BasinHoppingRunner(x0, wrapped_minimizer, take_step_wrapped,
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_basinhopping.py", line 72, in __init__
+    minres = minimizer(self.x)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_basinhopping.py", line 284, in __call__
+    return self.minimizer(self.func, x0, **self.kwargs)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_minimize.py", line 612, in minimize
+    return _minimize_bfgs(fun, x0, args, jac, callback, **options)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 1101, in _minimize_bfgs
+    sf = _prepare_scalar_function(fun, x0, jac, args=args, epsilon=eps,
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 261, in _prepare_scalar_function
+    sf = ScalarFunction(fun, x0, args, grad, hess,
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 76, in __init__
+    self._update_fun()
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 166, in _update_fun
+    self._update_fun_impl()
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 73, in update_fun
+    self.f = fun_wrapped(self.x)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 70, in fun_wrapped
+    return fun(x, *args)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 74, in __call__
+    self._compute_if_needed(x, *args)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 68, in _compute_if_needed
+    fg = self.fun(x, *args)
+  File "/home/jkgpu/HVQE/_HVQE.py", line 110, in calc_cost
+    cost.backward()
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/variable.py", line 1438, in backward
+    _backprop_to_all([(node, grad_var)], retain_grad, loss_scale)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/variable.py", line 1653, in _backprop_to_all
+    _backprop_utils.backprop_step(
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/_backprop_utils.py", line 212, in backprop_step
+    _reduce(gx)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/_backprop_utils.py", line 15, in _reduce
+    grad_list[:] = [chainer.functions.add(*grad_list)]
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/functions/math/basic_math.py", line 250, in add
+    return Add().apply((lhs, rhs))[0]
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/function_node.py", line 321, in apply
+    outputs = self.forward(in_data)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/functions/math/basic_math.py", line 172, in forward
+    y = utils.force_array(x[0] + x[1])
+  File "cupy/core/core.pyx", line 1072, in cupy.core.core.ndarray.__add__
+  File "cupy/core/_kernel.pyx", line 1063, in cupy.core._kernel.ufunc.__call__
+  File "cupy/core/_kernel.pyx", line 565, in cupy.core._kernel._get_out_args
+  File "cupy/core/core.pyx", line 3018, in cupy.core.core._ndarray_init
+  File "cupy/core/core.pyx", line 223, in cupy.core.core.ndarray._init_fast
+  File "cupy/cuda/memory.pyx", line 574, in cupy.cuda.memory.alloc
+  File "cupy/cuda/memory.pyx", line 1246, in cupy.cuda.memory.MemoryPool.malloc
+  File "cupy/cuda/memory.pyx", line 1267, in cupy.cuda.memory.MemoryPool.malloc
+  File "cupy/cuda/memory.pyx", line 935, in cupy.cuda.memory.SingleDeviceMemoryPool.malloc
+  File "cupy/cuda/memory.pyx", line 955, in cupy.cuda.memory.SingleDeviceMemoryPool._malloc
+  File "cupy/cuda/memory.pyx", line 1206, in cupy.cuda.memory.SingleDeviceMemoryPool._try_malloc
+cupy.cuda.memory.OutOfMemoryError: Out of memory allocating 33,554,432 bytes (allocated so far: 11,475,623,424 bytes).
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/backends/cuda.py:142: UserWarning: cuDNN is not enabled.
+Please reinstall CuPy after you install cudnn
+(see https://docs-cupy.chainer.org/en/stable/install.html#install-cudnn).
+  warnings.warn(
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/_environment_check.py:70: UserWarning: 
+--------------------------------------------------------------------------------
+CuPy (cupy) version 8.0.0 may not be compatible with this version of Chainer.
+Please consider installing the supported version by running:
+  $ pip install 'cupy>=6.3.0,<7.0.0'
+
+See the following page for more details:
+  https://docs-cupy.chainer.org/en/latest/install.html
+--------------------------------------------------------------------------------
+
+  warnings.warn(msg.format(
+CuPy installation found, continuing using GPU acceleration.
+having the CPUs {1, 3, 5} available.
+Started basinhopping at 2021-01-16 21:29:58.002840 UTC, with
+command line arguments = {'path': '/home/jkgpu/HVQE/data/chain/periodic/own_graph/ops/energy/22', 'n_par': 14, 'par_multiplicity': 11, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+runtime variables =  {'GPU': True, 'date_start': '2021-01-16 21:29:58.002840', 'complete_graph': [(1, 2), (3, 4), (5, 6), (7, 8), (9, 10), (11, 12), (13, 14), (15, 16), (17, 18), (19, 20), (21, 0), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17), (18, 19), (20, 21)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17), (18, 19), (20, 21)], 'layers': [[(1, 2), (3, 4), (5, 6), (7, 8), (9, 10), (11, 12), (13, 14), (15, 16), (17, 18), (19, 20), (21, 0)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17), (18, 19), (20, 21)]], 'n': 22}
+Traceback (most recent call last):
+  File "/home/jkgpu/HVQE/HVQE.py", line 78, in <module>
+    vqe_out=_HVQE.run_VQE(cmd_args,run_args,init_reg,gs_reg)
+  File "/home/jkgpu/HVQE/_HVQE.py", line 163, in run_VQE
+    sol=scipy.optimize.basinhopping(calc_cost,vqe_out.init_par,stepsize=cmd_args.stepsize,minimizer_kwargs={'jac':True, 'options':{'gtol':0.5e-05}},niter=cmd_args.n_iter,interval=25,callback=callback,T=cmd_args.temperature)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_basinhopping.py", line 678, in basinhopping
+    bh = BasinHoppingRunner(x0, wrapped_minimizer, take_step_wrapped,
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_basinhopping.py", line 72, in __init__
+    minres = minimizer(self.x)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_basinhopping.py", line 284, in __call__
+    return self.minimizer(self.func, x0, **self.kwargs)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_minimize.py", line 612, in minimize
+    return _minimize_bfgs(fun, x0, args, jac, callback, **options)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 1101, in _minimize_bfgs
+    sf = _prepare_scalar_function(fun, x0, jac, args=args, epsilon=eps,
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 261, in _prepare_scalar_function
+    sf = ScalarFunction(fun, x0, args, grad, hess,
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 76, in __init__
+    self._update_fun()
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 166, in _update_fun
+    self._update_fun_impl()
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 73, in update_fun
+    self.f = fun_wrapped(self.x)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 70, in fun_wrapped
+    return fun(x, *args)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 74, in __call__
+    self._compute_if_needed(x, *args)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/scipy/optimize/optimize.py", line 68, in _compute_if_needed
+    fg = self.fun(x, *args)
+  File "/home/jkgpu/HVQE/_HVQE.py", line 105, in calc_cost
+    cost=Heisenberg_energy_from_parameters(run_args.complete_graph,init_reg,run_args.layers,run_args.n,cmd_args.par_multiplicity,parameters)
+  File "/home/jkgpu/HVQE/_HVQE.py", line 68, in Heisenberg_energy_from_parameters
+    E=qem.Heisenberg_energy(complete_graph,reg)
+  File "/home/jkgpu/HVQE/qem.py", line 645, in Heisenberg_energy
+    apply_action(action,reg_prime)
+  File "/home/jkgpu/HVQE/qem.py", line 434, in apply_action
+    reg.psi=reg_id.psi+reg_SWAP.psi
+  File "/home/jkgpu/HVQE/qem.py", line 53, in __add__
+    return Array(self.re+other.re,self.im+other.im)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/functions/math/basic_math.py", line 250, in add
+    return Add().apply((lhs, rhs))[0]
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/function_node.py", line 321, in apply
+    outputs = self.forward(in_data)
+  File "/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/functions/math/basic_math.py", line 172, in forward
+    y = utils.force_array(x[0] + x[1])
+  File "cupy/core/core.pyx", line 1072, in cupy.core.core.ndarray.__add__
+  File "cupy/core/_kernel.pyx", line 1063, in cupy.core._kernel.ufunc.__call__
+  File "cupy/core/_kernel.pyx", line 565, in cupy.core._kernel._get_out_args
+  File "cupy/core/core.pyx", line 3018, in cupy.core.core._ndarray_init
+  File "cupy/core/core.pyx", line 223, in cupy.core.core.ndarray._init_fast
+  File "cupy/cuda/memory.pyx", line 574, in cupy.cuda.memory.alloc
+  File "cupy/cuda/memory.pyx", line 1246, in cupy.cuda.memory.MemoryPool.malloc
+  File "cupy/cuda/memory.pyx", line 1267, in cupy.cuda.memory.MemoryPool.malloc
+  File "cupy/cuda/memory.pyx", line 935, in cupy.cuda.memory.SingleDeviceMemoryPool.malloc
+  File "cupy/cuda/memory.pyx", line 955, in cupy.cuda.memory.SingleDeviceMemoryPool._malloc
+  File "cupy/cuda/memory.pyx", line 1206, in cupy.cuda.memory.SingleDeviceMemoryPool._try_malloc
+cupy.cuda.memory.OutOfMemoryError: Out of memory allocating 33,554,432 bytes (allocated so far: 11,475,623,424 bytes).

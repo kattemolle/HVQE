@@ -3,4 +3,1020 @@ having the CPUs {35, 11, 39, 7} available.
 Started basinhopping at 2021-01-11 20:53:33.538236 UTC, with
 command line arguments = {'path': '/home/jkattem1/HVQE/data/kagome/periodic/own_graph/ops/energy/4x2', 'n_par': 12, 'par_multiplicity': 4, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': 64}
 runtime variables =  {'GPU': False, 'date_start': '2021-01-11 20:53:33.538236', 'complete_graph': [(0, 8), (2, 10), (4, 12), (6, 14), (16, 11), (18, 13), (20, 15), (22, 9), (19, 1), (21, 3), (23, 5), (17, 7), (1, 8), (3, 10), (5, 12), (7, 14), (9, 16), (11, 18), (13, 20), (15, 22), (17, 0), (19, 2), (21, 4), (23, 6), (1, 2), (3, 4), (5, 6), (7, 0), (10, 16), (12, 18), (14, 20), (8, 22), (9, 17), (11, 19), (13, 21), (15, 23), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17), (18, 19), (20, 21), (22, 23)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17), (18, 19), (20, 21), (22, 23)], 'layers': [[(0, 8), (2, 10), (4, 12), (6, 14), (16, 11), (18, 13), (20, 15), (22, 9), (19, 1), (21, 3), (23, 5), (17, 7)], [(1, 8), (3, 10), (5, 12), (7, 14), (9, 16), (11, 18), (13, 20), (15, 22), (17, 0), (19, 2), (21, 4), (23, 6)], [(1, 2), (3, 4), (5, 6), (7, 0), (10, 16), (12, 18), (14, 20), (8, 22), (9, 17), (11, 19), (13, 21), (15, 23)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17), (18, 19), (20, 21), (22, 23)]], 'n': 24}
-....
+................................................................Data dump on 2021-01-11 23:14:29.518930
+............ 
+==========================================================================================
+Finished basinhopping of  /home/jkattem1/HVQE/data/kagome/periodic/own_graph/ops/energy/4x2 at 2021-01-11 23:41:30.078455 UTC, with
+ 
+{'path': '/home/jkattem1/HVQE/data/kagome/periodic/own_graph/ops/energy/4x2', 'n_par': 12, 'par_multiplicity': 4, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': 64}
+init_par = [1.8068453244718006e-05, 0.00033044983544912245, 0.0004931775460337838, 0.00018971430984027085, -0.000304913186329091, 0.0003677716947765278, 9.5570946614572e-05, 0.00029555301773167143, 0.00043430903301392245, 9.431503528223924e-05, -0.00042265545180706157, -0.00037796029767208294]
+ 
+RESULTS:
+--------
+E_VQE = -10.241598579002048
+inf_VQE = 1.0
+n_fn_calls = 76
+Wall-clock time 2.790976137386428 hours
+ 
+For more output, see /home/jkattem1/HVQE/data/kagome/periodic/own_graph/ops/energy/4x2/output.txt
+Plots of output saved in /home/jkattem1/HVQE/data/kagome/periodic/own_graph/ops/energy/4x2
+End of HVQE.py
+==========================================================================================
+No CuPy installation found, continuing without GPU acceleration.
+having the CPUs {35, 11, 39, 7} available.
+Started basinhopping at 2021-01-11 23:41:34.303161 UTC, with
+command line arguments = {'path': '/home/jkattem1/HVQE/data/kagome/periodic/own_graph/ops/energy/4x2', 'n_par': 24, 'par_multiplicity': 4, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': 64}
+runtime variables =  {'GPU': False, 'date_start': '2021-01-11 23:41:34.303161', 'complete_graph': [(0, 8), (2, 10), (4, 12), (6, 14), (16, 11), (18, 13), (20, 15), (22, 9), (19, 1), (21, 3), (23, 5), (17, 7), (1, 8), (3, 10), (5, 12), (7, 14), (9, 16), (11, 18), (13, 20), (15, 22), (17, 0), (19, 2), (21, 4), (23, 6), (1, 2), (3, 4), (5, 6), (7, 0), (10, 16), (12, 18), (14, 20), (8, 22), (9, 17), (11, 19), (13, 21), (15, 23), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17), (18, 19), (20, 21), (22, 23)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17), (18, 19), (20, 21), (22, 23)], 'layers': [[(0, 8), (2, 10), (4, 12), (6, 14), (16, 11), (18, 13), (20, 15), (22, 9), (19, 1), (21, 3), (23, 5), (17, 7)], [(1, 8), (3, 10), (5, 12), (7, 14), (9, 16), (11, 18), (13, 20), (15, 22), (17, 0), (19, 2), (21, 4), (23, 6)], [(1, 2), (3, 4), (5, 6), (7, 0), (10, 16), (12, 18), (14, 20), (8, 22), (9, 17), (11, 19), (13, 21), (15, 23)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17), (18, 19), (20, 21), (22, 23)]], 'n': 24}
+................................................................Data dump on 2021-01-12 03:03:35.964967
+......................................... 
+==========================================================================================
+Finished basinhopping of  /home/jkattem1/HVQE/data/kagome/periodic/own_graph/ops/energy/4x2 at 2021-01-12 05:12:34.458624 UTC, with
+ 
+{'path': '/home/jkattem1/HVQE/data/kagome/periodic/own_graph/ops/energy/4x2', 'n_par': 24, 'par_multiplicity': 4, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': 64}
+init_par = [0.00032935058632795923, -1.7496784858966213e-05, 0.00015046170327790462, -0.00015099065725524566, 0.0003185584864621641, 0.0004902098954503757, -0.00029201153999016836, 0.0001036387645176319, 0.00024209800394302229, 0.00041128681193794317, -0.0002879115819246108, 3.983445165550671e-05, -1.023295946013926e-05, -0.00011996579475774907, 0.0004926240011668807, 0.0001432487296797951, -0.00019113092184419437, -0.00023832959166501067, 0.00014883843489217185, 0.00022227179920768648, 0.0003332888346721101, -1.0498585589882202e-05, 0.00033550295744908486, -0.0003383193913027564]
+ 
+RESULTS:
+--------
+E_VQE = -10.381005303742992
+inf_VQE = 1.0
+n_fn_calls = 105
+Wall-clock time 5.503420750564999 hours
+ 
+For more output, see /home/jkattem1/HVQE/data/kagome/periodic/own_graph/ops/energy/4x2/output.txt
+Plots of output saved in /home/jkattem1/HVQE/data/kagome/periodic/own_graph/ops/energy/4x2
+End of HVQE.py
+==========================================================================================
+No CuPy installation found, continuing without GPU acceleration.
+having the CPUs {35, 11, 39, 7} available.
+Started basinhopping at 2021-01-12 05:12:40.810898 UTC, with
+command line arguments = {'path': '/home/jkattem1/HVQE/data/kagome/periodic/own_graph/ops/energy/4x2', 'n_par': 36, 'par_multiplicity': 4, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': 64}
+runtime variables =  {'GPU': False, 'date_start': '2021-01-12 05:12:40.810898', 'complete_graph': [(0, 8), (2, 10), (4, 12), (6, 14), (16, 11), (18, 13), (20, 15), (22, 9), (19, 1), (21, 3), (23, 5), (17, 7), (1, 8), (3, 10), (5, 12), (7, 14), (9, 16), (11, 18), (13, 20), (15, 22), (17, 0), (19, 2), (21, 4), (23, 6), (1, 2), (3, 4), (5, 6), (7, 0), (10, 16), (12, 18), (14, 20), (8, 22), (9, 17), (11, 19), (13, 21), (15, 23), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17), (18, 19), (20, 21), (22, 23)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17), (18, 19), (20, 21), (22, 23)], 'layers': [[(0, 8), (2, 10), (4, 12), (6, 14), (16, 11), (18, 13), (20, 15), (22, 9), (19, 1), (21, 3), (23, 5), (17, 7)], [(1, 8), (3, 10), (5, 12), (7, 14), (9, 16), (11, 18), (13, 20), (15, 22), (17, 0), (19, 2), (21, 4), (23, 6)], [(1, 2), (3, 4), (5, 6), (7, 0), (10, 16), (12, 18), (14, 20), (8, 22), (9, 17), (11, 19), (13, 21), (15, 23)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17), (18, 19), (20, 21), (22, 23)]], 'n': 24}
+................................................................Data dump on 2021-01-12 09:31:13.872868
+................................................................Data dump on 2021-01-12 13:49:20.412158
+................................................................Data dump on 2021-01-12 18:06:26.662805
+................................................................Data dump on 2021-01-12 22:25:04.920535
+........................ 
+==========================================================================================
+Finished basinhopping of  /home/jkattem1/HVQE/data/kagome/periodic/own_graph/ops/energy/4x2 at 2021-01-13 00:03:13.350324 UTC, with
+ 
+{'path': '/home/jkattem1/HVQE/data/kagome/periodic/own_graph/ops/energy/4x2', 'n_par': 36, 'par_multiplicity': 4, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': 64}
+init_par = [-0.0003906450843573811, -0.000180971106168353, 0.00015669003426525905, -0.000288011900832155, -0.0003118476675426757, -0.00043880815245936946, -0.00011139442461905114, -9.861909263235457e-06, 0.0004271639520278248, 0.0004939672346725476, -0.00012567835237092486, -0.00032130673507442065, 0.00029204995276095526, -0.00034945035155161644, -0.000332508791791715, -0.00048820046181427133, 0.00011917214548544169, 0.00010533810285300515, 0.0003907416436429739, 0.00014534172338326302, -0.00020219170331431017, -0.00042035940295769903, 0.0002474750233413609, 0.00046161432878932785, 0.00018346251025273157, 0.0002754023377188786, -0.00045742792597765636, -1.2477583646474679e-05, -0.00019081940839716337, 0.000357233504187934, -9.781115122914954e-05, 6.668008913324512e-05, -0.00024033180568585336, 0.00015526480514814998, 0.00045922894085288605, -8.687952748025375e-05]
+ 
+RESULTS:
+--------
+E_VQE = -10.522086492213806
+inf_VQE = 1.0
+n_fn_calls = 280
+Wall-clock time 18.82329195724593 hours
+ 
+For more output, see /home/jkattem1/HVQE/data/kagome/periodic/own_graph/ops/energy/4x2/output.txt
+Plots of output saved in /home/jkattem1/HVQE/data/kagome/periodic/own_graph/ops/energy/4x2
+End of HVQE.py
+==========================================================================================
+No CuPy installation found, continuing without GPU acceleration.
+having the CPUs {35, 11, 39, 7} available.
+Started basinhopping at 2021-01-13 00:03:17.369107 UTC, with
+command line arguments = {'path': '/home/jkattem1/HVQE/data/kagome/periodic/own_graph/ops/energy/4x2', 'n_par': 48, 'par_multiplicity': 4, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': 64}
+runtime variables =  {'GPU': False, 'date_start': '2021-01-13 00:03:17.369107', 'complete_graph': [(0, 8), (2, 10), (4, 12), (6, 14), (16, 11), (18, 13), (20, 15), (22, 9), (19, 1), (21, 3), (23, 5), (17, 7), (1, 8), (3, 10), (5, 12), (7, 14), (9, 16), (11, 18), (13, 20), (15, 22), (17, 0), (19, 2), (21, 4), (23, 6), (1, 2), (3, 4), (5, 6), (7, 0), (10, 16), (12, 18), (14, 20), (8, 22), (9, 17), (11, 19), (13, 21), (15, 23), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17), (18, 19), (20, 21), (22, 23)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17), (18, 19), (20, 21), (22, 23)], 'layers': [[(0, 8), (2, 10), (4, 12), (6, 14), (16, 11), (18, 13), (20, 15), (22, 9), (19, 1), (21, 3), (23, 5), (17, 7)], [(1, 8), (3, 10), (5, 12), (7, 14), (9, 16), (11, 18), (13, 20), (15, 22), (17, 0), (19, 2), (21, 4), (23, 6)], [(1, 2), (3, 4), (5, 6), (7, 0), (10, 16), (12, 18), (14, 20), (8, 22), (9, 17), (11, 19), (13, 21), (15, 23)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17), (18, 19), (20, 21), (22, 23)]], 'n': 24}
+................................................................Data dump on 2021-01-13 05:20:53.074768
+................................................................Data dump on 2021-01-13 10:39:24.383875
+................................................................Data dump on 2021-01-13 15:58:10.869803
+................................................................Data dump on 2021-01-13 21:15:09.051914
+........................................... 
+==========================================================================================
+Finished basinhopping of  /home/jkattem1/HVQE/data/kagome/periodic/own_graph/ops/energy/4x2 at 2021-01-14 00:49:44.215429 UTC, with
+ 
+{'path': '/home/jkattem1/HVQE/data/kagome/periodic/own_graph/ops/energy/4x2', 'n_par': 48, 'par_multiplicity': 4, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': 64}
+init_par = [6.9228649613927926e-06, 0.00013065259669560523, 0.0003982198270664327, -0.0004571086293824559, -0.0003581895834426476, -2.458063030323708e-05, 0.0004566191596381033, 4.693416373855537e-05, -0.00038740383373950493, -0.00010393406688538641, -0.0004765889392512438, -0.00029870928464787404, -2.765697343710727e-05, -0.00042263536904004807, 0.00017419364909318936, -8.146979537964846e-06, 4.737733634401311e-05, -0.00034254826083362345, 0.00026844705040425347, -0.00042868832189310905, 0.00013816240360269147, 0.00022972002445832695, -0.00029959554583673133, -0.0004466127388901221, 0.00025116012629761717, 0.00043039781827144334, 0.0002404906445902026, 0.00018053202686385593, -3.112740727074614e-05, -0.0003664013484617186, -0.0001898756920341279, -0.0002265274989145726, -1.8592979914149608e-06, 0.0004744948418868247, 9.900732076755458e-05, 4.8074702386237335e-05, 0.00010988448112349606, 0.0002576618106561046, -7.168507512413992e-05, -0.00010794376872560796, 0.00042178852729908903, 0.00011548120656161044, 0.00036538527862661784, -0.0004437692921356116, -0.00018282095609751484, -0.0002695868684894411, -0.00035860330883429904, 2.9170800988021265e-05]
+ 
+RESULTS:
+--------
+E_VQE = -10.551623645615242
+inf_VQE = 1.0
+n_fn_calls = 299
+Wall-clock time 24.75004778239462 hours
+ 
+For more output, see /home/jkattem1/HVQE/data/kagome/periodic/own_graph/ops/energy/4x2/output.txt
+Plots of output saved in /home/jkattem1/HVQE/data/kagome/periodic/own_graph/ops/energy/4x2
+End of HVQE.py
+==========================================================================================
+No CuPy installation found, continuing without GPU acceleration.
+having the CPUs {35, 11, 39, 7} available.
+Started basinhopping at 2021-01-14 00:49:48.133298 UTC, with
+command line arguments = {'path': '/home/jkattem1/HVQE/data/kagome/periodic/own_graph/ops/energy/4x2', 'n_par': 60, 'par_multiplicity': 4, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': 64}
+runtime variables =  {'GPU': False, 'date_start': '2021-01-14 00:49:48.133298', 'complete_graph': [(0, 8), (2, 10), (4, 12), (6, 14), (16, 11), (18, 13), (20, 15), (22, 9), (19, 1), (21, 3), (23, 5), (17, 7), (1, 8), (3, 10), (5, 12), (7, 14), (9, 16), (11, 18), (13, 20), (15, 22), (17, 0), (19, 2), (21, 4), (23, 6), (1, 2), (3, 4), (5, 6), (7, 0), (10, 16), (12, 18), (14, 20), (8, 22), (9, 17), (11, 19), (13, 21), (15, 23), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17), (18, 19), (20, 21), (22, 23)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17), (18, 19), (20, 21), (22, 23)], 'layers': [[(0, 8), (2, 10), (4, 12), (6, 14), (16, 11), (18, 13), (20, 15), (22, 9), (19, 1), (21, 3), (23, 5), (17, 7)], [(1, 8), (3, 10), (5, 12), (7, 14), (9, 16), (11, 18), (13, 20), (15, 22), (17, 0), (19, 2), (21, 4), (23, 6)], [(1, 2), (3, 4), (5, 6), (7, 0), (10, 16), (12, 18), (14, 20), (8, 22), (9, 17), (11, 19), (13, 21), (15, 23)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17), (18, 19), (20, 21), (22, 23)]], 'n': 24}
+................................................................Data dump on 2021-01-14 07:07:31.358701
+................................................................Data dump on 2021-01-14 13:26:28.817689
+................................................................Data dump on 2021-01-14 19:45:00.162995
+................................................................Data dump on 2021-01-15 02:03:32.616305
+................................................................Data dump on 2021-01-15 08:22:21.991673
+................................................................Data dump on 2021-01-15 14:40:42.391486
+........................... 
+==========================================================================================
+Finished basinhopping of  /home/jkattem1/HVQE/data/kagome/periodic/own_graph/ops/energy/4x2 at 2021-01-15 17:22:18.388405 UTC, with
+ 
+{'path': '/home/jkattem1/HVQE/data/kagome/periodic/own_graph/ops/energy/4x2', 'n_par': 60, 'par_multiplicity': 4, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': 64}
+init_par = [-0.0003579466074716955, -0.0001300229922906947, 0.00043936972894954027, -0.0001640756324325894, 0.0004052888221118972, -5.3183366140796984e-05, 0.00014342443595854147, 0.00047387762299171024, 0.0001890279822581478, -0.0002959858954351838, -9.45966920103034e-05, -0.00047290931130548495, 0.00010349301611607264, -0.0002167170222840985, 0.00016732835301742043, 0.00022679743968486766, -0.00026128731787337565, -0.00017514465970748017, -0.0002763969313700535, -1.7343629015402766e-05, -0.00045721529537997565, 0.00020958092513566568, 0.00042163037036412596, -1.3405694166688565e-05, 0.00022948508063480122, 0.00020670773325829153, -3.114216211294829e-05, -0.00041874464657474196, -0.0003432433161594566, -8.866059733398838e-05, 0.00012681162061115676, 4.1533421862139145e-05, 0.0004640077459630328, -0.00015452514914861352, 1.3401000124893384e-05, -0.0002355814968280917, 4.802523216980274e-05, -2.647748852355517e-05, -0.00043856551401352583, 0.00029383509519916506, -0.0003923741083562138, 0.00047353142706552467, -0.0004893765549468521, -4.7267735620716285e-05, -0.00034736436036090384, 0.00032943598920674234, -0.000266586370700438, 0.00014654060512743353, -0.00045136534565914477, -0.00048192742903295374, 0.0004194324000611372, 0.00022838057068774807, -0.0004241433131877982, 0.00046277583393529865, -0.00034438295899068597, -0.0003487718085902968, -0.000286498648262269, 5.398124003463511e-05, 8.951295346483923e-05, -0.00025751450117491404]
+ 
+RESULTS:
+--------
+E_VQE = -10.556232480831321
+inf_VQE = 1.0
+n_fn_calls = 411
+Wall-clock time 40.511849835779934 hours
+ 
+For more output, see /home/jkattem1/HVQE/data/kagome/periodic/own_graph/ops/energy/4x2/output.txt
+Plots of output saved in /home/jkattem1/HVQE/data/kagome/periodic/own_graph/ops/energy/4x2
+End of HVQE.py
+==========================================================================================
+No CuPy installation found, continuing without GPU acceleration.
+having the CPUs {35, 11, 39, 7} available.
+Started basinhopping at 2021-01-15 17:22:22.374055 UTC, with
+command line arguments = {'path': '/home/jkattem1/HVQE/data/kagome/periodic/own_graph/ops/energy/4x2', 'n_par': 72, 'par_multiplicity': 4, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': 64}
+runtime variables =  {'GPU': False, 'date_start': '2021-01-15 17:22:22.374055', 'complete_graph': [(0, 8), (2, 10), (4, 12), (6, 14), (16, 11), (18, 13), (20, 15), (22, 9), (19, 1), (21, 3), (23, 5), (17, 7), (1, 8), (3, 10), (5, 12), (7, 14), (9, 16), (11, 18), (13, 20), (15, 22), (17, 0), (19, 2), (21, 4), (23, 6), (1, 2), (3, 4), (5, 6), (7, 0), (10, 16), (12, 18), (14, 20), (8, 22), (9, 17), (11, 19), (13, 21), (15, 23), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17), (18, 19), (20, 21), (22, 23)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17), (18, 19), (20, 21), (22, 23)], 'layers': [[(0, 8), (2, 10), (4, 12), (6, 14), (16, 11), (18, 13), (20, 15), (22, 9), (19, 1), (21, 3), (23, 5), (17, 7)], [(1, 8), (3, 10), (5, 12), (7, 14), (9, 16), (11, 18), (13, 20), (15, 22), (17, 0), (19, 2), (21, 4), (23, 6)], [(1, 2), (3, 4), (5, 6), (7, 0), (10, 16), (12, 18), (14, 20), (8, 22), (9, 17), (11, 19), (13, 21), (15, 23)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17), (18, 19), (20, 21), (22, 23)]], 'n': 24}
+................................................................Data dump on 2021-01-16 00:55:28.122464
+................................................................Data dump on 2021-01-16 08:25:49.156513
+................................................................Data dump on 2021-01-16 15:58:45.930334
+................................................................Data dump on 2021-01-16 23:32:57.537056
+................................................................Data dump on 2021-01-17 07:11:38.650635
+................................................................Data dump on 2021-01-17 14:46:49.356234
+................................................................Data dump on 2021-01-17 22:24:03.539018
+..................................... 
+==========================================================================================
+Finished basinhopping of  /home/jkattem1/HVQE/data/kagome/periodic/own_graph/ops/energy/4x2 at 2021-01-18 02:51:16.229192 UTC, with
+ 
+{'path': '/home/jkattem1/HVQE/data/kagome/periodic/own_graph/ops/energy/4x2', 'n_par': 72, 'par_multiplicity': 4, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': 64}
+init_par = [-1.5555157854892782e-06, 0.000250659210580641, -8.300772147174033e-05, -0.0002879146380735876, 0.00011062315055212254, -7.869601751085285e-05, -0.0004271873689132925, 0.00012865036326286587, 9.21032642564847e-05, -7.091958133874409e-06, -0.0004378909267200665, 0.00032528477689193903, -0.00023999850612616534, -0.0003874842194787013, -0.00025427338795297883, 0.00012128755877539724, -0.0002730997748696569, 0.00014675512018848583, 0.0002653295857597026, -0.0004333436421251681, -0.0001734864807896147, 8.670826163499428e-05, -0.00033106915032857947, 0.0003857419502555263, -0.0004514480605893607, -0.00010696864914092497, 0.0003159817907835178, 0.0002608305861800641, 6.651590597415926e-05, 0.00023156167070766, -0.00016610768435770655, 0.00047950553568595054, -0.00031520785000659025, -0.0002657817294560032, 0.00045228827972985984, 3.941141706237752e-05, -0.0003340348559188282, 0.0004050558434666848, -0.00038709436833113257, -0.0002714517857056097, 0.0004160844046324345, 0.0004091133500459482, 0.00029058365326652276, -0.00043621056867226485, 0.0003471591086569494, 0.0004978157952351904, -6.347545672598609e-05, 0.00018369167963490569, 0.000281164592490567, 0.00019979626392684048, 8.735027582637024e-05, -0.00030164225890707, -4.805132201634476e-05, 4.6033517282078186e-05, -0.00044972130414635246, -0.00011805804428560729, -0.0004020281103305289, 8.031070248520227e-05, 0.00046419460388902214, 0.00029920703588896553, 0.0004739959292079538, -0.00015221133032158754, 8.927045369450603e-05, 0.00019795287016804335, -0.00015856137431984665, -0.00014905507193955857, -0.00020932797836966603, 0.00015718989181438597, 0.0003228076770449491, -0.0002992558402143625, 0.00014613428139857514, 0.0003358331719290332]
+ 
+RESULTS:
+--------
+E_VQE = -10.598515977076783
+inf_VQE = 1.0
+n_fn_calls = 485
+Wall-clock time 57.44717425829835 hours
+ 
+For more output, see /home/jkattem1/HVQE/data/kagome/periodic/own_graph/ops/energy/4x2/output.txt
+Plots of output saved in /home/jkattem1/HVQE/data/kagome/periodic/own_graph/ops/energy/4x2
+End of HVQE.py
+==========================================================================================
+No CuPy installation found, continuing without GPU acceleration.
+having the CPUs {35, 11, 39, 7} available.
+Started basinhopping at 2021-01-18 02:51:20.539769 UTC, with
+command line arguments = {'path': '/home/jkattem1/HVQE/data/kagome/periodic/own_graph/ops/energy/4x2', 'n_par': 84, 'par_multiplicity': 4, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': 64}
+runtime variables =  {'GPU': False, 'date_start': '2021-01-18 02:51:20.539769', 'complete_graph': [(0, 8), (2, 10), (4, 12), (6, 14), (16, 11), (18, 13), (20, 15), (22, 9), (19, 1), (21, 3), (23, 5), (17, 7), (1, 8), (3, 10), (5, 12), (7, 14), (9, 16), (11, 18), (13, 20), (15, 22), (17, 0), (19, 2), (21, 4), (23, 6), (1, 2), (3, 4), (5, 6), (7, 0), (10, 16), (12, 18), (14, 20), (8, 22), (9, 17), (11, 19), (13, 21), (15, 23), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17), (18, 19), (20, 21), (22, 23)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17), (18, 19), (20, 21), (22, 23)], 'layers': [[(0, 8), (2, 10), (4, 12), (6, 14), (16, 11), (18, 13), (20, 15), (22, 9), (19, 1), (21, 3), (23, 5), (17, 7)], [(1, 8), (3, 10), (5, 12), (7, 14), (9, 16), (11, 18), (13, 20), (15, 22), (17, 0), (19, 2), (21, 4), (23, 6)], [(1, 2), (3, 4), (5, 6), (7, 0), (10, 16), (12, 18), (14, 20), (8, 22), (9, 17), (11, 19), (13, 21), (15, 23)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17), (18, 19), (20, 21), (22, 23)]], 'n': 24}
+................................................................Data dump on 2021-01-18 13:20:59.383621
+................................................................Data dump on 2021-01-19 00:52:01.701449
+................................................................Data dump on 2021-01-19 12:32:48.843027
+................................................................Data dump on 2021-01-20 00:29:57.336747
+................................................................Data dump on 2021-01-20 12:41:55.832486
+................................................................Data dump on 2021-01-21 01:39:16.962722
+................................................................Data dump on 2021-01-21 15:06:37.150000
+................................................................Data dump on 2021-01-22 04:57:39.799917
+................................................................Data dump on 2021-01-22 19:06:18.527310
+................................................................Data dump on 2021-01-23 09:39:16.764031
+................................................................Data dump on 2021-01-24 00:39:57.559062
+................................ 
+==========================================================================================
+Finished basinhopping of  /home/jkattem1/HVQE/data/kagome/periodic/own_graph/ops/energy/4x2 at 2021-01-24 08:37:56.887501 UTC, with
+ 
+{'path': '/home/jkattem1/HVQE/data/kagome/periodic/own_graph/ops/energy/4x2', 'n_par': 84, 'par_multiplicity': 4, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': 64}
+init_par = [0.0003791145133480979, -1.1096189894708834e-05, 0.00045653696817799026, -0.0003256037231676778, -0.0001224654028086413, -0.0002604819775129648, -0.00022652009598312463, -0.0004897946406024441, 0.00025536554584951437, -0.0003189116138457975, 0.00043273153548962747, -0.0003719458788787181, 0.0003767677387188352, -0.00027586271883637745, -3.2330560692969386e-05, -0.0003857927661425984, 0.0001979820894114137, -0.00010510051375200449, 0.0003004592743713, 3.9709811910137614e-05, 0.00022204734672765024, 8.619310392170916e-05, -6.813547434516101e-05, -0.00011402303250388634, 0.00018545115547493154, 0.00015005797037065914, -0.00011265873809175478, 0.00018999147656917977, 6.034189571428085e-05, -2.4167960004403352e-05, 0.00039518179650393863, 7.110720909150946e-05, 7.448300710280454e-05, 0.0004166875832686813, 0.00033019892689827284, 0.0002869849647690972, -0.0001402249498021028, 0.00019241394719125696, -0.0001562798872755704, 0.0003125432832964992, 4.240622604851599e-05, 0.00022302018359328748, 0.0003768452805824107, -0.00030915380200021114, 0.00011492707258220134, -0.0003451511977013617, -0.0003318881138698924, 0.0001791461285360744, -0.0001368321477170127, 0.00036744780108824817, -9.179781553599856e-05, -0.00029569801439544875, -9.498161987106757e-05, 1.6364549463849143e-05, -1.553557546534037e-05, 0.00039072926212400244, 3.914371859019901e-05, -0.00010768822188051422, 1.4177474250663571e-05, -0.0002458222802124599, 3.488160139306388e-05, -0.00043772768232560645, 0.00029324742075363013, 0.00011610855296573567, -0.00037296702063793486, 1.266063345417253e-05, 0.00046989554190123353, -0.00048692129802834085, -1.4413104929266298e-05, -0.00017033416827813688, -0.00037857497925888997, -0.0001928114894638293, 4.465253779400741e-05, -0.00017157548340569463, -0.0004810476086705602, -0.00029595714542065155, -0.00027700251099430345, 6.619672567206771e-05, 0.00011135403905527988, -0.00037209276873935383, -9.794469381108853e-05, 0.0003919916592596324, -0.0002536094905117443, 0.00026485583650789175]
+ 
+RESULTS:
+--------
+E_VQE = -10.635040275192665
+inf_VQE = 1.0
+n_fn_calls = 736
+Wall-clock time 149.70846753080687 hours
+ 
+For more output, see /home/jkattem1/HVQE/data/kagome/periodic/own_graph/ops/energy/4x2/output.txt
+Plots of output saved in /home/jkattem1/HVQE/data/kagome/periodic/own_graph/ops/energy/4x2
+End of HVQE.py
+==========================================================================================
+/var/spool/slurm/job00711/slurm_script: line 7: 31462 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 31533 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 31582 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 31625 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 31684 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 31755 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 31798 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 31843 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 31887 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 31957 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 32001 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 32042 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 32114 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 32179 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 32220 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 32263 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 32330 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 32374 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 32418 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 32486 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 32528 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 32571 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 32656 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 32699 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 32741 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 32787 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 32847 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 32891 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 32932 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 33003 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 33038 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 33095 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 33138 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 33210 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 33252 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 33298 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 33340 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 33407 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 33451 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 33501 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 33561 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 33629 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 33670 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 33716 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 33765 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 33830 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 33874 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 33919 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 33987 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 34046 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 34090 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 34133 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 34200 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 34254 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 34294 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 34339 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 34406 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 34448 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 34502 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 34538 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 34608 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 34655 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 34702 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 34754 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 34816 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 34860 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 34906 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 34990 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 35031 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 35075 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 35116 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 35186 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 35228 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 35269 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 35337 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 35380 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 35440 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 35483 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 35552 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 35596 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 35640 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 35704 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 35747 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 35788 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 35856 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 35913 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 35956 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 35996 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 36064 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 36108 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 36154 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 36224 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 36268 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 36313 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 36372 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 36439 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 36483 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 36525 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 36569 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 36638 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 36684 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 36727 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 36773 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 36852 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 36898 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 36941 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 37012 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 37058 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 37100 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 37144 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 37219 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 37266 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 37326 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 37394 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 37433 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 37474 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 37521 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 37589 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 37633 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 37673 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 37715 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 37799 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 37845 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 37887 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 37927 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 38000 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 38044 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 38088 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 38157 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 38203 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 38276 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 38319 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 38389 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 38432 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 38475 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 38518 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 38588 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 38631 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 38674 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 38759 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 38804 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 38847 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 38891 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 38959 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 38997 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 39046 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 39114 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 39157 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 39217 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 39289 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 39342 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 39385 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 39432 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 39498 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 39542 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 39584 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 39653 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 39712 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 39758 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 39801 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 39880 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 39928 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 39992 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 40036 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 40110 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 40152 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 40209 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 40255 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 40351 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 40394 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 40438 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 40507 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 40551 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 40591 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 40660 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 40719 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 40763 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 40806 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 40873 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 40915 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 40955 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 41000 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 41067 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 41127 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 41167 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 41237 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 41278 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 41323 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 41363 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 41431 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 41474 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 41515 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 41598 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 41643 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 41685 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 41732 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 41802 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 41849 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 41891 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 41960 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 42002 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 42045 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 42102 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 42173 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 42215 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 42258 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 42303 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 42371 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 42414 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 42457 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 42529 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 42593 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 42641 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 42707 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 42751 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 42803 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 42845 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 42912 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 42955 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 43016 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 43058 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 43125 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 43168 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 43212 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 43279 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 43325 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 43366 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 43408 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 43494 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 43537 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 43580 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 43645 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 43693 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 43737 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 43778 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 43849 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 43892 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 43954 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 43995 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 44064 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 44108 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 44154 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 44199 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 44266 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 44309 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 44353 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 44439 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 44492 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 44531 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 44575 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 44645 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 44686 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 44729 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 44799 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 44840 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 44902 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 44970 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 45017 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 45059 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 45130 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 45173 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 45215 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 45259 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 45324 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 45386 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 45428 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 45468 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 45537 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 45579 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 45620 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 45689 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 45733 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 45776 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 45837 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 45902 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 45944 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 45987 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 46058 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 46100 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 46143 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 46186 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 46257 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 46317 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 46375 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 46420 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 46487 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 46532 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 46574 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 46644 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 46685 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 46729 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 46786 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 46852 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 46896 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 46937 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 47009 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 47051 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 47091 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 47130 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 47196 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 47258 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 47299 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 47343 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 47412 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 47454 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 47498 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 47541 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 47610 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 47652 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 47713 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 47779 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 47821 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 47865 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 47935 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 47980 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 48028 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 48070 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 48142 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 48201 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 48243 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 48318 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 48363 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 48404 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 48447 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 48517 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 48559 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 48601 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 48659 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 48728 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 48771 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 48813 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 48882 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 48926 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 48967 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 49032 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 49080 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 49138 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 49180 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 49259 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 49301 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 49343 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 49391 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 49458 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 49500 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 49553 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 49637 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 49680 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 49724 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 49768 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 49837 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 49882 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 49937 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 50004 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 50051 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 50117 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 50183 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 50226 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 50271 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 50314 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 50382 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 50426 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 50469 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 50538 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 50596 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 50639 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 50681 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 50748 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 50794 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 50837 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 50903 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 50943 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 51002 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 51042 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 51108 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 51155 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 51198 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 51244 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 51337 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 51383 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 51429 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 51490 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 51560 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 51637 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 51680 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 51725 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 51792 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 51836 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 51878 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 51944 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 52003 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 52047 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 52097 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 52166 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 52207 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 52249 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 52316 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 52356 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 52404 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 52465 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 52537 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 52580 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 52626 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 52697 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 52739 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 52780 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 52826 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 52892 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 52954 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 52997 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 53081 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 53121 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 53164 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 53206 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 53275 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 53317 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 53359 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 53441 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 53485 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 53531 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 53603 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 53650 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 53698 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 53769 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 53811 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 53855 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 53938 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 53980 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 54028 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 54076 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 54140 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 54184 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 54229 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 54298 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 54345 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 54403 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 54447 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 54517 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 54559 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 54605 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 54648 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 54714 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 54758 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 54802 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 54861 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 54925 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 54967 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 55011 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 55078 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 55122 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 55163 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 55205 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 55291 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 55333 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 55375 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 55443 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 55678 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 56401 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7:  4345 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7:  9751 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 10201 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 10266 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 10333 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 12626 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 18172 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 23550 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 23839 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 23884 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 23925 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 23996 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 24054 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 24097 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 24143 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 24214 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 24260 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 24305 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 24373 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 24419 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 24461 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 24521 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 24590 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 24632 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 24675 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 24718 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 24788 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 24833 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 24875 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 24946 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 25003 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 25045 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 25093 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 25176 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 25219 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 25264 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 25343 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 25389 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 25432 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 25492 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 25559 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 25602 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 25647 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 25716 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 25759 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 25802 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 25874 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 25915 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 25975 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 26049 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 26089 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 26132 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 26175 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 26246 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 26292 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 26334 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 26409 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 26467 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 26510 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 26551 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 26622 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 26667 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 26712 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 26777 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 26819 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 26879 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 26944 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 26986 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 27029 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 27071 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 27138 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 27178 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 27225 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 27268 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 27355 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 27394 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 27440 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 27509 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 27553 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 27594 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 27638 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 27705 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 27753 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 27813 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 27856 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 27922 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 27963 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 28008 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 28077 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 28120 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 28160 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 28204 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 28287 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 28331 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 28375 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 28417 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 28486 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 28529 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 28572 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 28616 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 28684 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 28743 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 28786 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 28858 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 28900 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 28943 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 29002 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 29077 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 29133 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 29175 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 29235 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 29307 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 29352 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 29395 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 29462 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 29505 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 29548 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 29589 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 29660 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 29726 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 29771 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 29836 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 29881 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 29924 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 29967 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 30037 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 30084 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 30129 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 30212 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 30279 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 30328 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 30382 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 30425 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 30493 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 30537 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 30577 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 30662 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 30705 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 30747 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 30842 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 30886 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 30927 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 30971 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 31042 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 31086 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 31147 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 31213 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 31255 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 31296 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 31368 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 31412 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 31456 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 31502 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 31570 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 31628 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 31672 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 31744 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 31787 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 31834 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 31901 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 31950 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 31990 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 32031 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 32115 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 32163 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 32203 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 32247 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 32317 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 32360 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 32404 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 32470 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 32518 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 32580 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 32622 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 32692 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 32733 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 32777 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 32850 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 32893 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 32935 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 32981 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 33065 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 33107 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 33151 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 33204 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 33274 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 33317 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 33361 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 33431 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 33475 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 33533 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 33578 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 33645 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 33692 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 33737 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 33805 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 33852 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 33896 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 33979 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 34023 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 34068 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 34113 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 34180 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 34229 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 34274 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 34344 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 34386 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 34446 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 34512 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 34558 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 34601 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 34645 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 34716 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 34763 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 34807 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 34878 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 34937 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 34981 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 35027 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 35093 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 35135 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 35176 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 35246 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 35288 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 35338 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 35395 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 35465 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 35516 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 35558 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 35632 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 35674 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 35721 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 35793 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 35839 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 35896 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 35966 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 36007 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 36048 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 36090 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 36157 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 36207 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 36366 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 36526 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 36661 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 36710 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 36754 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 36827 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 36868 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 36910 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 36955 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 37192 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 37247 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 37426 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 37473 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 37645 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 37896 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 40315 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 40362 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 40430 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 40473 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 40530 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 40599 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 40643 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 40687 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 40758 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 40801 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 40844 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 40890 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 40956 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 41016 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 41060 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 41129 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 41182 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 41226 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 41294 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 41336 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 41378 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 41422 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 41505 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 41548 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 41590 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 41660 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 41709 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 41755 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 41821 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 41865 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 41908 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 41967 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 42036 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 42081 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 42123 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 42166 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 42234 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 42279 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 42321 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 42392 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 42452 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 42494 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 42533 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 42604 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 42647 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 42691 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 42736 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 42804 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 42851 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 42911 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 42983 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 43024 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 43065 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 43110 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 43178 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 43222 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 43265 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 43352 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 43393 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 43435 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 43479 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 43554 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 43602 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 43648 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 43717 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 43760 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 43821 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 43864 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 43938 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 43977 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 44023 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 44097 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 44141 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 44183 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 44233 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 44321 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 44362 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 44404 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 44446 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 44517 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 44564 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 44609 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 44649 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 44717 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 44773 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 44815 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 45239 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 45305 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 45348 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 45396 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 45450 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 45521 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 45565 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 45634 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 45700 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 45768 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 45811 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 45879 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 45919 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 45961 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 46003 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 46077 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 46135 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 46179 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 46250 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 46296 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 46339 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 46409 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 46451 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 46493 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 46553 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 46621 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+/var/spool/slurm/job00711/slurm_script: line 7: 46664 Killed                  python3 ~/HVQE/HVQE.py $PWD $i 4 --dump_interval 64
+slurmstepd: error: Detected 826 oom-kill event(s) in step 711.batch cgroup. Some of your processes may have been killed by the cgroup out-of-memory handler.

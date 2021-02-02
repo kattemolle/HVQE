@@ -8,7 +8,7 @@
 
 for np in {1..2}
 do
-    python3 ~/HVQE/HVQE.py $PWD 336 3 --cost_fn infidelity &
+    python3 ~/HVQE/HVQE.py $PWD 420 3 --cost_fn infidelity &
     sleep 0.1
 done
 wait

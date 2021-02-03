@@ -9,7 +9,7 @@ Contents:<br>
 [Installation](##installation)<br>
 
 
-## Example: a square
+##Example: a square
 Say you want to use a VQE to find the ground state of the Heisenberg model on a square. In this example I will assume you have installed HeisenbergVQE into ~/HVQE (also see [installation](#installation)). Create a text file with the contents
 
 ```python
@@ -52,7 +52,7 @@ The vertical axis displays the relative error to the ground state `(E_VQE-E_0)/E
 
 The VQE has already found the exact ground state of the Heisenberg model on the square after a single cycle of the ansatz (a circuit of depth 2).
 
-## Files and folders
+##Files and folders
 For usage of HeisenbergVQE, the most important files and folders are:
 
 - `data/`. Contains pre-produced data that was obtained by running `HVQE.py`. The folder contains a tree of folders, where every leaf contains all input and output pertaining to a single, specific system and ansatz.
@@ -64,7 +64,7 @@ Compute the `k` lowest energy eigenstates of the Heisenberg model on the graph `
 
 - `qem.py`. (qem is short for Quantum EMulator) This script defines standard functions and classes needed for the emulation of quantum circuits.
 
-## Installation
+##Installation
 
 - If you have git installed, clone the repo by `$ git clone https://github.com/barbireau/HVQE.git`. Alternatively, you can download and unzip this repo via the green 'code' button at the top right of the github page. 
 

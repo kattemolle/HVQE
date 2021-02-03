@@ -4,9 +4,9 @@
 A python package tailored to Variational Quantum Eigensolvers for the Heisenberg model, with optional GPU acceleration. Documentation, with plenty examples, is contained in the docstrings of the files outlined under [Files and folders](##files-and-folders).
 
 Contents:<br>
-[Example: a square](##example:-a-square)<br>
-[Files and folders](##files-and-folders)<br>
-[Installation](##installation)<br>
+[Example](#example)<br>
+[Files and folders](#files-and-folders)<br>
+[Installation](#installation)<br>
 
 
 ##Example: a square

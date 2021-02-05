@@ -1,8 +1,11 @@
-**/.DStore
-.DStore
+**/.DS_Store
+.DS_Store
 __pycache__
 *~
 tmp.txt
 **/4x2/gs.dat
 *#*
-*SLURM*
+*slurm*
+*DS_Store*
+*slurm*
+

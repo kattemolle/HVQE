@@ -1,0 +1,266 @@
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/backends/cuda.py:142: UserWarning: cuDNN is not enabled.
+Please reinstall CuPy after you install cudnn
+(see https://docs-cupy.chainer.org/en/stable/install.html#install-cudnn).
+  warnings.warn(
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/_environment_check.py:70: UserWarning: 
+--------------------------------------------------------------------------------
+CuPy (cupy) version 8.0.0 may not be compatible with this version of Chainer.
+Please consider installing the supported version by running:
+  $ pip install 'cupy>=6.3.0,<7.0.0'
+
+See the following page for more details:
+  https://docs-cupy.chainer.org/en/latest/install.html
+--------------------------------------------------------------------------------
+
+  warnings.warn(msg.format(
+CuPy installation found, continuing using GPU acceleration.
+having the CPUs {9, 11, 7} available.
+Started basinhopping at 2021-01-16 19:37:45.082576 UTC, with
+command line arguments = {'path': '/home/jkgpu/HVQE/data/chain/periodic/own_graph/ops/infidelity/18', 'n_par': 0, 'par_multiplicity': 9, 'n_iter': 0, 'cost_fn': 'infidelity', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+runtime variables =  {'GPU': True, 'date_start': '2021-01-16 19:37:45.082576', 'complete_graph': [(1, 2), (3, 4), (5, 6), (7, 8), (9, 10), (11, 12), (13, 14), (15, 16), (17, 0), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'layers': [[(1, 2), (3, 4), (5, 6), (7, 8), (9, 10), (11, 12), (13, 14), (15, 16), (17, 0)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)]], 'n': 18}
+ 
+==========================================================================================
+Finished basinhopping of  /home/jkgpu/HVQE/data/chain/periodic/own_graph/ops/infidelity/18 at 2021-01-16 19:37:45.490813 UTC, with
+ 
+{'path': '/home/jkgpu/HVQE/data/chain/periodic/own_graph/ops/infidelity/18', 'n_par': 0, 'par_multiplicity': 9, 'n_iter': 0, 'cost_fn': 'infidelity', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+init_par = []
+ 
+RESULTS:
+--------
+E_VQE = -6.74999999999999
+inf_VQE = 0.7792873293483105
+n_fn_calls = 0
+Wall-clock time 5.995167626274957e-06 hours
+ 
+For more output, see /home/jkgpu/HVQE/data/chain/periodic/own_graph/ops/infidelity/18/output.txt
+Plots of output saved in /home/jkgpu/HVQE/data/chain/periodic/own_graph/ops/infidelity/18
+End of HVQE.py
+==========================================================================================
+CuPy installation found, continuing using GPU acceleration.
+having the CPUs {9, 11, 7} available.
+Started basinhopping at 2021-01-16 19:37:52.289249 UTC, with
+command line arguments = {'path': '/home/jkgpu/HVQE/data/chain/periodic/own_graph/ops/infidelity/18', 'n_par': 2, 'par_multiplicity': 9, 'n_iter': 0, 'cost_fn': 'infidelity', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+runtime variables =  {'GPU': True, 'date_start': '2021-01-16 19:37:52.289249', 'complete_graph': [(1, 2), (3, 4), (5, 6), (7, 8), (9, 10), (11, 12), (13, 14), (15, 16), (17, 0), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'layers': [[(1, 2), (3, 4), (5, 6), (7, 8), (9, 10), (11, 12), (13, 14), (15, 16), (17, 0)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)]], 'n': 18}
+................................./home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/backends/cuda.py:142: UserWarning: cuDNN is not enabled.
+Please reinstall CuPy after you install cudnn
+(see https://docs-cupy.chainer.org/en/stable/install.html#install-cudnn).
+  warnings.warn(
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/_environment_check.py:70: UserWarning: 
+--------------------------------------------------------------------------------
+CuPy (cupy) version 8.0.0 may not be compatible with this version of Chainer.
+Please consider installing the supported version by running:
+  $ pip install 'cupy>=6.3.0,<7.0.0'
+
+See the following page for more details:
+  https://docs-cupy.chainer.org/en/latest/install.html
+--------------------------------------------------------------------------------
+
+  warnings.warn(msg.format(
+ 
+==========================================================================================
+Finished basinhopping of  /home/jkgpu/HVQE/data/chain/periodic/own_graph/ops/infidelity/18 at 2021-01-16 19:38:02.692426 UTC, with
+ 
+{'path': '/home/jkgpu/HVQE/data/chain/periodic/own_graph/ops/infidelity/18', 'n_par': 2, 'par_multiplicity': 9, 'n_iter': 0, 'cost_fn': 'infidelity', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+init_par = [0.0004236994309486762, 0.00023052244766250986]
+ 
+RESULTS:
+--------
+E_VQE = -7.606344977404004
+inf_VQE = 0.48206196480200725
+n_fn_calls = 33
+Wall-clock time 0.0027721707026163735 hours
+ 
+For more output, see /home/jkgpu/HVQE/data/chain/periodic/own_graph/ops/infidelity/18/output.txt
+Plots of output saved in /home/jkgpu/HVQE/data/chain/periodic/own_graph/ops/infidelity/18
+End of HVQE.py
+==========================================================================================
+CuPy installation found, continuing using GPU acceleration.
+having the CPUs {9, 11, 7} available.
+Started basinhopping at 2021-01-16 19:38:06.781761 UTC, with
+command line arguments = {'path': '/home/jkgpu/HVQE/data/chain/periodic/own_graph/ops/infidelity/18', 'n_par': 4, 'par_multiplicity': 9, 'n_iter': 0, 'cost_fn': 'infidelity', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+runtime variables =  {'GPU': True, 'date_start': '2021-01-16 19:38:06.781761', 'complete_graph': [(1, 2), (3, 4), (5, 6), (7, 8), (9, 10), (11, 12), (13, 14), (15, 16), (17, 0), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'layers': [[(1, 2), (3, 4), (5, 6), (7, 8), (9, 10), (11, 12), (13, 14), (15, 16), (17, 0)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)]], 'n': 18}
+........................................../home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/backends/cuda.py:142: UserWarning: cuDNN is not enabled.
+Please reinstall CuPy after you install cudnn
+(see https://docs-cupy.chainer.org/en/stable/install.html#install-cudnn).
+  warnings.warn(
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/_environment_check.py:70: UserWarning: 
+--------------------------------------------------------------------------------
+CuPy (cupy) version 8.0.0 may not be compatible with this version of Chainer.
+Please consider installing the supported version by running:
+  $ pip install 'cupy>=6.3.0,<7.0.0'
+
+See the following page for more details:
+  https://docs-cupy.chainer.org/en/latest/install.html
+--------------------------------------------------------------------------------
+
+  warnings.warn(msg.format(
+ 
+==========================================================================================
+Finished basinhopping of  /home/jkgpu/HVQE/data/chain/periodic/own_graph/ops/infidelity/18 at 2021-01-16 19:38:32.358672 UTC, with
+ 
+{'path': '/home/jkgpu/HVQE/data/chain/periodic/own_graph/ops/infidelity/18', 'n_par': 4, 'par_multiplicity': 9, 'n_iter': 0, 'cost_fn': 'infidelity', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+init_par = [0.00029916862703572135, -5.6755790748615155e-05, 0.00039646743863321185, -0.00014219739901073515]
+ 
+RESULTS:
+--------
+E_VQE = -7.644662714199435
+inf_VQE = 0.45282884545770274
+n_fn_calls = 42
+Wall-clock time 0.0069725855853822495 hours
+ 
+For more output, see /home/jkgpu/HVQE/data/chain/periodic/own_graph/ops/infidelity/18/output.txt
+Plots of output saved in /home/jkgpu/HVQE/data/chain/periodic/own_graph/ops/infidelity/18
+End of HVQE.py
+==========================================================================================
+CuPy installation found, continuing using GPU acceleration.
+having the CPUs {9, 11, 7} available.
+Started basinhopping at 2021-01-16 19:38:37.800749 UTC, with
+command line arguments = {'path': '/home/jkgpu/HVQE/data/chain/periodic/own_graph/ops/infidelity/18', 'n_par': 6, 'par_multiplicity': 9, 'n_iter': 0, 'cost_fn': 'infidelity', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+runtime variables =  {'GPU': True, 'date_start': '2021-01-16 19:38:37.800749', 'complete_graph': [(1, 2), (3, 4), (5, 6), (7, 8), (9, 10), (11, 12), (13, 14), (15, 16), (17, 0), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'layers': [[(1, 2), (3, 4), (5, 6), (7, 8), (9, 10), (11, 12), (13, 14), (15, 16), (17, 0)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)]], 'n': 18}
+............................................................./home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/backends/cuda.py:142: UserWarning: cuDNN is not enabled.
+Please reinstall CuPy after you install cudnn
+(see https://docs-cupy.chainer.org/en/stable/install.html#install-cudnn).
+  warnings.warn(
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/_environment_check.py:70: UserWarning: 
+--------------------------------------------------------------------------------
+CuPy (cupy) version 8.0.0 may not be compatible with this version of Chainer.
+Please consider installing the supported version by running:
+  $ pip install 'cupy>=6.3.0,<7.0.0'
+
+See the following page for more details:
+  https://docs-cupy.chainer.org/en/latest/install.html
+--------------------------------------------------------------------------------
+
+  warnings.warn(msg.format(
+ 
+==========================================================================================
+Finished basinhopping of  /home/jkgpu/HVQE/data/chain/periodic/own_graph/ops/infidelity/18 at 2021-01-16 19:39:32.397321 UTC, with
+ 
+{'path': '/home/jkgpu/HVQE/data/chain/periodic/own_graph/ops/infidelity/18', 'n_par': 6, 'par_multiplicity': 9, 'n_iter': 0, 'cost_fn': 'infidelity', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+init_par = [0.0001691952477878494, 0.0004299878285750401, -4.969645447536951e-05, 0.00014409830366222877, 0.00021593388207502844, -0.0004907630007543465]
+ 
+RESULTS:
+--------
+E_VQE = -7.767383581711926
+inf_VQE = 0.29944460864362643
+n_fn_calls = 61
+Wall-clock time 0.015029937558703953 hours
+ 
+For more output, see /home/jkgpu/HVQE/data/chain/periodic/own_graph/ops/infidelity/18/output.txt
+Plots of output saved in /home/jkgpu/HVQE/data/chain/periodic/own_graph/ops/infidelity/18
+End of HVQE.py
+==========================================================================================
+CuPy installation found, continuing using GPU acceleration.
+having the CPUs {9, 11, 7} available.
+Started basinhopping at 2021-01-16 19:39:39.601041 UTC, with
+command line arguments = {'path': '/home/jkgpu/HVQE/data/chain/periodic/own_graph/ops/infidelity/18', 'n_par': 8, 'par_multiplicity': 9, 'n_iter': 0, 'cost_fn': 'infidelity', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+runtime variables =  {'GPU': True, 'date_start': '2021-01-16 19:39:39.601041', 'complete_graph': [(1, 2), (3, 4), (5, 6), (7, 8), (9, 10), (11, 12), (13, 14), (15, 16), (17, 0), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'layers': [[(1, 2), (3, 4), (5, 6), (7, 8), (9, 10), (11, 12), (13, 14), (15, 16), (17, 0)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)]], 'n': 18}
+......................................................................./home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/backends/cuda.py:142: UserWarning: cuDNN is not enabled.
+Please reinstall CuPy after you install cudnn
+(see https://docs-cupy.chainer.org/en/stable/install.html#install-cudnn).
+  warnings.warn(
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/_environment_check.py:70: UserWarning: 
+--------------------------------------------------------------------------------
+CuPy (cupy) version 8.0.0 may not be compatible with this version of Chainer.
+Please consider installing the supported version by running:
+  $ pip install 'cupy>=6.3.0,<7.0.0'
+
+See the following page for more details:
+  https://docs-cupy.chainer.org/en/latest/install.html
+--------------------------------------------------------------------------------
+
+  warnings.warn(msg.format(
+ 
+==========================================================================================
+Finished basinhopping of  /home/jkgpu/HVQE/data/chain/periodic/own_graph/ops/infidelity/18 at 2021-01-16 19:41:02.345493 UTC, with
+ 
+{'path': '/home/jkgpu/HVQE/data/chain/periodic/own_graph/ops/infidelity/18', 'n_par': 8, 'par_multiplicity': 9, 'n_iter': 0, 'cost_fn': 'infidelity', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+init_par = [-0.00033339025474788417, -7.336342891116023e-05, 7.025616881596326e-05, 0.00020723978312210103, -0.0003022448668391834, 0.00015720795504648485, -0.00023518626192042092, -0.00037487481438619073]
+ 
+RESULTS:
+--------
+E_VQE = -7.856618342130357
+inf_VQE = 0.0949344305836719
+n_fn_calls = 71
+Wall-clock time 0.02283779501914978 hours
+ 
+For more output, see /home/jkgpu/HVQE/data/chain/periodic/own_graph/ops/infidelity/18/output.txt
+Plots of output saved in /home/jkgpu/HVQE/data/chain/periodic/own_graph/ops/infidelity/18
+End of HVQE.py
+==========================================================================================
+CuPy installation found, continuing using GPU acceleration.
+having the CPUs {9, 11, 7} available.
+Started basinhopping at 2021-01-16 19:41:06.347965 UTC, with
+command line arguments = {'path': '/home/jkgpu/HVQE/data/chain/periodic/own_graph/ops/infidelity/18', 'n_par': 10, 'par_multiplicity': 9, 'n_iter': 0, 'cost_fn': 'infidelity', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+runtime variables =  {'GPU': True, 'date_start': '2021-01-16 19:41:06.347965', 'complete_graph': [(1, 2), (3, 4), (5, 6), (7, 8), (9, 10), (11, 12), (13, 14), (15, 16), (17, 0), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'layers': [[(1, 2), (3, 4), (5, 6), (7, 8), (9, 10), (11, 12), (13, 14), (15, 16), (17, 0)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)]], 'n': 18}
+............................................................................................................./home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/backends/cuda.py:142: UserWarning: cuDNN is not enabled.
+Please reinstall CuPy after you install cudnn
+(see https://docs-cupy.chainer.org/en/stable/install.html#install-cudnn).
+  warnings.warn(
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/_environment_check.py:70: UserWarning: 
+--------------------------------------------------------------------------------
+CuPy (cupy) version 8.0.0 may not be compatible with this version of Chainer.
+Please consider installing the supported version by running:
+  $ pip install 'cupy>=6.3.0,<7.0.0'
+
+See the following page for more details:
+  https://docs-cupy.chainer.org/en/latest/install.html
+--------------------------------------------------------------------------------
+
+  warnings.warn(msg.format(
+ 
+==========================================================================================
+Finished basinhopping of  /home/jkgpu/HVQE/data/chain/periodic/own_graph/ops/infidelity/18 at 2021-01-16 19:43:43.553063 UTC, with
+ 
+{'path': '/home/jkgpu/HVQE/data/chain/periodic/own_graph/ops/infidelity/18', 'n_par': 10, 'par_multiplicity': 9, 'n_iter': 0, 'cost_fn': 'infidelity', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+init_par = [0.0003623154479677732, 0.00013641846696129474, -0.00033309853817096313, 0.00016995733766707213, 0.00047350673713776397, -3.9461388324802185e-05, -0.00024135554199031684, -3.58788617063065e-05, 6.624967208800514e-05, -0.00033273535788668515]
+ 
+RESULTS:
+--------
+E_VQE = -7.77932946235683
+inf_VQE = 0.25575912491191777
+n_fn_calls = 109
+Wall-clock time 0.04351207686795129 hours
+ 
+For more output, see /home/jkgpu/HVQE/data/chain/periodic/own_graph/ops/infidelity/18/output.txt
+Plots of output saved in /home/jkgpu/HVQE/data/chain/periodic/own_graph/ops/infidelity/18
+End of HVQE.py
+==========================================================================================
+CuPy installation found, continuing using GPU acceleration.
+having the CPUs {9, 11, 7} available.
+Started basinhopping at 2021-01-16 19:43:47.483565 UTC, with
+command line arguments = {'path': '/home/jkgpu/HVQE/data/chain/periodic/own_graph/ops/infidelity/18', 'n_par': 12, 'par_multiplicity': 9, 'n_iter': 0, 'cost_fn': 'infidelity', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+runtime variables =  {'GPU': True, 'date_start': '2021-01-16 19:43:47.483565', 'complete_graph': [(1, 2), (3, 4), (5, 6), (7, 8), (9, 10), (11, 12), (13, 14), (15, 16), (17, 0), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'layers': [[(1, 2), (3, 4), (5, 6), (7, 8), (9, 10), (11, 12), (13, 14), (15, 16), (17, 0)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)]], 'n': 18}
+............................................................................................................................................../home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/backends/cuda.py:142: UserWarning: cuDNN is not enabled.
+Please reinstall CuPy after you install cudnn
+(see https://docs-cupy.chainer.org/en/stable/install.html#install-cudnn).
+  warnings.warn(
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/_environment_check.py:70: UserWarning: 
+--------------------------------------------------------------------------------
+CuPy (cupy) version 8.0.0 may not be compatible with this version of Chainer.
+Please consider installing the supported version by running:
+  $ pip install 'cupy>=6.3.0,<7.0.0'
+
+See the following page for more details:
+  https://docs-cupy.chainer.org/en/latest/install.html
+--------------------------------------------------------------------------------
+
+  warnings.warn(msg.format(
+ 
+==========================================================================================
+Finished basinhopping of  /home/jkgpu/HVQE/data/chain/periodic/own_graph/ops/infidelity/18 at 2021-01-16 19:47:55.660456 UTC, with
+ 
+{'path': '/home/jkgpu/HVQE/data/chain/periodic/own_graph/ops/infidelity/18', 'n_par': 12, 'par_multiplicity': 9, 'n_iter': 0, 'cost_fn': 'infidelity', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+init_par = [0.00038943685616233206, -0.0001573820172164986, 0.00024820689238332094, -0.00014881673889089033, 0.00011562397143400878, 0.00039116475877305475, 0.0003913089944693794, -0.00043476345635012084, -0.000204238860206165, 0.00015533074204926531, 1.7807540762119654e-05, 0.0003210221201638304]
+ 
+RESULTS:
+--------
+E_VQE = -7.987825708806443
+inf_VQE = 0.01784730112081867
+n_fn_calls = 142
+Wall-clock time 0.06876615497801039 hours
+ 
+For more output, see /home/jkgpu/HVQE/data/chain/periodic/own_graph/ops/infidelity/18/output.txt
+Plots of output saved in /home/jkgpu/HVQE/data/chain/periodic/own_graph/ops/infidelity/18
+End of HVQE.py
+==========================================================================================

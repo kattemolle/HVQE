@@ -1,0 +1,38 @@
+CuPy installation found, continuing using GPU acceleration.
+having the CPUs {1, 3, 5} available.
+Started basinhopping at 2021-01-16 19:35:02.791230 UTC, with
+command line arguments = {'path': '/home/jkgpu/HVQE/data/chain/periodic/own_graph/ops/energy/18', 'n_par': 18, 'par_multiplicity': 9, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+runtime variables =  {'GPU': True, 'date_start': '2021-01-16 19:35:02.791230', 'complete_graph': [(1, 2), (3, 4), (5, 6), (7, 8), (9, 10), (11, 12), (13, 14), (15, 16), (17, 0), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'layers': [[(1, 2), (3, 4), (5, 6), (7, 8), (9, 10), (11, 12), (13, 14), (15, 16), (17, 0)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)]], 'n': 18}
+................................................................................................................................................................................................................................................................../home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/backends/cuda.py:142: UserWarning: cuDNN is not enabled.
+Please reinstall CuPy after you install cudnn
+(see https://docs-cupy.chainer.org/en/stable/install.html#install-cudnn).
+  warnings.warn(
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/_environment_check.py:70: UserWarning: 
+--------------------------------------------------------------------------------
+CuPy (cupy) version 8.0.0 may not be compatible with this version of Chainer.
+Please consider installing the supported version by running:
+  $ pip install 'cupy>=6.3.0,<7.0.0'
+
+See the following page for more details:
+  https://docs-cupy.chainer.org/en/latest/install.html
+--------------------------------------------------------------------------------
+
+  warnings.warn(msg.format(
+ 
+==========================================================================================
+Finished basinhopping of  /home/jkgpu/HVQE/data/chain/periodic/own_graph/ops/energy/18 at 2021-01-16 19:46:54.241509 UTC, with
+ 
+{'path': '/home/jkgpu/HVQE/data/chain/periodic/own_graph/ops/energy/18', 'n_par': 18, 'par_multiplicity': 9, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+init_par = [-0.0004228937769818123, 0.00031725763517033087, 0.00043850353891117754, -0.0001234535147281198, 0.00011096559756402417, 0.00037426791582281294, -0.00045762339593635195, -0.0002018154600559311, -0.00034495277053865733, 0.00013582861830153503, 0.00011364503462918624, 0.00010999981012816263, 0.00016989937803227274, 0.00046104046657072706, -0.0002848948090168353, -0.00015011268989068515, 6.220107249999972e-05, -0.00019670441909233415]
+ 
+RESULTS:
+--------
+E_VQE = -7.943621473870664
+inf_VQE = 0.1544317632904505
+n_fn_calls = 258
+Wall-clock time 0.1974426276816262 hours
+ 
+For more output, see /home/jkgpu/HVQE/data/chain/periodic/own_graph/ops/energy/18/output.txt
+Plots of output saved in /home/jkgpu/HVQE/data/chain/periodic/own_graph/ops/energy/18
+End of HVQE.py
+==========================================================================================

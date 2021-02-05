@@ -1,0 +1,38 @@
+CuPy installation found, continuing using GPU acceleration.
+having the CPUs {8, 10, 6} available.
+Started basinhopping at 2021-01-16 20:51:21.888392 UTC, with
+command line arguments = {'path': '/home/jkgpu/HVQE/data/chain/periodic/own_graph/ops/energy/18', 'n_par': 26, 'par_multiplicity': 9, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+runtime variables =  {'GPU': True, 'date_start': '2021-01-16 20:51:21.888392', 'complete_graph': [(1, 2), (3, 4), (5, 6), (7, 8), (9, 10), (11, 12), (13, 14), (15, 16), (17, 0), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'layers': [[(1, 2), (3, 4), (5, 6), (7, 8), (9, 10), (11, 12), (13, 14), (15, 16), (17, 0)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)]], 'n': 18}
+....................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................../home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/backends/cuda.py:142: UserWarning: cuDNN is not enabled.
+Please reinstall CuPy after you install cudnn
+(see https://docs-cupy.chainer.org/en/stable/install.html#install-cudnn).
+  warnings.warn(
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/_environment_check.py:70: UserWarning: 
+--------------------------------------------------------------------------------
+CuPy (cupy) version 8.0.0 may not be compatible with this version of Chainer.
+Please consider installing the supported version by running:
+  $ pip install 'cupy>=6.3.0,<7.0.0'
+
+See the following page for more details:
+  https://docs-cupy.chainer.org/en/latest/install.html
+--------------------------------------------------------------------------------
+
+  warnings.warn(msg.format(
+ 
+==========================================================================================
+Finished basinhopping of  /home/jkgpu/HVQE/data/chain/periodic/own_graph/ops/energy/18 at 2021-01-16 21:45:52.149224 UTC, with
+ 
+{'path': '/home/jkgpu/HVQE/data/chain/periodic/own_graph/ops/energy/18', 'n_par': 26, 'par_multiplicity': 9, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+init_par = [0.0004533615809299336, 0.00029650556922572577, -0.00025797848006915583, -0.00014268113563604214, -0.00045636277950840897, 0.00027576589958500184, -0.0002367199908304273, -0.00010986522378975149, 0.0002768881938361343, -0.00042973466045697874, -0.00023356432416684638, 0.00011130106967590736, -4.63143532852918e-05, 0.0002858813020572851, -0.0001074624527611895, 0.0003913993551822335, -0.00034025828454139215, 0.000348575264543459, -0.0001813627919793698, -0.0001586470345164568, 6.328204665598377e-06, 0.0001866071492070163, -0.00037789681305374083, 0.00017380910954252764, 5.7601959742688323e-05, -0.00026377089520844224]
+ 
+RESULTS:
+--------
+E_VQE = -8.022272615217755
+inf_VQE = 0.00012462745985075685
+n_fn_calls = 822
+Wall-clock time 0.908190473847919 hours
+ 
+For more output, see /home/jkgpu/HVQE/data/chain/periodic/own_graph/ops/energy/18/output.txt
+Plots of output saved in /home/jkgpu/HVQE/data/chain/periodic/own_graph/ops/energy/18
+End of HVQE.py
+==========================================================================================

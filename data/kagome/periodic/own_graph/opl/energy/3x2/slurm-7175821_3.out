@@ -1,0 +1,760 @@
+CuPy installation found, continuing using GPU acceleration.
+having the CPUs {1, 3, 5, 7} available.
+Started basinhopping at 2020-12-25 06:51:32.305471 UTC, with
+command line arguments = {'path': '/home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2', 'n_par': 4, 'par_multiplicity': 9, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+runtime variables =  {'GPU': True, 'date_start': '2020-12-25 06:51:32.305471', 'complete_graph': [(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5), (1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4), (1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'layers': [[(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5)], [(1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4)], [(1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)]], 'n': 18}
+................................../home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/backends/cuda.py:142: UserWarning: cuDNN is not enabled.
+Please reinstall CuPy after you install cudnn
+(see https://docs-cupy.chainer.org/en/stable/install.html#install-cudnn).
+  warnings.warn(
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/_environment_check.py:70: UserWarning: 
+--------------------------------------------------------------------------------
+CuPy (cupy) version 8.0.0 may not be compatible with this version of Chainer.
+Please consider installing the supported version by running:
+  $ pip install 'cupy>=6.3.0,<7.0.0'
+
+See the following page for more details:
+  https://docs-cupy.chainer.org/en/latest/install.html
+--------------------------------------------------------------------------------
+
+  warnings.warn(msg.format(
+ 
+==========================================================================================
+Finished basinhopping of  /home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2 at 2020-12-25 06:52:01.199126 UTC, with
+ 
+{'path': '/home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2', 'n_par': 4, 'par_multiplicity': 9, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+init_par = [-0.0003633977665083026, -0.00034140497303805563, -0.00044434528074720393, -1.8129297245564888e-05]
+ 
+RESULTS:
+--------
+E_VQE = -7.524600285243712
+inf_VQE = 0.840022251947407
+n_fn_calls = 34
+Wall-clock time 0.007901613646083407 hours
+ 
+For more output, see /home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2/output.txt
+Plots of output saved in /home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2
+End of HVQE.py
+==========================================================================================
+CuPy installation found, continuing using GPU acceleration.
+having the CPUs {1, 3, 5, 7} available.
+Started basinhopping at 2020-12-25 06:52:04.807843 UTC, with
+command line arguments = {'path': '/home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2', 'n_par': 8, 'par_multiplicity': 9, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+runtime variables =  {'GPU': True, 'date_start': '2020-12-25 06:52:04.807843', 'complete_graph': [(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5), (1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4), (1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'layers': [[(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5)], [(1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4)], [(1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)]], 'n': 18}
+.............................................../home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/backends/cuda.py:142: UserWarning: cuDNN is not enabled.
+Please reinstall CuPy after you install cudnn
+(see https://docs-cupy.chainer.org/en/stable/install.html#install-cudnn).
+  warnings.warn(
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/_environment_check.py:70: UserWarning: 
+--------------------------------------------------------------------------------
+CuPy (cupy) version 8.0.0 may not be compatible with this version of Chainer.
+Please consider installing the supported version by running:
+  $ pip install 'cupy>=6.3.0,<7.0.0'
+
+See the following page for more details:
+  https://docs-cupy.chainer.org/en/latest/install.html
+--------------------------------------------------------------------------------
+
+  warnings.warn(msg.format(
+ 
+==========================================================================================
+Finished basinhopping of  /home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2 at 2020-12-25 06:53:09.743028 UTC, with
+ 
+{'path': '/home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2', 'n_par': 8, 'par_multiplicity': 9, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+init_par = [-0.0001184948410658807, -0.00037014450879303997, -5.008304457658567e-05, -0.000172897843924792, -8.578870726298928e-05, 0.00026627407403972947, -0.0002831960463074003, -9.826866244777701e-05]
+ 
+RESULTS:
+--------
+E_VQE = -7.662910332413736
+inf_VQE = 0.7381814167613602
+n_fn_calls = 47
+Wall-clock time 0.017894588510195417 hours
+ 
+For more output, see /home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2/output.txt
+Plots of output saved in /home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2
+End of HVQE.py
+==========================================================================================
+CuPy installation found, continuing using GPU acceleration.
+having the CPUs {1, 3, 5, 7} available.
+Started basinhopping at 2020-12-25 06:53:13.427787 UTC, with
+command line arguments = {'path': '/home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2', 'n_par': 12, 'par_multiplicity': 9, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+runtime variables =  {'GPU': True, 'date_start': '2020-12-25 06:53:13.427787', 'complete_graph': [(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5), (1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4), (1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'layers': [[(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5)], [(1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4)], [(1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)]], 'n': 18}
+............................................................./home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/backends/cuda.py:142: UserWarning: cuDNN is not enabled.
+Please reinstall CuPy after you install cudnn
+(see https://docs-cupy.chainer.org/en/stable/install.html#install-cudnn).
+  warnings.warn(
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/_environment_check.py:70: UserWarning: 
+--------------------------------------------------------------------------------
+CuPy (cupy) version 8.0.0 may not be compatible with this version of Chainer.
+Please consider installing the supported version by running:
+  $ pip install 'cupy>=6.3.0,<7.0.0'
+
+See the following page for more details:
+  https://docs-cupy.chainer.org/en/latest/install.html
+--------------------------------------------------------------------------------
+
+  warnings.warn(msg.format(
+ 
+==========================================================================================
+Finished basinhopping of  /home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2 at 2020-12-25 06:55:13.504055 UTC, with
+ 
+{'path': '/home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2', 'n_par': 12, 'par_multiplicity': 9, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+init_par = [8.914652227764866e-05, 0.00028065686096323246, -0.0001438065358039714, -8.832113859484224e-05, 0.0002216967562860317, 0.0002419364029579824, 3.142595072989495e-05, 0.00012371445692974364, -0.000428240224273579, 0.0003682905820424629, -0.00014529889299762434, -0.0001382191142441279]
+ 
+RESULTS:
+--------
+E_VQE = -7.779423204822651
+inf_VQE = 0.6620482267563357
+n_fn_calls = 61
+Wall-clock time 0.03319043570094639 hours
+ 
+For more output, see /home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2/output.txt
+Plots of output saved in /home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2
+End of HVQE.py
+==========================================================================================
+CuPy installation found, continuing using GPU acceleration.
+having the CPUs {1, 3, 5, 7} available.
+Started basinhopping at 2020-12-25 06:55:17.368452 UTC, with
+command line arguments = {'path': '/home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2', 'n_par': 16, 'par_multiplicity': 9, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+runtime variables =  {'GPU': True, 'date_start': '2020-12-25 06:55:17.368452', 'complete_graph': [(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5), (1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4), (1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'layers': [[(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5)], [(1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4)], [(1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)]], 'n': 18}
+.................................................................................................................................................................................................................../home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/backends/cuda.py:142: UserWarning: cuDNN is not enabled.
+Please reinstall CuPy after you install cudnn
+(see https://docs-cupy.chainer.org/en/stable/install.html#install-cudnn).
+  warnings.warn(
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/_environment_check.py:70: UserWarning: 
+--------------------------------------------------------------------------------
+CuPy (cupy) version 8.0.0 may not be compatible with this version of Chainer.
+Please consider installing the supported version by running:
+  $ pip install 'cupy>=6.3.0,<7.0.0'
+
+See the following page for more details:
+  https://docs-cupy.chainer.org/en/latest/install.html
+--------------------------------------------------------------------------------
+
+  warnings.warn(msg.format(
+ 
+==========================================================================================
+Finished basinhopping of  /home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2 at 2020-12-25 07:04:18.359166 UTC, with
+ 
+{'path': '/home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2', 'n_par': 16, 'par_multiplicity': 9, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+init_par = [-0.0003818224226199749, -0.00046877019736236373, 0.0004987803302997913, 0.0001360304964591356, 0.0004242204708292067, -0.000166120236223703, 0.00033269664570760344, -0.0004255309293715932, 0.0002593813921498362, -0.00046725864741411994, 0.00023685589515492318, 0.00018718141053476582, -0.00011938359609895002, 0.0004591706452405864, 0.00023674296829255992, 0.00012139638561420036]
+ 
+RESULTS:
+--------
+E_VQE = -7.785497199886518
+inf_VQE = 0.6188603364239766
+n_fn_calls = 211
+Wall-clock time 0.15009656998846266 hours
+ 
+For more output, see /home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2/output.txt
+Plots of output saved in /home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2
+End of HVQE.py
+==========================================================================================
+CuPy installation found, continuing using GPU acceleration.
+having the CPUs {1, 3, 5, 7} available.
+Started basinhopping at 2020-12-25 07:04:25.620941 UTC, with
+command line arguments = {'path': '/home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2', 'n_par': 20, 'par_multiplicity': 9, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+runtime variables =  {'GPU': True, 'date_start': '2020-12-25 07:04:25.620941', 'complete_graph': [(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5), (1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4), (1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'layers': [[(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5)], [(1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4)], [(1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)]], 'n': 18}
+................................................................................../home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/backends/cuda.py:142: UserWarning: cuDNN is not enabled.
+Please reinstall CuPy after you install cudnn
+(see https://docs-cupy.chainer.org/en/stable/install.html#install-cudnn).
+  warnings.warn(
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/_environment_check.py:70: UserWarning: 
+--------------------------------------------------------------------------------
+CuPy (cupy) version 8.0.0 may not be compatible with this version of Chainer.
+Please consider installing the supported version by running:
+  $ pip install 'cupy>=6.3.0,<7.0.0'
+
+See the following page for more details:
+  https://docs-cupy.chainer.org/en/latest/install.html
+--------------------------------------------------------------------------------
+
+  warnings.warn(msg.format(
+ 
+==========================================================================================
+Finished basinhopping of  /home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2 at 2020-12-25 07:08:48.551762 UTC, with
+ 
+{'path': '/home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2', 'n_par': 20, 'par_multiplicity': 9, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+init_par = [8.885544087968008e-05, 0.0002410160481770623, 0.0003808750350104055, -0.00023001746565276304, -5.509225157694864e-05, -0.0001298526946449342, 0.0003065170164867011, 0.00034459049134307005, 0.00015786839585729478, -0.00026077550536050473, -0.00011190510631803433, 6.56681040051045e-05, 0.0002201020437432419, 0.00036418898916302904, 0.00041735549720864275, 0.00022610129787469868, -0.00040997141369283663, 0.00033880600841906827, 0.000459687107711503, -4.444077512801139e-05]
+ 
+RESULTS:
+--------
+E_VQE = -7.849290299646443
+inf_VQE = 0.5706898882536269
+n_fn_calls = 82
+Wall-clock time 0.07279468013180626 hours
+ 
+For more output, see /home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2/output.txt
+Plots of output saved in /home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2
+End of HVQE.py
+==========================================================================================
+CuPy installation found, continuing using GPU acceleration.
+having the CPUs {1, 3, 5, 7} available.
+Started basinhopping at 2020-12-25 07:08:55.929056 UTC, with
+command line arguments = {'path': '/home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2', 'n_par': 24, 'par_multiplicity': 9, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+runtime variables =  {'GPU': True, 'date_start': '2020-12-25 07:08:55.929056', 'complete_graph': [(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5), (1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4), (1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'layers': [[(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5)], [(1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4)], [(1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)]], 'n': 18}
+.........................................................................................................................../home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/backends/cuda.py:142: UserWarning: cuDNN is not enabled.
+Please reinstall CuPy after you install cudnn
+(see https://docs-cupy.chainer.org/en/stable/install.html#install-cudnn).
+  warnings.warn(
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/_environment_check.py:70: UserWarning: 
+--------------------------------------------------------------------------------
+CuPy (cupy) version 8.0.0 may not be compatible with this version of Chainer.
+Please consider installing the supported version by running:
+  $ pip install 'cupy>=6.3.0,<7.0.0'
+
+See the following page for more details:
+  https://docs-cupy.chainer.org/en/latest/install.html
+--------------------------------------------------------------------------------
+
+  warnings.warn(msg.format(
+ 
+==========================================================================================
+Finished basinhopping of  /home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2 at 2020-12-25 07:16:50.687719 UTC, with
+ 
+{'path': '/home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2', 'n_par': 24, 'par_multiplicity': 9, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+init_par = [-8.52364524419791e-05, -3.5124431260483147e-05, 0.00046017817494928065, 0.00038164452695741303, 0.00039283532945530344, 0.00015484276262141391, -0.00046400816998960114, -5.386752621330728e-06, -3.8093212609596327e-05, -0.00018572258763089092, -0.000213230018957259, 0.0002851029322705615, 0.0001159483739608466, -0.0002978075621928268, 9.276892436606678e-05, 0.00013576569564634688, -0.0001064192475416177, -0.00026199996117605873, -0.00041541820231506555, -4.041400845248254e-05, 0.00036612900315789775, -0.00039770197412662635, -0.000309786093044241, -0.000228665261503595]
+ 
+RESULTS:
+--------
+E_VQE = -7.89215175313037
+inf_VQE = 0.5158797128276762
+n_fn_calls = 123
+Wall-clock time 0.13164942814244165 hours
+ 
+For more output, see /home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2/output.txt
+Plots of output saved in /home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2
+End of HVQE.py
+==========================================================================================
+CuPy installation found, continuing using GPU acceleration.
+having the CPUs {1, 3, 5, 7} available.
+Started basinhopping at 2020-12-25 07:16:57.918464 UTC, with
+command line arguments = {'path': '/home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2', 'n_par': 28, 'par_multiplicity': 9, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+runtime variables =  {'GPU': True, 'date_start': '2020-12-25 07:16:57.918464', 'complete_graph': [(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5), (1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4), (1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'layers': [[(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5)], [(1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4)], [(1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)]], 'n': 18}
+............................................................................................................................................................../home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/backends/cuda.py:142: UserWarning: cuDNN is not enabled.
+Please reinstall CuPy after you install cudnn
+(see https://docs-cupy.chainer.org/en/stable/install.html#install-cudnn).
+  warnings.warn(
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/_environment_check.py:70: UserWarning: 
+--------------------------------------------------------------------------------
+CuPy (cupy) version 8.0.0 may not be compatible with this version of Chainer.
+Please consider installing the supported version by running:
+  $ pip install 'cupy>=6.3.0,<7.0.0'
+
+See the following page for more details:
+  https://docs-cupy.chainer.org/en/latest/install.html
+--------------------------------------------------------------------------------
+
+  warnings.warn(msg.format(
+ 
+==========================================================================================
+Finished basinhopping of  /home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2 at 2020-12-25 07:28:37.258761 UTC, with
+ 
+{'path': '/home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2', 'n_par': 28, 'par_multiplicity': 9, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+init_par = [0.00023202840267247968, -0.00044404243913553687, 0.00030168441380676715, 0.00046720052700635194, -0.00023632525119278967, -0.00040448406761674417, 0.00013229056974251843, 0.00012722005897573786, -0.00029570547577106247, -0.00038931930314026544, -0.0001249749189488785, 7.398039654422678e-05, -0.00016454480851889564, -4.410866146782225e-05, 3.0079549916405294e-05, -6.973519511419522e-05, 0.0003412172089582927, 6.343928566664191e-05, 5.680084613859232e-05, 0.00014590008521937823, 0.00011269647121801894, 4.2479607078178524e-05, 4.2579478754556886e-05, -0.00016245440210519715, -0.0003685942387509015, -1.2813499656765806e-05, -0.00025387710946264973, 0.00044014198374766385]
+ 
+RESULTS:
+--------
+E_VQE = -7.950162884315267
+inf_VQE = 0.4937351171455806
+n_fn_calls = 158
+Wall-clock time 0.1940295233991411 hours
+ 
+For more output, see /home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2/output.txt
+Plots of output saved in /home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2
+End of HVQE.py
+==========================================================================================
+CuPy installation found, continuing using GPU acceleration.
+having the CPUs {1, 3, 5, 7} available.
+Started basinhopping at 2020-12-25 07:28:44.542635 UTC, with
+command line arguments = {'path': '/home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2', 'n_par': 32, 'par_multiplicity': 9, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+runtime variables =  {'GPU': True, 'date_start': '2020-12-25 07:28:44.542635', 'complete_graph': [(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5), (1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4), (1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'layers': [[(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5)], [(1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4)], [(1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)]], 'n': 18}
+............................................................................................................................................................................................................................/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/backends/cuda.py:142: UserWarning: cuDNN is not enabled.
+Please reinstall CuPy after you install cudnn
+(see https://docs-cupy.chainer.org/en/stable/install.html#install-cudnn).
+  warnings.warn(
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/_environment_check.py:70: UserWarning: 
+--------------------------------------------------------------------------------
+CuPy (cupy) version 8.0.0 may not be compatible with this version of Chainer.
+Please consider installing the supported version by running:
+  $ pip install 'cupy>=6.3.0,<7.0.0'
+
+See the following page for more details:
+  https://docs-cupy.chainer.org/en/latest/install.html
+--------------------------------------------------------------------------------
+
+  warnings.warn(msg.format(
+ 
+==========================================================================================
+Finished basinhopping of  /home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2 at 2020-12-25 07:47:14.784844 UTC, with
+ 
+{'path': '/home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2', 'n_par': 32, 'par_multiplicity': 9, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+init_par = [0.0003436412916632527, 0.00037996031501548455, -4.5401998438093576e-05, 0.0004817123886110626, 6.917442891036585e-05, -5.065737314379436e-05, 0.0004921734213166825, 0.0001835531584339381, 0.0001581860395325754, -0.0004118697137217122, -0.00048477900198971424, -0.0004009463827731589, 0.00027854195255705384, 0.00031813202332495964, -0.0002532834756851965, -0.0004487199064040645, 0.0003959966305742516, -0.000378919565969545, 0.00039494694935327326, 0.00019980293159943606, -0.0001689864175576331, 0.0004991761740226323, 9.387273445479695e-05, 0.0002053722584951398, -0.00017418599166645212, -0.0004195481952199005, 0.00010582565847385296, 0.000498817797986599, 0.0004906722686403128, 0.00018355215675306454, -0.000315795037450623, -0.0001446618562349681]
+ 
+RESULTS:
+--------
+E_VQE = -7.953322228231639
+inf_VQE = 0.4931986380615584
+n_fn_calls = 220
+Wall-clock time 0.3081507005956438 hours
+ 
+For more output, see /home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2/output.txt
+Plots of output saved in /home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2
+End of HVQE.py
+==========================================================================================
+CuPy installation found, continuing using GPU acceleration.
+having the CPUs {1, 3, 5, 7} available.
+Started basinhopping at 2020-12-25 07:47:22.252545 UTC, with
+command line arguments = {'path': '/home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2', 'n_par': 36, 'par_multiplicity': 9, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+runtime variables =  {'GPU': True, 'date_start': '2020-12-25 07:47:22.252545', 'complete_graph': [(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5), (1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4), (1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'layers': [[(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5)], [(1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4)], [(1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)]], 'n': 18}
+............................................................................................................................................................................................................................/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/backends/cuda.py:142: UserWarning: cuDNN is not enabled.
+Please reinstall CuPy after you install cudnn
+(see https://docs-cupy.chainer.org/en/stable/install.html#install-cudnn).
+  warnings.warn(
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/_environment_check.py:70: UserWarning: 
+--------------------------------------------------------------------------------
+CuPy (cupy) version 8.0.0 may not be compatible with this version of Chainer.
+Please consider installing the supported version by running:
+  $ pip install 'cupy>=6.3.0,<7.0.0'
+
+See the following page for more details:
+  https://docs-cupy.chainer.org/en/latest/install.html
+--------------------------------------------------------------------------------
+
+  warnings.warn(msg.format(
+ 
+==========================================================================================
+Finished basinhopping of  /home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2 at 2020-12-25 08:08:07.976152 UTC, with
+ 
+{'path': '/home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2', 'n_par': 36, 'par_multiplicity': 9, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+init_par = [0.00038480559017107477, -0.0003816707261541615, 0.00035446598661070274, 0.0001959255183278005, 0.0001951531675504995, -0.0004299254880853164, -0.0003313322866525267, -0.0004068021771952504, -0.0004863071189597594, -6.618258033085685e-06, -0.00014217933924956272, 0.00024658983290403954, -0.00016110508224402657, 0.0004730683128116608, 0.000224717896041932, 0.0003672145660705416, 0.00036884969173783236, -0.00018248060741354421, 0.0002981879811884612, 5.830623382790121e-05, 0.000165778839556193, 0.00047119134200885107, -9.485237241759972e-05, -0.00041891225723540574, -0.0001627948572237127, -8.291887562005777e-05, 0.0004932203328118392, 4.360705054100918e-05, 8.981667806558908e-05, 0.00040443087782778724, -0.00037773366794479235, -0.0003480817344939349, 0.00012986184020389127, -0.00027855676369926096, 0.0004744740786817623, 0.00030679749595534497]
+ 
+RESULTS:
+--------
+E_VQE = -7.947879767956143
+inf_VQE = 0.49350384813564996
+n_fn_calls = 220
+Wall-clock time 0.3457472070058187 hours
+ 
+For more output, see /home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2/output.txt
+Plots of output saved in /home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2
+End of HVQE.py
+==========================================================================================
+CuPy installation found, continuing using GPU acceleration.
+having the CPUs {1, 3, 5, 7} available.
+Started basinhopping at 2020-12-25 08:08:15.206690 UTC, with
+command line arguments = {'path': '/home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2', 'n_par': 40, 'par_multiplicity': 9, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+runtime variables =  {'GPU': True, 'date_start': '2020-12-25 08:08:15.206690', 'complete_graph': [(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5), (1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4), (1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'layers': [[(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5)], [(1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4)], [(1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)]], 'n': 18}
+..................................................................................................................................................................................................................................................................................................................../home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/backends/cuda.py:142: UserWarning: cuDNN is not enabled.
+Please reinstall CuPy after you install cudnn
+(see https://docs-cupy.chainer.org/en/stable/install.html#install-cudnn).
+  warnings.warn(
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/_environment_check.py:70: UserWarning: 
+--------------------------------------------------------------------------------
+CuPy (cupy) version 8.0.0 may not be compatible with this version of Chainer.
+Please consider installing the supported version by running:
+  $ pip install 'cupy>=6.3.0,<7.0.0'
+
+See the following page for more details:
+  https://docs-cupy.chainer.org/en/latest/install.html
+--------------------------------------------------------------------------------
+
+  warnings.warn(msg.format(
+ 
+==========================================================================================
+Finished basinhopping of  /home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2 at 2020-12-25 08:40:26.672278 UTC, with
+ 
+{'path': '/home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2', 'n_par': 40, 'par_multiplicity': 9, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+init_par = [0.0002452036918682796, -0.00022270890729918572, -0.00043766412672770563, 0.00021368495914872172, -2.600388670195809e-05, -0.00035202681834692995, 0.0003143839840262987, -0.0004489288011963288, -0.000468659467157031, -7.030763552359027e-06, -0.00024388704961500653, -2.1610814542091686e-05, -0.00036597058521361327, -0.00045111376773971734, -0.00031446820634615613, -0.00020062716871509093, -0.00037301545598432265, -0.00037008288201324536, 0.00042399034759415654, 0.00013498101046409297, 0.000485157868216521, -0.0002889221903168202, -0.00034671653489677277, -0.00015555926735577065, -0.00019184630870189002, 0.00044161382201274595, -0.00019585093119102258, 0.00034902305946563875, 0.00019741796768019755, -0.0002536230478962334, -0.00042582621649377476, 0.00022124286228131945, 0.00028808907330713364, -0.00013373303649237566, 0.0004871392741838407, -0.0004755126869433433, -0.00031687330889159927, -0.00016396813467404293, 0.00042705156762332325, 0.0003808345809267757]
+ 
+RESULTS:
+--------
+E_VQE = -7.95168425126383
+inf_VQE = 0.4902033520997988
+n_fn_calls = 308
+Wall-clock time 0.5361951924694909 hours
+ 
+For more output, see /home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2/output.txt
+Plots of output saved in /home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2
+End of HVQE.py
+==========================================================================================
+CuPy installation found, continuing using GPU acceleration.
+having the CPUs {1, 3, 5, 7} available.
+Started basinhopping at 2020-12-25 08:40:34.182255 UTC, with
+command line arguments = {'path': '/home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2', 'n_par': 44, 'par_multiplicity': 9, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+runtime variables =  {'GPU': True, 'date_start': '2020-12-25 08:40:34.182255', 'complete_graph': [(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5), (1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4), (1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'layers': [[(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5)], [(1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4)], [(1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)]], 'n': 18}
+................................................................................................................................................................................................................................................................................................................./home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/backends/cuda.py:142: UserWarning: cuDNN is not enabled.
+Please reinstall CuPy after you install cudnn
+(see https://docs-cupy.chainer.org/en/stable/install.html#install-cudnn).
+  warnings.warn(
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/_environment_check.py:70: UserWarning: 
+--------------------------------------------------------------------------------
+CuPy (cupy) version 8.0.0 may not be compatible with this version of Chainer.
+Please consider installing the supported version by running:
+  $ pip install 'cupy>=6.3.0,<7.0.0'
+
+See the following page for more details:
+  https://docs-cupy.chainer.org/en/latest/install.html
+--------------------------------------------------------------------------------
+
+  warnings.warn(msg.format(
+ 
+==========================================================================================
+Finished basinhopping of  /home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2 at 2020-12-25 09:15:36.792682 UTC, with
+ 
+{'path': '/home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2', 'n_par': 44, 'par_multiplicity': 9, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+init_par = [-0.00028497080198419775, -7.70748453475405e-05, -0.00015816215744430553, -0.00011819508605318295, 0.0004838776245656507, 0.00044168314421297306, 0.00021344827696047266, 0.00011786233438245786, 0.0002781118878932336, -6.862780755770737e-05, 0.0001055819188981648, -6.472817006684164e-05, 0.00018306457142656083, -0.0003311484611949118, 0.00036674775128910553, 0.0004928590995448808, -0.00022140525119021184, -0.00047171638218081847, 1.5440298340910056e-05, -7.591576057097672e-05, -0.00034493109458730076, -0.0001822740660537876, -0.00023032833563891208, 5.080954467994651e-05, 0.00020380431418550696, 0.0003230140004820202, -0.00015320882255893953, -3.053993196088168e-05, -0.0004560288247746475, 0.00010070865463758126, -9.79550546466378e-05, 0.0004964474015394921, -0.0003423202892159801, 0.00045312877616978634, -0.00011218290577988513, -0.0003883494533150619, -0.00048316968853808097, -9.555744512128371e-05, -0.0003683653710673831, -0.0003943689128519378, 0.0003351391352494226, 0.00048539892818068395, -0.0004926265583353445, 0.0001075433965132415]
+ 
+RESULTS:
+--------
+E_VQE = -7.979186735312529
+inf_VQE = 0.47908222287436597
+n_fn_calls = 305
+Wall-clock time 0.5837499144342211 hours
+ 
+For more output, see /home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2/output.txt
+Plots of output saved in /home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2
+End of HVQE.py
+==========================================================================================
+CuPy installation found, continuing using GPU acceleration.
+having the CPUs {1, 3, 5, 7} available.
+Started basinhopping at 2020-12-25 09:15:44.435387 UTC, with
+command line arguments = {'path': '/home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2', 'n_par': 48, 'par_multiplicity': 9, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+runtime variables =  {'GPU': True, 'date_start': '2020-12-25 09:15:44.435387', 'complete_graph': [(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5), (1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4), (1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'layers': [[(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5)], [(1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4)], [(1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)]], 'n': 18}
+........................................................................................................................................................................................................................................................................................................................................................................................../home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/backends/cuda.py:142: UserWarning: cuDNN is not enabled.
+Please reinstall CuPy after you install cudnn
+(see https://docs-cupy.chainer.org/en/stable/install.html#install-cudnn).
+  warnings.warn(
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/_environment_check.py:70: UserWarning: 
+--------------------------------------------------------------------------------
+CuPy (cupy) version 8.0.0 may not be compatible with this version of Chainer.
+Please consider installing the supported version by running:
+  $ pip install 'cupy>=6.3.0,<7.0.0'
+
+See the following page for more details:
+  https://docs-cupy.chainer.org/en/latest/install.html
+--------------------------------------------------------------------------------
+
+  warnings.warn(msg.format(
+ 
+==========================================================================================
+Finished basinhopping of  /home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2 at 2020-12-25 10:02:57.164253 UTC, with
+ 
+{'path': '/home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2', 'n_par': 48, 'par_multiplicity': 9, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+init_par = [0.00023956828721236035, 0.0001185284494423823, 0.00020704286678238496, 0.00010341133240182219, -0.00018249695302991208, 0.00044474918548992456, -0.0002563446527307587, 0.00042456423183044546, 0.00040669084469469074, -0.00040261145087482986, 0.00044062823926183537, 0.00024961687569957257, -0.0004902457056191863, -0.00034426314958724226, 0.0004316246014753203, -0.0004087750125218439, 0.0003261789312644809, -0.00039902825510968343, 0.00042689721988413605, 0.00032942726013010764, 7.859855478668093e-05, -5.893184500687222e-05, -0.00028137829719016016, 0.0003826639035980178, -0.00020398957944659212, -3.3845447833225864e-05, -0.00044354367617180146, 0.00018107673534266823, 0.00021125295739746316, 0.000149957180295716, -0.0002861972732599316, -0.00038205740562820224, -0.00015456754012253062, 0.00014583481113135486, 1.5156435560455869e-07, -0.0003424630071327859, 0.0003401055668607732, 6.094200471900896e-05, -0.00020782292933164292, -0.0001473480596333847, 0.0004426013396516787, -0.00012325813497083752, -0.0001095701700179114, 7.884408694293441e-05, 0.000498680749499257, 0.00019516392846022498, -0.00024954249187558123, 0.0002822338308292626]
+ 
+RESULTS:
+--------
+E_VQE = -7.982889299672788
+inf_VQE = 0.4691481227089117
+n_fn_calls = 378
+Wall-clock time 0.7865226535664664 hours
+ 
+For more output, see /home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2/output.txt
+Plots of output saved in /home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2
+End of HVQE.py
+==========================================================================================
+CuPy installation found, continuing using GPU acceleration.
+having the CPUs {1, 3, 5, 7} available.
+Started basinhopping at 2020-12-25 10:03:04.576135 UTC, with
+command line arguments = {'path': '/home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2', 'n_par': 52, 'par_multiplicity': 9, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+runtime variables =  {'GPU': True, 'date_start': '2020-12-25 10:03:04.576135', 'complete_graph': [(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5), (1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4), (1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'layers': [[(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5)], [(1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4)], [(1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)]], 'n': 18}
+................................................................................................................................................................................................................................................................................................................................................................/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/backends/cuda.py:142: UserWarning: cuDNN is not enabled.
+Please reinstall CuPy after you install cudnn
+(see https://docs-cupy.chainer.org/en/stable/install.html#install-cudnn).
+  warnings.warn(
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/_environment_check.py:70: UserWarning: 
+--------------------------------------------------------------------------------
+CuPy (cupy) version 8.0.0 may not be compatible with this version of Chainer.
+Please consider installing the supported version by running:
+  $ pip install 'cupy>=6.3.0,<7.0.0'
+
+See the following page for more details:
+  https://docs-cupy.chainer.org/en/latest/install.html
+--------------------------------------------------------------------------------
+
+  warnings.warn(msg.format(
+ 
+==========================================================================================
+Finished basinhopping of  /home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2 at 2020-12-25 10:51:43.823399 UTC, with
+ 
+{'path': '/home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2', 'n_par': 52, 'par_multiplicity': 9, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+init_par = [0.00040595094381627717, -9.620837725143926e-06, 0.00037720595131079265, 0.00031550232153918563, -0.0001965065155345166, 0.0003659462542603889, -0.0004555720130397987, -3.993436136087502e-05, 0.00021825258059022298, -0.0002521869752247359, 0.00042867326294845605, 0.0004796494690213094, -7.555676752129295e-05, 0.0003992530692075838, -7.536611637184499e-05, -2.3955427174065418e-05, -0.0004624530605280343, -0.0003977829558950219, 6.37232945023907e-05, 0.00012400850575728793, -0.0002542220353461721, -0.00016286328206334167, -0.0003075766787065505, 0.00015647355682138118, 0.000407244004335868, -4.4683419852005544e-05, 0.000388085098366521, 0.00029160500010195654, 0.00041537771961771, 4.4371741310187795e-06, 0.00040042690090608254, -0.0004346543854560911, -4.5440758205953966e-05, 0.00014248021262090564, 0.00041046666489271636, -0.00048234470281745116, -3.9959191119860336e-05, -0.00025541027481893234, 0.00028476411528109095, -0.00046478337863679897, -1.089372078690292e-05, -0.0003792942100271648, -0.00017886673147677657, -6.858496592429715e-06, -0.0001836412494389954, -3.463729082572056e-05, -0.00022180226235672651, -0.0002214631134324642, 0.00028179381291468567, 3.295086257211564e-05, 6.004300859402845e-05, 0.0004404082927538759]
+ 
+RESULTS:
+--------
+E_VQE = -7.983076297738736
+inf_VQE = 0.4731699101570985
+n_fn_calls = 352
+Wall-clock time 0.8105084609985352 hours
+ 
+For more output, see /home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2/output.txt
+Plots of output saved in /home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2
+End of HVQE.py
+==========================================================================================
+CuPy installation found, continuing using GPU acceleration.
+having the CPUs {1, 3, 5, 7} available.
+Started basinhopping at 2020-12-25 10:51:51.227147 UTC, with
+command line arguments = {'path': '/home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2', 'n_par': 56, 'par_multiplicity': 9, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+runtime variables =  {'GPU': True, 'date_start': '2020-12-25 10:51:51.227147', 'complete_graph': [(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5), (1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4), (1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'layers': [[(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5)], [(1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4)], [(1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)]], 'n': 18}
+............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/backends/cuda.py:142: UserWarning: cuDNN is not enabled.
+Please reinstall CuPy after you install cudnn
+(see https://docs-cupy.chainer.org/en/stable/install.html#install-cudnn).
+  warnings.warn(
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/_environment_check.py:70: UserWarning: 
+--------------------------------------------------------------------------------
+CuPy (cupy) version 8.0.0 may not be compatible with this version of Chainer.
+Please consider installing the supported version by running:
+  $ pip install 'cupy>=6.3.0,<7.0.0'
+
+See the following page for more details:
+  https://docs-cupy.chainer.org/en/latest/install.html
+--------------------------------------------------------------------------------
+
+  warnings.warn(msg.format(
+ 
+==========================================================================================
+Finished basinhopping of  /home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2 at 2020-12-25 12:01:18.871790 UTC, with
+ 
+{'path': '/home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2', 'n_par': 56, 'par_multiplicity': 9, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+init_par = [0.00029237168249814864, -0.0004784761926906867, -0.00030970848742041025, -9.495886626747054e-05, 4.575174115395322e-06, 0.0003510331158365505, 0.00020674436165658307, 0.00040495502454549403, 0.00035560047116106467, 0.0004748489314268091, 0.0001120012150593536, -0.0003525449527356792, 0.0001673115552142402, 0.00035249897174635745, 0.0003324470737747162, -0.0001606894801224613, -4.8071378298939925e-05, 0.00029326052026096175, 0.00035649851219694405, -0.0002971319660821128, 0.00012192250013034307, 1.1280987864236824e-07, -0.00022368927772179262, -8.84470134293689e-05, 0.00017685790695563027, -0.00011504381953336197, -0.0002014038325432397, -0.00021539826262977627, -5.159958226739071e-05, -0.00030176536848745394, -0.00032336477790762767, -6.345300284314406e-05, -2.0561531985664174e-06, -0.00011748069792247295, 0.00014747106657906326, 0.0001980748558521124, -2.9255862822764032e-05, 0.0001066630345472868, 0.00012543926004693448, -0.00016292441168205628, -0.00046728361793685905, -0.00033042448610543667, -0.0001105821503813014, -0.00029985363565375553, 0.0004026721390684377, 9.878326428891125e-05, -0.0003989599446384732, 1.3936839914351377e-06, -0.0001647336199621171, -8.31373843499972e-05, -0.0004976070180992934, 0.00033801619251949406, -0.0004469572619052903, 0.0002906623156327357, 0.0003051217064851334, 0.00021383473180631605]
+ 
+RESULTS:
+--------
+E_VQE = -7.982981831992115
+inf_VQE = 0.4729124742779105
+n_fn_calls = 476
+Wall-clock time 1.157263846927219 hours
+ 
+For more output, see /home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2/output.txt
+Plots of output saved in /home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2
+End of HVQE.py
+==========================================================================================
+CuPy installation found, continuing using GPU acceleration.
+having the CPUs {1, 3, 5, 7} available.
+Started basinhopping at 2020-12-25 12:01:26.487311 UTC, with
+command line arguments = {'path': '/home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2', 'n_par': 60, 'par_multiplicity': 9, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+runtime variables =  {'GPU': True, 'date_start': '2020-12-25 12:01:26.487311', 'complete_graph': [(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5), (1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4), (1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'layers': [[(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5)], [(1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4)], [(1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)]], 'n': 18}
+..................................................................................................................................................................................................................................................................................................................................................................................................................................................................../home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/backends/cuda.py:142: UserWarning: cuDNN is not enabled.
+Please reinstall CuPy after you install cudnn
+(see https://docs-cupy.chainer.org/en/stable/install.html#install-cudnn).
+  warnings.warn(
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/_environment_check.py:70: UserWarning: 
+--------------------------------------------------------------------------------
+CuPy (cupy) version 8.0.0 may not be compatible with this version of Chainer.
+Please consider installing the supported version by running:
+  $ pip install 'cupy>=6.3.0,<7.0.0'
+
+See the following page for more details:
+  https://docs-cupy.chainer.org/en/latest/install.html
+--------------------------------------------------------------------------------
+
+  warnings.warn(msg.format(
+ 
+==========================================================================================
+Finished basinhopping of  /home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2 at 2020-12-25 13:11:57.212732 UTC, with
+ 
+{'path': '/home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2', 'n_par': 60, 'par_multiplicity': 9, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+init_par = [-0.0004621772643408291, -0.00024808920295798, 0.00040450485019822495, 0.00040378160884213337, 6.401986094595072e-05, 0.00013562872243513423, 5.224537806473482e-05, 0.0004886274531631562, -0.00036486797473319363, -0.0002468097387688606, -0.00018054480851530742, -0.0002483087452108666, 0.0001752137959798786, -0.00038890147368778375, 1.5169545829200187e-05, -6.058606650986148e-06, -0.0002999083981810771, -0.00020364548683784648, 0.00032024809609218507, 9.192007741068919e-05, 0.00036343960871697365, 0.00036994688202448395, 0.00048806325299111846, 0.00016182988260874493, 0.0004195584948014793, -0.0004844480729256827, 0.0003173392721344012, -0.0002883561303143847, -0.00025957131305736416, 0.0001708240117684023, -0.0003206816301241198, 0.0004901662729828629, -0.0002910404526782364, 0.00019606625710923782, -0.00024260082933092787, 0.00023380699359456408, -0.00018048854947647606, -0.00030378533872244386, 0.00019386908207590114, -0.00024061188604582574, -1.925044238099274e-05, 0.00015720832359040885, 0.0002269884761049878, -4.772374639164755e-05, -0.00013033052583460736, -0.00046191469468800765, -0.00013841544257617522, -0.00010636926671549451, 0.00021862561609936734, -0.0004913604117833887, 4.39250941415343e-05, 0.00036036554821510045, -0.00022447888571090947, 5.9630807940467536e-05, -0.0004535620829902777, 0.0001540558997852558, -0.00044841712851351835, -0.0003359836888180855, -0.00027502212328713374, -0.00010817156884828261]
+ 
+RESULTS:
+--------
+E_VQE = -7.99058379967161
+inf_VQE = 0.46478869623219443
+n_fn_calls = 452
+Wall-clock time 1.1748043186134762 hours
+ 
+For more output, see /home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2/output.txt
+Plots of output saved in /home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2
+End of HVQE.py
+==========================================================================================
+CuPy installation found, continuing using GPU acceleration.
+having the CPUs {1, 3, 5, 7} available.
+Started basinhopping at 2020-12-25 13:12:04.784675 UTC, with
+command line arguments = {'path': '/home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2', 'n_par': 64, 'par_multiplicity': 9, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+runtime variables =  {'GPU': True, 'date_start': '2020-12-25 13:12:04.784675', 'complete_graph': [(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5), (1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4), (1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'layers': [[(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5)], [(1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4)], [(1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)]], 'n': 18}
+......................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................../home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/backends/cuda.py:142: UserWarning: cuDNN is not enabled.
+Please reinstall CuPy after you install cudnn
+(see https://docs-cupy.chainer.org/en/stable/install.html#install-cudnn).
+  warnings.warn(
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/_environment_check.py:70: UserWarning: 
+--------------------------------------------------------------------------------
+CuPy (cupy) version 8.0.0 may not be compatible with this version of Chainer.
+Please consider installing the supported version by running:
+  $ pip install 'cupy>=6.3.0,<7.0.0'
+
+See the following page for more details:
+  https://docs-cupy.chainer.org/en/latest/install.html
+--------------------------------------------------------------------------------
+
+  warnings.warn(msg.format(
+ 
+==========================================================================================
+Finished basinhopping of  /home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2 at 2020-12-25 15:16:20.853443 UTC, with
+ 
+{'path': '/home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2', 'n_par': 64, 'par_multiplicity': 9, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+init_par = [0.00018855447260232247, 0.00042482230053594405, 0.00018091470681229273, 0.00015284118476563977, 0.0004448559318090884, 0.0004565082662827902, 0.00039086527148964967, 0.0003424078789082892, 0.0002971842908142319, -8.058723778966303e-05, -0.0004550621605098427, 0.00011465802866517886, -0.00042090349863425946, 0.00031123188215699494, 0.0004966108782788916, 0.00016766824274013284, 0.0003681362924985869, -0.0003739280861200902, 0.00030763759796687397, -0.0003900384458471074, 0.00023714005039529378, 0.00028161027024657735, 0.0003376816456257682, -0.0002891807550111162, -1.673749451063433e-05, 0.0002948525096929573, 0.00025952010833708687, 7.44475595837082e-05, 0.0002903250555178529, -8.73017503733781e-05, 0.0004335536776536781, -0.0002774727857041641, 0.00036407433831740907, -0.00014656413217583556, 0.0004748225965758941, 0.0003241566014392516, -1.7360330356986134e-05, 0.00020904189113605414, -9.502186087470787e-05, 0.0002272028282946549, 0.0001472941501841986, -4.570316887278752e-06, 0.0004012729018847513, 2.9003465882988214e-05, 0.00013066114468141617, 0.00022597466434949175, -0.00015949956537168053, -7.476512206404102e-06, 0.00046007481361378256, 0.000441497954551218, -0.0003527983828619874, 7.134345729375839e-05, 0.00026459294792402163, -0.00046624514814108334, -0.0003652096792595524, -0.00042172262781739077, 0.0002628667752552507, -0.00011591721638460305, -0.0002719518272363084, 0.00047279260651469565, -0.0004959677929709281, 0.0003078689829355345, -9.135388890851658e-05, -0.0001331209336652075]
+ 
+RESULTS:
+--------
+E_VQE = -7.985007116174828
+inf_VQE = 0.46795090265586214
+n_fn_calls = 744
+Wall-clock time 2.0707141273551515 hours
+ 
+For more output, see /home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2/output.txt
+Plots of output saved in /home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2
+End of HVQE.py
+==========================================================================================
+CuPy installation found, continuing using GPU acceleration.
+having the CPUs {1, 3, 5, 7} available.
+Started basinhopping at 2020-12-25 15:16:28.429029 UTC, with
+command line arguments = {'path': '/home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2', 'n_par': 68, 'par_multiplicity': 9, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+runtime variables =  {'GPU': True, 'date_start': '2020-12-25 15:16:28.429029', 'complete_graph': [(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5), (1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4), (1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'layers': [[(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5)], [(1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4)], [(1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)]], 'n': 18}
+......................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................./home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/backends/cuda.py:142: UserWarning: cuDNN is not enabled.
+Please reinstall CuPy after you install cudnn
+(see https://docs-cupy.chainer.org/en/stable/install.html#install-cudnn).
+  warnings.warn(
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/_environment_check.py:70: UserWarning: 
+--------------------------------------------------------------------------------
+CuPy (cupy) version 8.0.0 may not be compatible with this version of Chainer.
+Please consider installing the supported version by running:
+  $ pip install 'cupy>=6.3.0,<7.0.0'
+
+See the following page for more details:
+  https://docs-cupy.chainer.org/en/latest/install.html
+--------------------------------------------------------------------------------
+
+  warnings.warn(msg.format(
+ 
+==========================================================================================
+Finished basinhopping of  /home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2 at 2020-12-25 18:30:09.145418 UTC, with
+ 
+{'path': '/home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2', 'n_par': 68, 'par_multiplicity': 9, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+init_par = [-0.00020556827049353344, -0.000285405362939103, -0.00027830613772325183, 0.0003393305948531085, -0.00044193324780296894, 7.452053356782004e-05, 0.00012742188882974089, 0.0002659751068029247, 0.00033552934036533747, 0.00011838737305276345, 1.0361492788403255e-05, 0.00038027729878135647, 5.882769278118703e-05, -4.927128398905903e-05, 0.00024850858964012366, 0.0003859269341421023, -0.0002157027537789522, -4.519910270545682e-05, -0.00020650233607370875, 0.0004800740325459859, -0.00019337808120936065, -0.0003269675581272409, 8.242815821153128e-05, 0.00023831097423845178, 0.0001962608133212507, -0.00037011152747034096, 0.00021350962554588405, 0.00046710450858205557, -4.24429539363396e-06, -0.00026625873954428005, 3.4857114033569163e-06, -6.553463142429427e-05, 0.0004645482577281273, 0.00020042352609601086, -0.0002055420029189893, -0.0003858889268989414, -0.00024313539062043244, -0.00038714349821436224, -0.00047792675892208825, 8.855791146713025e-05, -0.00035831652628148857, 0.00035123803640732, 0.00027868924246839805, -0.00042082058811508373, -0.0004884545377423835, 8.753953005784655e-05, 0.00044617378280611866, -0.00043149377701079086, 0.00033344909605031374, 0.0003756463284280082, 0.0004833041343007237, 0.00012306047410444573, -0.0004726479807528591, -0.00034091400067977394, -0.00021697498850197004, 0.00010893502337308472, -0.00048367413540112804, 0.0004636252900641443, -8.234140635935273e-06, 0.00046252940012669473, -0.0001700841598712518, -4.256626531349986e-05, 0.0004904195182765102, 0.0001491255838817311, 0.0001612808721944399, -0.00046268216123331697, -0.00011142151205235543, -0.00034333051510353365]
+ 
+RESULTS:
+--------
+E_VQE = -7.992485679754193
+inf_VQE = 0.4583753757722393
+n_fn_calls = 903
+Wall-clock time 3.2275112614366743 hours
+ 
+For more output, see /home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2/output.txt
+Plots of output saved in /home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2
+End of HVQE.py
+==========================================================================================
+CuPy installation found, continuing using GPU acceleration.
+having the CPUs {1, 3, 5, 7} available.
+Started basinhopping at 2020-12-25 18:30:16.860385 UTC, with
+command line arguments = {'path': '/home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2', 'n_par': 72, 'par_multiplicity': 9, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+runtime variables =  {'GPU': True, 'date_start': '2020-12-25 18:30:16.860385', 'complete_graph': [(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5), (1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4), (1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'layers': [[(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5)], [(1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4)], [(1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)]], 'n': 18}
+.........................................................................................................................................................................................................................................................................................................................................................................................................................................../home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/backends/cuda.py:142: UserWarning: cuDNN is not enabled.
+Please reinstall CuPy after you install cudnn
+(see https://docs-cupy.chainer.org/en/stable/install.html#install-cudnn).
+  warnings.warn(
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/_environment_check.py:70: UserWarning: 
+--------------------------------------------------------------------------------
+CuPy (cupy) version 8.0.0 may not be compatible with this version of Chainer.
+Please consider installing the supported version by running:
+  $ pip install 'cupy>=6.3.0,<7.0.0'
+
+See the following page for more details:
+  https://docs-cupy.chainer.org/en/latest/install.html
+--------------------------------------------------------------------------------
+
+  warnings.warn(msg.format(
+ 
+==========================================================================================
+Finished basinhopping of  /home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2 at 2020-12-25 19:49:08.045410 UTC, with
+ 
+{'path': '/home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2', 'n_par': 72, 'par_multiplicity': 9, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+init_par = [-0.0004527612128483758, -0.00022370359368487482, -0.00031454194730291596, 0.00013284382991052496, -0.0003533465035834856, -7.595724077010348e-05, 0.0003231542798193506, 0.0004965878362385202, -0.0002214387480065975, 0.0003422372231469455, -0.00018797697822593907, 0.00035070662131834335, 2.8106811197906555e-05, -3.316311744795908e-05, -0.0003668359033740073, -0.00038713233683612013, 0.0003025042610125887, -0.0002657820752686521, 0.00041812544863870744, -0.00013823240293851536, -0.0004475110869248489, -0.00010966729649239225, -0.00019374643374955283, 0.00042268106002732507, 0.00015494649031463036, 0.00047363827356017903, 0.00027017883705407833, -0.00031746963836737764, -0.0004361339978698775, 0.00019489545490858015, -8.252056525712858e-05, 0.000397910913450591, 0.00040645231295677786, 0.0002438908101794825, 4.982621009575296e-05, 0.00012569253094354158, -0.00027682649567243483, 0.00012157018461855123, -0.0002774251143543621, -7.28651285446469e-05, 0.00013522702485937066, 0.00045514209644210773, -0.00018277709496966935, -0.00035593566671135934, -9.460550782389079e-06, -5.1055120675671e-05, 3.522159193329502e-05, 0.00017679430350223666, -0.000353969732664566, 0.0004780827560112357, 0.00010749183377918733, -0.000330335286172168, -0.00019263523841667163, -0.0004898452774239262, -0.0003702309588338162, -0.000438925471597712, -0.0002589409893347562, 0.00043560385763360705, -7.700308269071145e-05, -4.131848601498036e-05, 0.00029397761287117943, -8.116676077310481e-05, 0.0004919426975750862, -0.00018405052223797628, -0.00025709528090512776, 0.0004913582059627999, 0.0002903032381042519, -0.0003882145398344631, 0.0004040354667915459, -0.00014479334870519769, 0.00017752004387719292, 0.0004994653371190368]
+ 
+RESULTS:
+--------
+E_VQE = -7.997176243720488
+inf_VQE = 0.43625736945880633
+n_fn_calls = 427
+Wall-clock time 1.3137463817331527 hours
+ 
+For more output, see /home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2/output.txt
+Plots of output saved in /home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2
+End of HVQE.py
+==========================================================================================
+CuPy installation found, continuing using GPU acceleration.
+having the CPUs {1, 3, 5, 7} available.
+Started basinhopping at 2020-12-25 19:49:15.624324 UTC, with
+command line arguments = {'path': '/home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2', 'n_par': 76, 'par_multiplicity': 9, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+runtime variables =  {'GPU': True, 'date_start': '2020-12-25 19:49:15.624324', 'complete_graph': [(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5), (1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4), (1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'layers': [[(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5)], [(1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4)], [(1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)]], 'n': 18}
+....................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................../home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/backends/cuda.py:142: UserWarning: cuDNN is not enabled.
+Please reinstall CuPy after you install cudnn
+(see https://docs-cupy.chainer.org/en/stable/install.html#install-cudnn).
+  warnings.warn(
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/_environment_check.py:70: UserWarning: 
+--------------------------------------------------------------------------------
+CuPy (cupy) version 8.0.0 may not be compatible with this version of Chainer.
+Please consider installing the supported version by running:
+  $ pip install 'cupy>=6.3.0,<7.0.0'
+
+See the following page for more details:
+  https://docs-cupy.chainer.org/en/latest/install.html
+--------------------------------------------------------------------------------
+
+  warnings.warn(msg.format(
+ 
+==========================================================================================
+Finished basinhopping of  /home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2 at 2020-12-25 23:00:46.177148 UTC, with
+ 
+{'path': '/home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2', 'n_par': 76, 'par_multiplicity': 9, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+init_par = [0.0003033541019006571, 0.00010322917158895847, -0.00014378318364541021, 0.0002345011093785183, -0.0001696582668817509, -0.00044744867612495575, -0.0002985781351348711, -0.0004864646028815547, -0.0002741085129809986, 0.00018034675487237257, -0.00047448613146959697, -0.0003394734510897496, -0.0003605879038436044, -0.00025747913921638063, -6.648874217500393e-05, 0.0003163666367913265, -0.00040638713799428497, -0.00046903381259762167, -0.00042655122715657713, -0.00024330800102149362, 9.575463575041475e-06, 0.0004994309360865112, 0.0003567169861214581, 0.0003265571754896304, 0.00040627383270761463, -0.0002446694602996893, 0.00029468361745729884, 0.0003641283293520568, -5.5820774796987464e-05, 0.0004207896596485895, 0.00012032667281703627, -0.00013288958175925348, 0.0002453407199851865, 0.000495092428295872, 0.0001410539082403921, -4.3201287431636416e-05, -0.0003296254245556235, -0.00034383049960153044, -0.00026000518248367325, -0.00048369473760671877, -7.614661948021997e-05, -0.00031215169751631065, -0.0004811121141057314, -1.1416811993644727e-05, -0.0002529087401791025, 0.0002568698981195985, -0.00010010396256218278, 7.275104130317499e-05, 0.0004825033305869836, 6.10016238901497e-05, -0.0004692424137163488, -0.00019408602272504163, 2.922402163424453e-06, -0.0004429250523423055, 0.0001432381820419133, 0.00010100616999601342, 0.00015510767430395765, -0.00016378473730263533, 0.00045054651269149236, 0.0001846681900037839, -0.00035824109974720586, -0.00036790854587851986, -0.00028546739014673726, 2.3894753939266702e-05, -0.00041896377556252995, -0.0004527114471452456, 0.00039223872578872875, 0.00044979685754348644, 0.0003733270046703006, 6.790721888404899e-05, -0.0001107469480503348, -0.000150840183569354, 1.50900440529767e-05, 0.00019816232747159833, 6.878797830505454e-05, 8.195229565451773e-05]
+ 
+RESULTS:
+--------
+E_VQE = -7.993222122966135
+inf_VQE = 0.4581675998245921
+n_fn_calls = 982
+Wall-clock time 3.1913363883892694 hours
+ 
+For more output, see /home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2/output.txt
+Plots of output saved in /home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2
+End of HVQE.py
+==========================================================================================
+CuPy installation found, continuing using GPU acceleration.
+having the CPUs {1, 3, 5, 7} available.
+Started basinhopping at 2020-12-25 23:00:53.774886 UTC, with
+command line arguments = {'path': '/home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2', 'n_par': 80, 'par_multiplicity': 9, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+runtime variables =  {'GPU': True, 'date_start': '2020-12-25 23:00:53.774886', 'complete_graph': [(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5), (1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4), (1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)], 'layers': [[(0, 6), (2, 8), (4, 10), (12, 9), (14, 11), (16, 7), (15, 1), (17, 3), (13, 5)], [(1, 6), (3, 8), (5, 10), (7, 12), (9, 14), (11, 16), (13, 0), (15, 2), (17, 4)], [(1, 2), (3, 4), (5, 0), (8, 12), (10, 14), (6, 16), (7, 13), (9, 15), (11, 17)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11), (12, 13), (14, 15), (16, 17)]], 'n': 18}
+.............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................../home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/backends/cuda.py:142: UserWarning: cuDNN is not enabled.
+Please reinstall CuPy after you install cudnn
+(see https://docs-cupy.chainer.org/en/stable/install.html#install-cudnn).
+  warnings.warn(
+/home/jkgpu/miniconda3/lib/python3.8/site-packages/chainer/_environment_check.py:70: UserWarning: 
+--------------------------------------------------------------------------------
+CuPy (cupy) version 8.0.0 may not be compatible with this version of Chainer.
+Please consider installing the supported version by running:
+  $ pip install 'cupy>=6.3.0,<7.0.0'
+
+See the following page for more details:
+  https://docs-cupy.chainer.org/en/latest/install.html
+--------------------------------------------------------------------------------
+
+  warnings.warn(msg.format(
+ 
+==========================================================================================
+Finished basinhopping of  /home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2 at 2020-12-26 02:53:05.081685 UTC, with
+ 
+{'path': '/home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2', 'n_par': 80, 'par_multiplicity': 9, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+init_par = [0.0002215309633365176, -0.0003620946429297879, -2.7608420910177464e-05, -0.0003634100803677051, -0.0003087611174038455, -0.0004595780236160518, 9.720381251914975e-06, 7.760382431450227e-05, 0.00038028276469940006, -9.509094977320278e-05, 5.120344258402172e-05, -0.00014466124531628744, 0.0003401782969574039, 0.00021928162595169422, 3.8029287172483247e-05, 0.0002834869978491821, 2.2880685614885474e-07, 0.0002716820634706749, 9.214500563289754e-05, 0.00022426934831072892, 0.0001864339518227149, -0.00014581442359097932, 0.0001866517884974722, -0.0001420897143051694, 0.000327876034370124, 1.3697954033395376e-05, -0.00047585263588253334, -0.0004947219744754601, -0.00027197131887544545, -0.0002485720945088449, -0.00036494777711186256, -3.135515229947864e-05, -0.00045328260140243073, -0.0004055533966516019, -3.099530476160042e-05, -0.00016269765696952143, -4.1897671513824305e-05, -0.0002998223319797653, 0.00045700448624166076, -1.016304233104697e-05, -0.00036844834821549323, 0.0004689045221913412, 0.00019666421311964946, 0.0002891497474468058, 0.0003550639459881052, 0.00017680806792772159, 0.00015200785370534362, -0.00017756473735309488, 0.0004073723620888383, 0.000499133385947822, 0.00020791243829917753, -0.00023586366734679653, 0.00028602951166689335, -6.393582866983771e-05, -0.00023215849807027724, -0.0002622627913824091, 0.00042766061787065065, 0.00047795731816958637, -2.349185227009477e-05, 1.4164015195558457e-05, -0.0003219090851410526, -0.0003684169976229923, -0.00043539922526597064, -0.0004115355145335204, -0.0004601540009705655, 0.0004383290437881581, -0.00019107430037509742, 0.0004987706321000491, 0.00036147453423815553, 0.00023858693761902967, 0.0002204280320578651, -0.00024894806683498663, -2.3918651171180884e-05, 0.00026806581114728525, 0.00047361462469151414, 0.0003521585679416799, 8.79439278763124e-05, -0.00012718025944203194, 0.0003909442792317204, 0.00048704826669132215]
+ 
+RESULTS:
+--------
+E_VQE = -7.992402918653115
+inf_VQE = 0.46277346114693696
+n_fn_calls = 1119
+Wall-clock time 3.869270497295591 hours
+ 
+For more output, see /home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2/output.txt
+Plots of output saved in /home/jkgpu/HVQE/data/kagome/periodic/own_graph/opl/energy/3x2
+End of HVQE.py
+==========================================================================================

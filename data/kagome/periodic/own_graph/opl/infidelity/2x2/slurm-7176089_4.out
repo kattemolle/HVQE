@@ -1,0 +1,190 @@
+No CuPy installation found, continuing without GPU acceleration.
+having the CPUs {32, 33, 36, 37} available.
+Started basinhopping at 2020-12-24 22:52:35.757682 UTC, with
+command line arguments = {'path': '/home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/infidelity/2x2', 'n_par': 8, 'par_multiplicity': 6, 'n_iter': 0, 'cost_fn': 'infidelity', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+runtime variables =  {'GPU': False, 'date_start': '2020-12-24 22:52:35.757682', 'complete_graph': [(0, 4), (2, 6), (8, 7), (10, 5), (11, 1), (9, 3), (1, 4), (3, 6), (5, 8), (7, 10), (9, 0), (11, 2), (1, 2), (3, 0), (6, 8), (4, 10), (5, 9), (7, 11), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11)], 'layers': [[(0, 4), (2, 6), (8, 7), (10, 5), (11, 1), (9, 3)], [(1, 4), (3, 6), (5, 8), (7, 10), (9, 0), (11, 2)], [(1, 2), (3, 0), (6, 8), (4, 10), (5, 9), (7, 11)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11)]], 'n': 12}
+........................................... 
+==========================================================================================
+Finished basinhopping of  /home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/infidelity/2x2 at 2020-12-24 23:00:16.753269 UTC, with
+ 
+{'path': '/home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/infidelity/2x2', 'n_par': 8, 'par_multiplicity': 6, 'n_iter': 0, 'cost_fn': 'infidelity', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+init_par = [0.0002024560431740693, -0.00010421635515451292, 0.00011391694960113832, 0.00048753048392948624, 0.0004352592160157164, -0.0004596382721476867, 0.00036791189341911956, 0.00041607936310219683]
+ 
+RESULTS:
+--------
+E_VQE = -4.88346980145085
+inf_VQE = 0.559783613710618
+n_fn_calls = 43
+Wall-clock time 0.06165116098192003 hours
+ 
+For more output, see /home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/infidelity/2x2/output.txt
+Plots of output saved in /home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/infidelity/2x2
+End of HVQE.py
+==========================================================================================
+No CuPy installation found, continuing without GPU acceleration.
+having the CPUs {32, 33, 36, 37} available.
+Started basinhopping at 2020-12-24 23:12:19.792210 UTC, with
+command line arguments = {'path': '/home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/infidelity/2x2', 'n_par': 12, 'par_multiplicity': 6, 'n_iter': 0, 'cost_fn': 'infidelity', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+runtime variables =  {'GPU': False, 'date_start': '2020-12-24 23:12:19.792210', 'complete_graph': [(0, 4), (2, 6), (8, 7), (10, 5), (11, 1), (9, 3), (1, 4), (3, 6), (5, 8), (7, 10), (9, 0), (11, 2), (1, 2), (3, 0), (6, 8), (4, 10), (5, 9), (7, 11), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11)], 'layers': [[(0, 4), (2, 6), (8, 7), (10, 5), (11, 1), (9, 3)], [(1, 4), (3, 6), (5, 8), (7, 10), (9, 0), (11, 2)], [(1, 2), (3, 0), (6, 8), (4, 10), (5, 9), (7, 11)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11)]], 'n': 12}
+............................................................................. 
+==========================================================================================
+Finished basinhopping of  /home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/infidelity/2x2 at 2020-12-24 23:37:53.468930 UTC, with
+ 
+{'path': '/home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/infidelity/2x2', 'n_par': 12, 'par_multiplicity': 6, 'n_iter': 0, 'cost_fn': 'infidelity', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+init_par = [-0.0003354926390312608, -0.0001105084707172023, -0.0004362086242980177, 0.0001890878267284279, 2.8799126183671076e-05, -0.00034899069103489633, -0.0001947979467399831, -0.00012245571009782287, -0.00011237991523768145, 0.000369922355819147, -5.96219166069938e-05, -0.0004892157188216476]
+ 
+RESULTS:
+--------
+E_VQE = -4.764669710713071
+inf_VQE = 0.4163736030285101
+n_fn_calls = 77
+Wall-clock time 0.3857444313499663 hours
+ 
+For more output, see /home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/infidelity/2x2/output.txt
+Plots of output saved in /home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/infidelity/2x2
+End of HVQE.py
+==========================================================================================
+No CuPy installation found, continuing without GPU acceleration.
+having the CPUs {32, 33, 36, 37} available.
+Started basinhopping at 2020-12-24 23:49:23.148738 UTC, with
+command line arguments = {'path': '/home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/infidelity/2x2', 'n_par': 16, 'par_multiplicity': 6, 'n_iter': 0, 'cost_fn': 'infidelity', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+runtime variables =  {'GPU': False, 'date_start': '2020-12-24 23:49:23.148738', 'complete_graph': [(0, 4), (2, 6), (8, 7), (10, 5), (11, 1), (9, 3), (1, 4), (3, 6), (5, 8), (7, 10), (9, 0), (11, 2), (1, 2), (3, 0), (6, 8), (4, 10), (5, 9), (7, 11), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11)], 'layers': [[(0, 4), (2, 6), (8, 7), (10, 5), (11, 1), (9, 3)], [(1, 4), (3, 6), (5, 8), (7, 10), (9, 0), (11, 2)], [(1, 2), (3, 0), (6, 8), (4, 10), (5, 9), (7, 11)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11)]], 'n': 12}
+........................................................................... 
+==========================================================================================
+Finished basinhopping of  /home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/infidelity/2x2 at 2020-12-25 00:35:34.303432 UTC, with
+ 
+{'path': '/home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/infidelity/2x2', 'n_par': 16, 'par_multiplicity': 6, 'n_iter': 0, 'cost_fn': 'infidelity', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+init_par = [0.0003849825171349082, -0.0004873179328922852, -0.0003635427645544006, -0.00017322845994964856, 6.893574511967972e-05, 3.589392632621512e-05, 0.00043745965584067415, 0.0002945521829522355, -0.00014810924822068218, -0.0003918161783756673, -0.0004231895119866337, 0.00010491545668789076, -0.00012651098372820017, 0.0004116230051569718, 0.0001390879737257337, 6.933869828385235e-05]
+ 
+RESULTS:
+--------
+E_VQE = -4.528670726897503
+inf_VQE = 0.47327818720229375
+n_fn_calls = 75
+Wall-clock time 0.731676000489129 hours
+ 
+For more output, see /home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/infidelity/2x2/output.txt
+Plots of output saved in /home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/infidelity/2x2
+End of HVQE.py
+==========================================================================================
+No CuPy installation found, continuing without GPU acceleration.
+having the CPUs {32, 33, 36, 37} available.
+Started basinhopping at 2020-12-25 00:52:41.119188 UTC, with
+command line arguments = {'path': '/home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/infidelity/2x2', 'n_par': 20, 'par_multiplicity': 6, 'n_iter': 0, 'cost_fn': 'infidelity', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+runtime variables =  {'GPU': False, 'date_start': '2020-12-25 00:52:41.119188', 'complete_graph': [(0, 4), (2, 6), (8, 7), (10, 5), (11, 1), (9, 3), (1, 4), (3, 6), (5, 8), (7, 10), (9, 0), (11, 2), (1, 2), (3, 0), (6, 8), (4, 10), (5, 9), (7, 11), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11)], 'layers': [[(0, 4), (2, 6), (8, 7), (10, 5), (11, 1), (9, 3)], [(1, 4), (3, 6), (5, 8), (7, 10), (9, 0), (11, 2)], [(1, 2), (3, 0), (6, 8), (4, 10), (5, 9), (7, 11)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11)]], 'n': 12}
+......................................................................... 
+==========================================================================================
+Finished basinhopping of  /home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/infidelity/2x2 at 2020-12-25 02:02:30.833167 UTC, with
+ 
+{'path': '/home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/infidelity/2x2', 'n_par': 20, 'par_multiplicity': 6, 'n_iter': 0, 'cost_fn': 'infidelity', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+init_par = [-0.00033171656650413074, 5.260258884093403e-06, 0.00036867369056402754, -0.0002197824515171878, 0.0002854627869405299, 0.00032683881777028083, 0.00022512828075360082, 5.683688968055882e-05, 6.4279427666848535e-06, -3.3479123585160005e-06, 0.00018404110000924277, 8.113127172009577e-05, -0.00031571753743951756, 0.0002635768606529488, 0.00019565708215518783, -5.636018681440139e-05, -0.0003825965982021923, -1.788107094955019e-05, 2.036244467726626e-06, 0.0001090100536693218]
+ 
+RESULTS:
+--------
+E_VQE = -4.813403193895034
+inf_VQE = 0.339019475168291
+n_fn_calls = 73
+Wall-clock time 1.1265485922495524 hours
+ 
+For more output, see /home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/infidelity/2x2/output.txt
+Plots of output saved in /home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/infidelity/2x2
+End of HVQE.py
+==========================================================================================
+No CuPy installation found, continuing without GPU acceleration.
+having the CPUs {32, 33, 36, 37} available.
+Started basinhopping at 2020-12-25 02:15:42.133829 UTC, with
+command line arguments = {'path': '/home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/infidelity/2x2', 'n_par': 24, 'par_multiplicity': 6, 'n_iter': 0, 'cost_fn': 'infidelity', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+runtime variables =  {'GPU': False, 'date_start': '2020-12-25 02:15:42.133829', 'complete_graph': [(0, 4), (2, 6), (8, 7), (10, 5), (11, 1), (9, 3), (1, 4), (3, 6), (5, 8), (7, 10), (9, 0), (11, 2), (1, 2), (3, 0), (6, 8), (4, 10), (5, 9), (7, 11), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11)], 'layers': [[(0, 4), (2, 6), (8, 7), (10, 5), (11, 1), (9, 3)], [(1, 4), (3, 6), (5, 8), (7, 10), (9, 0), (11, 2)], [(1, 2), (3, 0), (6, 8), (4, 10), (5, 9), (7, 11)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11)]], 'n': 12}
+....................................................................................................................... 
+==========================================================================================
+Finished basinhopping of  /home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/infidelity/2x2 at 2020-12-25 04:22:51.265221 UTC, with
+ 
+{'path': '/home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/infidelity/2x2', 'n_par': 24, 'par_multiplicity': 6, 'n_iter': 0, 'cost_fn': 'infidelity', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+init_par = [0.0004749407396299073, -8.348032470421353e-07, -0.0002871354283114006, -0.0003783853072442586, 7.319156659604635e-05, -0.00023589571421011023, -7.40304642321177e-05, -4.121850756146138e-06, -0.00043448594023930685, -0.0003020564754268773, -0.0004695882493715677, 0.0004487431389073776, 2.4665720923687387e-05, -0.0004433613115927987, 0.0003250614949668163, -0.0003310953065291418, -0.00035532947103616183, 0.0003720195109086291, 0.0001794786878790797, -0.00018417294380707738, 0.0001117548143644288, 0.0004040628313485232, -0.00019486290763380266, 2.4787221264292118e-05]
+ 
+RESULTS:
+--------
+E_VQE = -4.6179717790508805
+inf_VQE = 0.32070501642262583
+n_fn_calls = 119
+Wall-clock time 2.0559496279557545 hours
+ 
+For more output, see /home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/infidelity/2x2/output.txt
+Plots of output saved in /home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/infidelity/2x2
+End of HVQE.py
+==========================================================================================
+No CuPy installation found, continuing without GPU acceleration.
+having the CPUs {32, 33, 36, 37} available.
+Started basinhopping at 2020-12-25 04:40:44.660802 UTC, with
+command line arguments = {'path': '/home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/infidelity/2x2', 'n_par': 28, 'par_multiplicity': 6, 'n_iter': 0, 'cost_fn': 'infidelity', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+runtime variables =  {'GPU': False, 'date_start': '2020-12-25 04:40:44.660802', 'complete_graph': [(0, 4), (2, 6), (8, 7), (10, 5), (11, 1), (9, 3), (1, 4), (3, 6), (5, 8), (7, 10), (9, 0), (11, 2), (1, 2), (3, 0), (6, 8), (4, 10), (5, 9), (7, 11), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11)], 'layers': [[(0, 4), (2, 6), (8, 7), (10, 5), (11, 1), (9, 3)], [(1, 4), (3, 6), (5, 8), (7, 10), (9, 0), (11, 2)], [(1, 2), (3, 0), (6, 8), (4, 10), (5, 9), (7, 11)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11)]], 'n': 12}
+............................................................................................................................................... 
+==========================================================================================
+Finished basinhopping of  /home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/infidelity/2x2 at 2020-12-25 08:43:26.276306 UTC, with
+ 
+{'path': '/home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/infidelity/2x2', 'n_par': 28, 'par_multiplicity': 6, 'n_iter': 0, 'cost_fn': 'infidelity', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+init_par = [-0.00041675764984326326, -0.0003804740920489227, 0.00039531720057027725, 0.0003258367817560269, -0.00048476167306417005, 0.00025301238103024126, 0.00036206865120290356, -0.00018138549948962934, 0.00039465178850667693, 0.00017692483681713627, -0.00019613744749175267, -0.00033626128221535734, -0.00030680269607412456, -0.00012140405878584992, -3.6275760231163775e-05, 0.0004419678664624284, 0.00016196060597945179, -0.000331059347606813, 0.00011625263643704788, 0.00010324006000498557, 6.85434738718787e-05, -0.00036722641767426514, 0.00020790875307717292, -8.74616249601251e-05, 0.0004465327641954554, 0.00046266622323579566, 0.00042281997114275384, 4.806756297958423e-05]
+ 
+RESULTS:
+--------
+E_VQE = -4.8641307088439385
+inf_VQE = 0.24034834073428135
+n_fn_calls = 143
+Wall-clock time 3.9024773740768435 hours
+ 
+For more output, see /home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/infidelity/2x2/output.txt
+Plots of output saved in /home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/infidelity/2x2
+End of HVQE.py
+==========================================================================================
+No CuPy installation found, continuing without GPU acceleration.
+having the CPUs {32, 33, 36, 37} available.
+Started basinhopping at 2020-12-25 09:00:09.384369 UTC, with
+command line arguments = {'path': '/home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/infidelity/2x2', 'n_par': 32, 'par_multiplicity': 6, 'n_iter': 0, 'cost_fn': 'infidelity', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+runtime variables =  {'GPU': False, 'date_start': '2020-12-25 09:00:09.384369', 'complete_graph': [(0, 4), (2, 6), (8, 7), (10, 5), (11, 1), (9, 3), (1, 4), (3, 6), (5, 8), (7, 10), (9, 0), (11, 2), (1, 2), (3, 0), (6, 8), (4, 10), (5, 9), (7, 11), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11)], 'layers': [[(0, 4), (2, 6), (8, 7), (10, 5), (11, 1), (9, 3)], [(1, 4), (3, 6), (5, 8), (7, 10), (9, 0), (11, 2)], [(1, 2), (3, 0), (6, 8), (4, 10), (5, 9), (7, 11)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11)]], 'n': 12}
+............................................................................................................................................................................................................. 
+==========================================================================================
+Finished basinhopping of  /home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/infidelity/2x2 at 2020-12-25 15:27:33.687019 UTC, with
+ 
+{'path': '/home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/infidelity/2x2', 'n_par': 32, 'par_multiplicity': 6, 'n_iter': 0, 'cost_fn': 'infidelity', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+init_par = [-6.747496016427349e-05, -0.00019102063862402755, -8.467691316789183e-05, -1.4488294433539725e-05, -0.00015815816308219953, 0.0003064903239580805, -0.0003955426959946421, -0.00040955574353468015, -0.00016236845886939422, 0.0004752091896406417, -2.243978367182266e-05, 0.00040400949448103044, 0.00032697239702332646, -9.401275089422211e-05, -0.0004909421541234113, -0.0003699715557937612, -0.0004458351049844673, -7.2511309391653286e-06, -0.00010686660122215155, -0.00047275258900698804, -5.9411342261674125e-05, 0.0001974242015677617, 0.0003799999262933557, 6.822613441859302e-05, 0.000391704479017936, 0.00048552495238403056, 9.054359996267557e-05, 0.0003722641806299643, -1.2180486767592415e-05, -0.00048502876984181956, -0.0004088518897224771, 0.00015501667632564686]
+ 
+RESULTS:
+--------
+E_VQE = -4.975993284201819
+inf_VQE = 0.16616589846836316
+n_fn_calls = 205
+Wall-clock time 6.388211938407687 hours
+ 
+For more output, see /home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/infidelity/2x2/output.txt
+Plots of output saved in /home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/infidelity/2x2
+End of HVQE.py
+==========================================================================================
+No CuPy installation found, continuing without GPU acceleration.
+having the CPUs {32, 33, 36, 37} available.
+Started basinhopping at 2020-12-25 15:51:17.482543 UTC, with
+command line arguments = {'path': '/home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/infidelity/2x2', 'n_par': 36, 'par_multiplicity': 6, 'n_iter': 0, 'cost_fn': 'infidelity', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+runtime variables =  {'GPU': False, 'date_start': '2020-12-25 15:51:17.482543', 'complete_graph': [(0, 4), (2, 6), (8, 7), (10, 5), (11, 1), (9, 3), (1, 4), (3, 6), (5, 8), (7, 10), (9, 0), (11, 2), (1, 2), (3, 0), (6, 8), (4, 10), (5, 9), (7, 11), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11)], 'layers': [[(0, 4), (2, 6), (8, 7), (10, 5), (11, 1), (9, 3)], [(1, 4), (3, 6), (5, 8), (7, 10), (9, 0), (11, 2)], [(1, 2), (3, 0), (6, 8), (4, 10), (5, 9), (7, 11)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11)]], 'n': 12}
+....................................................................................................................................... 
+==========================================================================================
+Finished basinhopping of  /home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/infidelity/2x2 at 2020-12-25 22:10:01.661533 UTC, with
+ 
+{'path': '/home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/infidelity/2x2', 'n_par': 36, 'par_multiplicity': 6, 'n_iter': 0, 'cost_fn': 'infidelity', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+init_par = [-3.879745920056524e-05, 0.0001391410564558444, -0.00014465220620071075, -0.00037511417739709063, 0.0001688851242551227, 0.0003955960961304737, 0.0004984829114665595, -0.0004424092496480099, 2.016277741935914e-05, -0.00026887122975110346, 0.00045362844737499184, -0.00019403638932425163, 3.378873388442793e-06, 0.00019982918561640224, -1.5079229038302087e-05, 0.00019106371613819475, 0.00031105120307502155, -0.00041589729223884866, -0.00038115467833517913, 0.00043754747444624796, -3.9913529875566746e-06, 0.00035704224310351314, -9.366737973753506e-05, -0.00015427602875222116, 0.00020934705318784532, -0.00018333019899066395, 0.00016719815632762437, 0.00019681511384191, -4.8857688291963704e-05, 0.0002851588352914678, -0.0003953484582209547, -0.0002366986595754095, -0.0001454866526478964, 0.0003707727078243071, 0.0004314260705333033, 0.0004239832200505769]
+ 
+RESULTS:
+--------
+E_VQE = -5.021744231325815
+inf_VQE = 0.15163857689268
+n_fn_calls = 135
+Wall-clock time 6.137045649290085 hours
+ 
+For more output, see /home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/infidelity/2x2/output.txt
+Plots of output saved in /home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/infidelity/2x2
+End of HVQE.py
+==========================================================================================
+No CuPy installation found, continuing without GPU acceleration.
+having the CPUs {32, 33, 36, 37} available.
+Started basinhopping at 2020-12-25 22:27:40.876458 UTC, with
+command line arguments = {'path': '/home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/infidelity/2x2', 'n_par': 40, 'par_multiplicity': 6, 'n_iter': 0, 'cost_fn': 'infidelity', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+runtime variables =  {'GPU': False, 'date_start': '2020-12-25 22:27:40.876458', 'complete_graph': [(0, 4), (2, 6), (8, 7), (10, 5), (11, 1), (9, 3), (1, 4), (3, 6), (5, 8), (7, 10), (9, 0), (11, 2), (1, 2), (3, 0), (6, 8), (4, 10), (5, 9), (7, 11), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11)], 'layers': [[(0, 4), (2, 6), (8, 7), (10, 5), (11, 1), (9, 3)], [(1, 4), (3, 6), (5, 8), (7, 10), (9, 0), (11, 2)], [(1, 2), (3, 0), (6, 8), (4, 10), (5, 9), (7, 11)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11)]], 'n': 12}
+.........slurmstepd: error: *** JOB 7176093 ON r38n4 CANCELLED AT 2020-12-25T23:52:10 DUE TO TIME LIMIT ***

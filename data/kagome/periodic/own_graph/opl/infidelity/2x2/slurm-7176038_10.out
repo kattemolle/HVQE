@@ -1,0 +1,23 @@
+No CuPy installation found, continuing without GPU acceleration.
+having the CPUs {34, 35, 38, 39} available.
+Started basinhopping at 2020-12-24 22:44:53.490630 UTC, with
+command line arguments = {'path': '/home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/infidelity/2x2', 'n_par': 4, 'par_multiplicity': 6, 'n_iter': 0, 'cost_fn': 'infidelity', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+runtime variables =  {'GPU': False, 'date_start': '2020-12-24 22:44:53.490630', 'complete_graph': [(0, 4), (2, 6), (8, 7), (10, 5), (11, 1), (9, 3), (1, 4), (3, 6), (5, 8), (7, 10), (9, 0), (11, 2), (1, 2), (3, 0), (6, 8), (4, 10), (5, 9), (7, 11), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11)], 'layers': [[(0, 4), (2, 6), (8, 7), (10, 5), (11, 1), (9, 3)], [(1, 4), (3, 6), (5, 8), (7, 10), (9, 0), (11, 2)], [(1, 2), (3, 0), (6, 8), (4, 10), (5, 9), (7, 11)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11)]], 'n': 12}
+.............................................. 
+==========================================================================================
+Finished basinhopping of  /home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/infidelity/2x2 at 2020-12-24 22:46:37.660812 UTC, with
+ 
+{'path': '/home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/infidelity/2x2', 'n_par': 4, 'par_multiplicity': 6, 'n_iter': 0, 'cost_fn': 'infidelity', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+init_par = [0.00036096435637204816, 7.460958913687048e-05, 0.00010969968066314574, 0.0003964096371188205]
+ 
+RESULTS:
+--------
+E_VQE = -4.469493058923328
+inf_VQE = 0.6592057070199262
+n_fn_calls = 46
+Wall-clock time 0.0011350311173333064 hours
+ 
+For more output, see /home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/infidelity/2x2/output.txt
+Plots of output saved in /home/jorisk2/HVQE/data/kagome/periodic/own_graph/opl/infidelity/2x2
+End of HVQE.py
+==========================================================================================

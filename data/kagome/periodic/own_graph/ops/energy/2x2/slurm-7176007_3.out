@@ -1,0 +1,23 @@
+No CuPy installation found, continuing without GPU acceleration.
+having the CPUs {16, 17, 20, 21} available.
+Started basinhopping at 2020-12-24 22:36:28.128174 UTC, with
+command line arguments = {'path': '/home/jorisk2/HVQE/data/kagome/periodic/own_graph/ops/energy/2x2', 'n_par': 12, 'par_multiplicity': 2, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+runtime variables =  {'GPU': False, 'date_start': '2020-12-24 22:36:28.128174', 'complete_graph': [(0, 4), (2, 6), (8, 7), (10, 5), (11, 1), (9, 3), (1, 4), (3, 6), (5, 8), (7, 10), (9, 0), (11, 2), (1, 2), (3, 0), (6, 8), (4, 10), (5, 9), (7, 11), (0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11)], 'init_layer': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11)], 'layers': [[(0, 4), (2, 6), (8, 7), (10, 5), (11, 1), (9, 3)], [(1, 4), (3, 6), (5, 8), (7, 10), (9, 0), (11, 2)], [(1, 2), (3, 0), (6, 8), (4, 10), (5, 9), (7, 11)], [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11)]], 'n': 12}
+................................................................. 
+==========================================================================================
+Finished basinhopping of  /home/jorisk2/HVQE/data/kagome/periodic/own_graph/ops/energy/2x2 at 2020-12-24 22:43:00.687585 UTC, with
+ 
+{'path': '/home/jorisk2/HVQE/data/kagome/periodic/own_graph/ops/energy/2x2', 'n_par': 12, 'par_multiplicity': 2, 'n_iter': 0, 'cost_fn': 'energy', 'temperature': 1.0, 'stepsize': 1.0, 'init_par': None, 'dump_interval': None}
+init_par = [0.00016975380275912287, 6.985434932762547e-05, 9.063552684257991e-05, -0.0004485839337400656, -7.789903020623859e-05, -0.00021270934641485687, -4.787293783963323e-05, 0.00025603869771780865, 0.0004910274052237291, -0.0002515612028905896, -0.0003400231602514813, -0.0004526286445939453]
+ 
+RESULTS:
+--------
+E_VQE = -5.138612203239319
+inf_VQE = 0.7907459880777361
+n_fn_calls = 65
+Wall-clock time 0.0710319952832328 hours
+ 
+For more output, see /home/jorisk2/HVQE/data/kagome/periodic/own_graph/ops/energy/2x2/output.txt
+Plots of output saved in /home/jorisk2/HVQE/data/kagome/periodic/own_graph/ops/energy/2x2
+End of HVQE.py
+==========================================================================================

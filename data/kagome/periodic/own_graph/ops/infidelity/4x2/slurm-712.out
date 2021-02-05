@@ -4639,3 +4639,8 @@ End of HVQE.py
 /var/spool/slurm/job00712/slurm_script: line 7: 13707 Killed                  python3 ~/HVQE/HVQE.py $PWD $n_par 4 --dump_interval 64 --cost_fn infidelity
 /var/spool/slurm/job00712/slurm_script: line 7: 13731 Killed                  python3 ~/HVQE/HVQE.py $PWD $n_par 4 --dump_interval 64 --cost_fn infidelity
 /var/spool/slurm/job00712/slurm_script: line 7: 13782 Killed                  python3 ~/HVQE/HVQE.py $PWD $n_par 4 --dump_interval 64 --cost_fn infidelity
+/var/spool/slurm/job00712/slurm_script: line 7: 13811 Killed                  python3 ~/HVQE/HVQE.py $PWD $n_par 4 --dump_interval 64 --cost_fn infidelity
+/var/spool/slurm/job00712/slurm_script: line 7: 13839 Killed                  python3 ~/HVQE/HVQE.py $PWD $n_par 4 --dump_interval 64 --cost_fn infidelity
+/var/spool/slurm/job00712/slurm_script: line 7: 13864 Killed                  python3 ~/HVQE/HVQE.py $PWD $n_par 4 --dump_interval 64 --cost_fn infidelity
+slurmstepd: error: *** JOB 712 ON obelix-cn002 CANCELLED AT 2021-01-29T20:37:19 ***
+slurmstepd: error: Detected 4437 oom-kill event(s) in step 712.batch cgroup. Some of your processes may have been killed by the cgroup out-of-memory handler.

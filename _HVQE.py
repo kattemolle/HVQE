@@ -160,7 +160,7 @@ def run_VQE(cmd_args,run_args,init_reg,gs_reg):
             vqe_out.init_par=[]
             
     else:
-        sol=scipy.optimize.basinhopping(calc_cost,vqe_out.init_par,stepsize=cmd_args.stepsize,minimizer_kwargs={'jac':True, 'options':{'gtol':0.5e-05}},niter=cmd_args.n_iter,interval=25,callback=callback,T=cmd_args.temperature)
+        sol=scipy.optimize.basinhopping(calc_cost,vqe_out.init_par,stepsize=cmd_args.stepsize,minimizer_kwargs={'jac':True},niter=cmd_args.n_iter,interval=25,callback=callback,T=cmd_args.temperature)
         vqe_out.cost_VQE=float(sol.fun)
         vqe_out.opt_parameters=sol.x.tolist()
         vqe_out.init_par=list(vqe_out.init_par)
@@ -208,6 +208,7 @@ def plot_VQE_data(path,fn,par_multiplicity,gates_per_cycle):
         elif fn=='wall_clock':
             wall_clock_list=[line[1]['wall_clock'] for line in n_iter_class]
             ax.semilogy(p_list,wall_clock_list,'-o')
+
     if fn=='energy':
         ax.axhline(y=-(E[1]-E[0])/E[0]) # Plot a horizontal line at the first excited state.
         ax.axhline(y=-(E[1]-E[0])/E[0]/2,ls='--') # Plot a horizontal dashed line halfway the ground state and the first excited state.
@@ -216,17 +217,23 @@ def plot_VQE_data(path,fn,par_multiplicity,gates_per_cycle):
         ax.set_ylabel('Infidelity')
     elif fn=='wall_clock':
         ax.set_ylabel('Wall-clock time (h)')
-        
-    # On the x-axis, put the number of cycles rather than the number of parameters. 
 
+    # On the x-axis, put the number of cycles rather then the number of parameters. 
     ax.set_xlabel('p') 
     ax.xaxis.set_major_locator(MaxNLocator(integer=True))
     ax.grid(True)
     ax.legend(n_iter_set, title='n_iter')
     plt.title(path)
+
+
+    # Write to disk.
     if fn=='energy':
         plt.savefig(path+'/E_VQE.pdf')
     if fn=='infidelity':
+<<<<<<< HEAD
         plt.savefig(path+'/inf_VQE.pdf')    
+=======
+        plt.savefig(path+'/inf_VQE.pdf')
+>>>>>>> remotes/obelix/develop_obelix
     if fn=='wall_clock':
         plt.savefig(path+'/wall_clock.pdf')

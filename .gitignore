@@ -1,5 +1,5 @@
-**/.DStore
-.DStore
+**/.DS_Store
+.DS_Store
 __pycache__
 *~
 tmp.txt
@@ -8,3 +8,4 @@ tmp.txt
 *SLURM*
 *DS_Store*
 *slurm*
+slurm*

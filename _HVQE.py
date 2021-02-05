@@ -230,10 +230,6 @@ def plot_VQE_data(path,fn,par_multiplicity,gates_per_cycle):
     if fn=='energy':
         plt.savefig(path+'/E_VQE.pdf')
     if fn=='infidelity':
-<<<<<<< HEAD
         plt.savefig(path+'/inf_VQE.pdf')    
-=======
-        plt.savefig(path+'/inf_VQE.pdf')
->>>>>>> remotes/obelix/develop_obelix
     if fn=='wall_clock':
         plt.savefig(path+'/wall_clock.pdf')

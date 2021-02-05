@@ -1,2 +1,0 @@
-/var/spool/slurm/job86893/slurm_script: line 7: 49573 Killed                  python3 ~/HVQE/HVQE.py $PWD 108 4 --dump_interval 64
-slurmstepd: error: Detected 1 oom-kill event(s) in step 86893.batch cgroup. Some of your processes may have been killed by the cgroup out-of-memory handler.

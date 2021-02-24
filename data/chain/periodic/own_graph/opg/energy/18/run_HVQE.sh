@@ -7,4 +7,4 @@
 #SBATCH --gres=gpu:1
 
 
-python3 ~/HVQE/HVQE.py $PWD 108 1
+python3 ~/HVQE/HVQE.py $PWD 198 1

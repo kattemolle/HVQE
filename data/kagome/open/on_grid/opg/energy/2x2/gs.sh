@@ -6,4 +6,5 @@
 #SBATCH --mem=100MB
 #SBATCH --gres=gpu:1
 
-python3 ~/HVQE/HVQE.py $PWD 450 1
+python3 ~/HVQE/ground_state.py $PWD 10 
+

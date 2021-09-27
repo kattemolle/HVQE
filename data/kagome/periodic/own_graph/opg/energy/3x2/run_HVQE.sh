@@ -9,7 +9,7 @@
 
 for mult in {1..2}
 do
-python3 ~/HVQE/HVQE.py $PWD 1224 1 &
+python3 ~/HVQE/HVQE.py $PWD 1332 1 &
 sleep .1
 done
 wait

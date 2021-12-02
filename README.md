@@ -73,3 +73,5 @@ Compute the `k` lowest energy eigenstates of the Heisenberg model on the graph `
 - Test your installation by running `$ python3 test_HVQE.py`. This may take a minute.
 
 - You're all set for running a VQE for your own graphs and ansätze!
+
+Installation has only been tested on UNIX-systems. Please open an issue or contact me directly if you would like to install HVQE on Windows.

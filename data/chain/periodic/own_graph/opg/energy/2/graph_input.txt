@@ -1,0 +1,9 @@
+init_layer_input=[(0,1)]
+
+layers_input=[
+[(1,0)]
+]
+
+complete_graph_input=[
+(0,1)
+]

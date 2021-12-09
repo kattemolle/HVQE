@@ -58,10 +58,11 @@ nodes=set(nodes)
 run_args.n=len(nodes)
 del nodes
 
-# Load the true ground state into memory for computation of infidelities. 
-gs_reg=qem.Reg(run_args.n)
-with open(cmd_args.path+'/gs.dat','rb') as file:
-    gs_reg.psi.re=xp.array(pickle.load(file)).reshape((2,)*run_args.n)   
+# If cost_fn is infidelity, load the true ground state into memory for computation of infidelities.
+if cmd_args.cost_fn=='infidelity':
+    gs_reg=qem.Reg(run_args.n)
+    with open(cmd_args.path+'/gs.dat','rb') as file:
+        gs_reg.psi.re=xp.array(pickle.load(file)).reshape((2,)*run_args.n)
 
 # Print info about current run to stdout.    
 print('Started basinhopping at',run_args.date_start, 'UTC, with'),
@@ -81,6 +82,12 @@ if run_args.GPU==True:
 run_args.end=time() 
 run_args.wall_clock=(run_args.end-run_args.start)/60/60 # Wall-clock time of VQE run only, in hours. In the case of a restart, it measures the time from the beginning of the first run to the end of the last run, even if there were large times in between. 
 ########################
+
+# If cost_fn is energy, load the true ground state into memory for computation of infidelities only now.
+if cmd_args.cost_fn=='energy':
+    gs_reg=qem.Reg(run_args.n)
+    with open(cmd_args.path+'/gs.dat','rb') as file:
+        gs_reg.psi.re=xp.array(pickle.load(file)).reshape((2,)*run_args.n)
 
 # Get the infidelity and the energy of the final state irrespective of whether we used the energy or the infidelity as the cost functon.
 vqe_out.opt_parameters=ch.Variable(xp.array(vqe_out.opt_parameters))

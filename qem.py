@@ -15,11 +15,11 @@ from copy import deepcopy
 import os
 from functools import reduce
 
-try:
-    os.sched_setaffinity(0,range(1000)) # Reset the CPU affinity; allow Python to use all CPUs that are available. 
-    print('having the CPUs', os.sched_getaffinity(0), 'available.')
-except AttributeError:
-    pass
+#try:
+#    os.sched_setaffinity(0,range(1000)) # Reset the CPU affinity; allow Python to use all CPUs that are available. 
+#    print('having the CPUs', os.sched_getaffinity(0), 'available.')
+#except AttributeError:
+#    pass
 
 # Only use when timing: may slow down computation if used improperly 
 if GPU==True:
@@ -545,7 +545,7 @@ def apply_H(qubits,reg):
     --------
     >>> import qem
     >>> reg=qem.Reg(2)
-    >>> qem.apply_H(0,reg)
+    >>> qem.apply_H((0,),reg)
     >>> print(reg.psi)
     variable([[0.70710678 0.        ]
               [0.70710678 0.        ]])

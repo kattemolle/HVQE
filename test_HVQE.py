@@ -14,6 +14,9 @@ import _HVQE
 import chainer as ch
 import pickle
 
+print('Testing HVQE')
+
+
 # gs chain 6
 
 with open('data/chain/periodic/own_graph/ops/energy/6/graph_input.txt', 'r') as file:
@@ -303,8 +306,98 @@ assert numpy.round(inf,6)==numpy.round(0.99079512,6)
 qem.round_assert(grad_inf,[-0.01020546,-0.00552987,-0.00329207,0.02484425,-0.01589784,0.01016548])
 
 
-#######
+def test_noisy_Heisenberg_energy_and_infidelity_from_parameters():
+    complete_graph=[(0,1)]
+    init_reg=qem.Reg(2)
+    qem.apply_H((0),init_reg)
+    qem.apply_CNOT((0,1),init_reg)
+    layers=[[(0,1)]]
+    n=2
+    par_multiplicity=1
+    parameters=ch.Variable(numpy.array([0.3423]))
+    pe=0
+    gs_reg=qem.Reg(2)
+    qem.apply_H((0,),gs_reg)
+    qem.apply_CNOT((0,1),gs_reg)
+    noise_type='depol'
+    E,inf=_HVQE.noisy_Heisenberg_energy_and_infidelity_from_parameters(complete_graph,init_reg,layers,n,par_multiplicity,parameters,pe,noise_type,gs_reg)
+    assert [E,inf]==['no_noise','no_noise']
 
-print('all tests passed succesfully')
+    complete_graph=[(0,1)]
+    init_reg=qem.Reg(2)
+    qem.apply_H((1,),init_reg)
+    qem.apply_CNOT((0,1),init_reg)
+    layers=[[(0,1)]]
+    n=2
+    par_multiplicity=1
+    parameters=ch.Variable(numpy.array([0.3423]))
+    pe=1
+    noise_type='depol'
+    gs_reg=qem.Reg(2)
+    qem.apply_H((0,),gs_reg)
+    qem.apply_CNOT((0,1),gs_reg)
+    lst=[]
+    for s in range(100):
+        E,inf=_HVQE.noisy_Heisenberg_energy_and_infidelity_from_parameters(complete_graph,init_reg,layers,n,par_multiplicity,parameters,pe,noise_type,gs_reg)
+        lst.append([E.data,inf.data])
 
+    lst=numpy.array(lst).transpose()
+    avE=numpy.mean(lst[0])
+    avinf=numpy.mean(lst[1])
 
+    assert numpy.around(avinf,2)==numpy.around(1-1/2**2,2)
+    assert numpy.around(avE,2)==numpy.around(0,2)
+
+    # Check that the expected number of errors is correct
+    complete_graph=[(0,1),(1,2),(2,0)]
+    init_reg=qem.Reg(3)
+    qem.apply_H((1,),init_reg)
+    qem.apply_CNOT((0,1),init_reg)
+    layers=[[(1,2)],[(2,0)],[(0,1)]]
+    n=3
+    noise_type='depol'
+    par_multiplicity=1
+    parameters=ch.Variable(numpy.random.rand(3))
+    pe=0.1
+    gs_reg=qem.Reg(3)
+    qem.apply_H((0,),gs_reg)
+    qem.apply_CNOT((0,1),gs_reg)
+    lst=[]
+    ns=1000
+    for s in range(ns):
+        E,inf=_HVQE.noisy_Heisenberg_energy_and_infidelity_from_parameters(complete_graph,init_reg,layers,n,par_multiplicity,parameters,pe,noise_type,gs_reg)
+        lst.append([str(E),str(inf)])
+
+    lst=numpy.array(lst).transpose()
+    a=numpy.count_nonzero(lst[0]=='no_noise')/ns
+    b=(1-pe)**(3*4)
+    assert numpy.around(a,1)==numpy.around(b,1)
+
+    # Check that the expected number of errors is correct, for bitflip errors.
+    noise_type='bitflip'
+    complete_graph=[(0,1),(1,2),(2,0)]
+    init_reg=qem.Reg(3)
+    qem.apply_H((1,),init_reg)
+    qem.apply_CNOT((0,1),init_reg)
+    layers=[[(1,2)],[(2,0)],[(0,1)]]
+    n=3
+    par_multiplicity=1
+    parameters=ch.Variable(numpy.random.rand(3))
+    pe=0.2
+    gs_reg=qem.Reg(3)
+    qem.apply_H((0,),gs_reg)
+    qem.apply_CNOT((0,1),gs_reg)
+    lst=[]
+    ns=1000
+    for s in range(ns):
+        E,inf=_HVQE.noisy_Heisenberg_energy_and_infidelity_from_parameters(complete_graph,init_reg,layers,n,par_multiplicity,parameters,pe,noise_type,gs_reg)
+        lst.append([str(E),str(inf)])
+
+    lst=numpy.array(lst).transpose()
+    a=numpy.count_nonzero(lst[0]=='no_noise')/ns
+    b=(1-pe)**(3*4)
+    assert numpy.around(a,1)==numpy.around(b,1)
+
+test_noisy_Heisenberg_energy_and_infidelity_from_parameters()
+
+print('all tests passed successfully')

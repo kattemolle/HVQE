@@ -104,7 +104,7 @@ output=str([vars(cmd_args),vars(run_args),vars(vqe_out)])
 
 if not os.path.exists(cmd_args.path+'/output.txt'):
     f=open(cmd_args.path+'/output.txt', 'w')
-    f.write("### Output of the VQEs is written to this file. Note that the first local minimum is not included in the lists local_min_list,local_min_parameters_list and local_min_accept_list. See the comment at de function definition of 'callback' inside HVQE.py \n")
+    f.write("### Output of the VQEs is written to this file. \n")
 with open(cmd_args.path+'/output.txt', 'a') as f:
     f.write(output+'\n\n')
 

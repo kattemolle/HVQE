@@ -33,7 +33,7 @@ def get_command_line_input():
     parser.add_argument('--stepsize','-s',type=float,default=1.,help="The max stepsize of random displacement per parameter after each local optimization in the scipy basinhopping routine.")
     parser.add_argument('--init_par',type=float,nargs='+',default=None,help='A list of initial parameters from which the basinhopping routine starts. Use as: --init_par par1 par2 par3 ... . If no --init_par is given, random parameters will be chosen in a specific interval. These are exported to output.txt at the end of the script for reproducibility. See VQE.run_VQE for more info.')
     parser.add_argument('--dump_interval', type=int,default=None, help='Dump the state of the program to path/dump.dat every dump_interval function calls.')
-    
+
     # Parse the args.
     cmd_args=parser.parse_args()
     if cmd_args.path[-1]=='/':
@@ -44,13 +44,84 @@ def get_command_line_input():
 
     return cmd_args
 
+def load_data(path):
+    """
+    Load data from path (a output.txt or noisy_output.txt).
+    """
+    with open(path,'r') as f:
+        f.readline()
+        _data=f.readlines()
+    data=[]
+    for line_nr,line in enumerate(_data):
+        if line !='\n':
+            try:
+                new_line=eval(line.strip())
+                data.append(new_line)
+            except:
+                print('WARNING: corruption found in line {} of {}'.format(line_nr+2,path))
+
+    return data
+
+def get_E_lst(path):
+    """
+    Load lowest energies from path (a lowest_energy.txt)
+    """
+    with open(path,'r') as f:
+        Elst=f.readlines()
+        Elst=[eval(x.strip()) for x in Elst]
+        Elst=[float(E) for E in Elst]
+        Elst.sort()
+
+    return Elst
+
+def optimal_line(data,n_par,n_iter,par_multiplicity,load_pe=0,run_pe=0):
+    """
+    Find optimal line in data with given n_par, n_iter, pe.
+    """
+    _data=[line for line in data if line[0]['n_par']==n_par and line[0]['n_iter']==n_iter and line[0]['par_multiplicity']==par_multiplicity]
+    if load_pe==0 and run_pe==0:
+        _data.sort(key=lambda x: x[1]['E_VQE'])
+    elif load_pe==0 and run_pe!=0:
+        _data=[line for line in _data if line[3]['pe']==run_pe]
+        _data.sort(key=lambda x: x[1]['E_VQE'])
+    elif load_pe!=0 and run_pe!=0:
+        assert load_pe==run_pe
+        _data=[line for line in _data if line[3]['pe']==run_pe]
+        _data.sort(key=lambda x: x[4]['noisy_E_mean'])
+
+    if len(_data)==0:
+        print('optimal_line: no entries found for n_par={}, n_iter={}, load_pe={}, run_pe={} in data'.format(n_par,n_iter,load_pe,run_pe))
+        return None
+    else:
+        return _data[0]
+
+def get_n_par_list(path,n_iter,par_multiplicity,pe):
+    """
+    Get the list of available n_par values in path (a noise_output.txt) with given n_iter,par_multiplicity, and pe.
+    """
+    assert pe!=0, 'Only implemented for noisy output.'
+    def filter_data(data,n_iter,par_multiplicity,pe):
+        def conditions(line):
+            cond=[line[0]['n_iter']==n_iter,
+                  line[0]['par_multiplicity']==par_multiplicity,
+                  line[3]['pe']==pe
+                  ]
+            return all(cond)
+        filtered=[line for line in data if conditions(line)]
+        return filtered
+
+    data=load_data(path)
+    data=filter_data(data,n_iter,par_multiplicity,pe)
+    n_par_data=list(set([line[0]['n_par'] for line in data]))
+    n_par_data.sort()
+    return n_par_data
+
 def Heisenberg_energy_from_parameters(complete_graph,init_reg,layers,n,par_multiplicity,parameters):
     """
     Return the energy of a state as defined via the init state, the ansatz and a setting for the parameters. Ansatz must already be mapped to ints and given as regular python list.
     
     Returns
-    -------
-    E : chainer.Variable
+    -------    E : chainer.Variable
     
     """
     reg=qem.EmptyReg(n)
@@ -67,6 +138,82 @@ def Heisenberg_energy_from_parameters(complete_graph,init_reg,layers,n,par_multi
 
     E=qem.Heisenberg_energy(complete_graph,reg)
     return E
+
+def noisy_Heisenberg_energy_and_infidelity_from_parameters(complete_graph,init_reg,layers,n,par_multiplicity,parameters,pe,noise_type,gs_reg):
+    """
+    Same as Heisenberg_energy_from_parameters, but at every qubit and, before the first layer, and after layer, with probability pe, a Pauli X Y or Z will be inserted uniformly at random.
+    Thus, the output becomes stochasic.
+
+    Returns
+    -------
+    [E,inf] : [chainer.Variable, chainer.Variable]
+
+    """
+    assert par_multiplicity==1, 'Error functionality is only available for One parameter Per Gate (OPG), i.e. par_multiplicity=1'
+    reg=qem.EmptyReg(n)
+    reg.psi=init_reg.psi
+
+    edges=[edge for layer in layers for edge in layer]
+    assert len(parameters)%len(edges)==0
+
+    tot_layers=len(parameters)/len(edges)*len(layers)
+    tot_error_loc=n*(1+tot_layers)
+    assert tot_error_loc%1==0
+    tot_error_loc=int(tot_error_loc)
+    error_list=numpy.random.rand(tot_error_loc)
+    if all(numpy.greater_equal(error_list,pe)):
+        return 'no_noise','no_noise'
+
+    i=0
+    j=0
+
+    # Apply error to init state probabilisticly
+    if noise_type=='depol':
+        for q in range(n):
+            r=error_list[j]
+            if r<pe/3:
+                qem.apply_X((q,),reg)
+            elif r<2*pe/3:
+                qem.apply_Y((q,),reg)
+            elif r<pe:
+                qem.apply_Z((q,),reg)
+            j+=1
+    elif noise_type=='bitflip':
+        for q in range(n):
+            r=error_list[j]
+            if r<pe:
+                qem.apply_X((q,),reg)
+            j+=1
+
+    while i<len(parameters):
+        for layer in layers:
+            for edge in layer:
+                gate=qem.Heisenberg_exp(parameters[i])
+                i+=1
+                action=qem.Action(edge,gate)
+                qem.apply_action(action,reg)
+            # Apply error after circuit layer probabilisticly
+            if noise_type=='depol':
+                for q in range(n):
+                    r=error_list[j]
+                    if r<pe/3:
+                        qem.apply_X((q,),reg)
+                    elif r<2*pe/3:
+                        qem.apply_Y((q,),reg)
+                    elif r<pe:
+                        qem.apply_Z((q,),reg)
+                    j+=1
+            elif noise_type=='bitflip':
+                for q in range(n):
+                    r=error_list[j]
+                    if r<pe:
+                        qem.apply_X((q,),reg)
+                    j+=1
+
+    assert j==tot_error_loc, 'Not all sampled errors were applied'
+    E=qem.Heisenberg_energy(complete_graph,reg)
+    inf=qem.infidelity(reg,gs_reg)
+    return E,inf
 
 def infidelity_from_parameters(init_reg,layers,n,par_multiplicity,parameters,gs_reg):
     reg=qem.EmptyReg(n)
@@ -117,7 +264,7 @@ def run_VQE(cmd_args,run_args,init_reg,gs_reg):
         elif run_args.GPU==False:
             cost=cost.array
 
-        ### Dump state of the prograpm. Restart has to be done by hand by running another HVQE.py from the command line. 
+        ### Dump state of the program. Restart has to be done by hand by running another HVQE.py from the command line. 
         if cmd_args.dump_interval!=None:
             if vqe_out.n_fn_calls%cmd_args.dump_interval==0:
                 tmp=Name()
@@ -133,12 +280,11 @@ def run_VQE(cmd_args,run_args,init_reg,gs_reg):
         ###
         return cost, g
 
-    def callback(x,f,accept): # Due to a bug in the scipy (version 1.3.1) basinhopping routine, this function is not called after the first local minimum. Hence the lists local_min_list, local_min_parameters_list and local_min_accept_list will not contain entries for the first local minimum found. This issue will be solved in version 1.6.0 of schipy. See https://github.com/scipy/scipy/pull/13029
-        #If basinhopping is run with n_iter=0, only a single local minimum is found, and in this case the value of the cost function, and the parameters, are in fact stored, because this minimum is the optimal minimum found and delivers the data for the output of the bassinhopping routine as a whole.
+    def callback(x,f,accept): #If basinhopping is run with n_iter=0, only a single local minimum is found, and in this case the value of the cost function, and the parameters, are in fact stored, because this minimum is the optimal minimum found and delivers the data for the output of the bassinhopping routine as a whole.
         nonlocal vqe_out
         print('\nNew local min for', vars(cmd_args))
         print('cost=',float(f),'accepted=',accept,'parameters=',list(x))
-        vqe_out.local_min_list.append(float(f))   
+        vqe_out.local_min_list.append(float(f))
         vqe_out.local_min_parameters_list.append(list(x))
         vqe_out.local_min_accept_list.append(accept)
        

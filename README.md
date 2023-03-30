@@ -74,4 +74,4 @@ Compute the `k` lowest energy eigenstates of the Heisenberg model on the graph `
 
 - You're all set for running a VQE for your own graphs and ansätze!
 
-Installation without GPU was tested on macOs 11.7.4 and SUSE Linux 7.5.0. Instalation with GPU was tested on SUSE Linux 7.5.0 only. Please open an issue or contact me directly if you run into any problems during installation.
+Installation without GPU was tested on macOs 11.7.4 and openSUSE Leap 15. Instalation with GPU was tested on openSUSE Leap 15. Please open an issue or contact me directly if you run into any problems during installation.

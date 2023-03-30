@@ -1,0 +1,8 @@
+name: HVQE_GPU
+channels:
+  - defaults
+dependencies:
+  - scipy
+  - chainer
+  - matplotlib
+  - cupy

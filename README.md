@@ -68,10 +68,10 @@ Compute the `k` lowest energy eigenstates of the Heisenberg model on the graph `
 
 - If you have git installed, clone the repo by `$ git clone https://github.com/barbireau/HVQE.git`. Alternatively, you can download and unzip this repo via the green 'code' button at the top right of the github page. 
 
-- Install [Miniconda](https://docs.conda.io/en/latest/miniconda.html) or [Anaconda](https://docs.anaconda.com/anaconda/install/). If you have a CUDA-enabled GPU and you want to use GPU acceleration, `cd` to your local repo and run `$ conda env create -f environment/environment_GPU.yml`. If you do not have such a GPU, or if you do not wish to use the GPU, change the command to `$ conda env create -f environment/environment_no_GPU.yml`.
+- Install [Miniconda](https://docs.conda.io/en/latest/miniconda.html) or [Anaconda](https://docs.anaconda.com/anaconda/install/). For the standard installation, `cd` to your local repo and run `$ conda env create -f environment/HVQE_no_GPU.yml`. If you have a CUDA-enabled GPU and you want to use GPU acceleration, run `$ conda env create -f environment/HVQE_GPU.yml`.  With high probability, you can also just run `$ python3 test_HVQE.py` and install packages untill there are no unknown packages. Also install cupy if you want to use GPU acceleration 
 
 - Test your installation by running `$ python3 test_HVQE.py`. This may take a minute.
 
 - You're all set for running a VQE for your own graphs and ansätze!
 
-Installation has only been tested on UNIX-systems. Please open an issue or contact me directly if you would like to install HVQE on Windows.
+Installation without GPU was tested on macOs 11.7.4 and SUSE Linux 7.5.0. Instalation with GPU was tested on SUSE Linux 7.5.0 only. Please open an issue or contact me directly if you run into any problems during installation.

@@ -1,0 +1,8 @@
+name: HVQE_no_GPU
+channels:
+  - defaults
+dependencies:
+  - chainer
+  - scipy
+  - matplotlib
+prefix: /opt/miniconda3/envs/HVQE_no_GPU

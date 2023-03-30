@@ -68,7 +68,7 @@ Compute the `k` lowest energy eigenstates of the Heisenberg model on the graph `
 
 - If you have git installed, clone the repo by `$ git clone https://github.com/barbireau/HVQE.git`. Alternatively, you can download and unzip this repo via the green 'code' button at the top right of the github page. 
 
-- Install [Miniconda](https://docs.conda.io/en/latest/miniconda.html) or [Anaconda](https://docs.anaconda.com/anaconda/install/). For the standard installation, `cd` to your local repo and run `$ conda env create -f environment/HVQE_no_GPU.yml`. If you have a CUDA-enabled GPU and you want to use GPU acceleration, run `$ conda env create -f environment/HVQE_GPU.yml`.  With high probability, you can also just run `$ python3 test_HVQE.py` and install packages untill there are no unknown packages. Also install cupy if you want to use GPU acceleration 
+- Install [Miniconda](https://docs.conda.io/en/latest/miniconda.html) or [Anaconda](https://docs.anaconda.com/anaconda/install/). For the standard installation, `cd` to your local repo and run `$ conda env create -f environment/HVQE_no_GPU.yml`. If you have a CUDA-enabled GPU and you want to use GPU acceleration, run `$ conda env create -f environment/HVQE_GPU.yml`.  With high probability, you can also just run `$ python3 test_HVQE.py` and install packages until there are no unknown packages. Also install cupy if you want to use GPU acceleration 
 
 - Test your installation by running `$ python3 test_HVQE.py`. This may take a minute.
 

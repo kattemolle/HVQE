@@ -6,7 +6,8 @@ A python package tailored to Variational Quantum Eigensolvers for the Heisenberg
 This code and data are used in:<br> 
 Variational quantum eigensolver for the Heisenberg antiferromagnet on the kagome lattice<br>
 Joris Kattemölle and Jasper van Wezel<br>
-[Phys. Rev. B **106**, 214429 (2022)](https://doi.org/10.1103/PhysRevB.106.214429)
+[Phys. Rev. B **106**, 214429 (2022)](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.106.214429)<br>
+[arxiv.org/abs/2108.02175](https://arxiv.org/abs/2108.02175)
 
 Contents:<br>
 [Example](#example)<br>

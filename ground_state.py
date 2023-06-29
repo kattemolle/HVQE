@@ -41,51 +41,53 @@ import qem
 import sys
 from time import time
 
-return_state=True
+return_state = True
 
-#%% Read input from file
-path=sys.argv[1]
-k=int(sys.argv[2])
+# %% Read input from file
+path = sys.argv[1]
+k = int(sys.argv[2])
 
-if path[-1]=='/':
-    path=path[:-1]
+if path[-1] == "/":
+    path = path[:-1]
 
-with open(path+'/graph_input.txt', 'r') as file:
+with open(path + "/graph_input.txt", "r") as file:
     exec(file.read())
-    
-complete_graph=complete_graph_input
+
+complete_graph = complete_graph_input
 del complete_graph_input
-     
-#%% Run
-print('')
-print('--------------------------------------------------')
-print('Computing the', k, 'lowest energies of',path)
-start=time()
-output=qem.ground_state(complete_graph,k,return_state)
-if qem.GPU==True: qem.sync()
-end=time()
-if return_state==False:
-    print('The', k, 'lowest energies are', output)
-if return_state==True:
-    print('The', k, 'lowest energies are', output[0])
-print('Solutions found using using ARPACK, in a total of', end-start, 'seconds')
-print('--------------------------------------------------')
-print(' ')
+
+# %% Run
+print("")
+print("--------------------------------------------------")
+print("Computing the", k, "lowest energies of", path)
+start = time()
+output = qem.ground_state(complete_graph, k, return_state)
+if qem.GPU == True:
+    qem.sync()
+end = time()
+if return_state == False:
+    print("The", k, "lowest energies are", output)
+if return_state == True:
+    print("The", k, "lowest energies are", output[0])
+print("Solutions found using using ARPACK, in a total of", end - start, "seconds")
+print("--------------------------------------------------")
+print(" ")
 
 ## Write gs energy to disk
-if return_state==False:
-    np.savetxt(path+'/lowest_energies.txt',output)
+if return_state == False:
+    np.savetxt(path + "/lowest_energies.txt", output)
 
-if return_state==True:
-    np.savetxt(path+'/lowest_energies.txt',output[0])
+if return_state == True:
+    np.savetxt(path + "/lowest_energies.txt", output[0])
 
 ## Write gs itself to disk if return_state is True
 
-if return_state==True:
+if return_state == True:
     import pickle
-    with open(path+'/gs.dat', 'wb') as file:
-        pickle.dump(output[1][:,0],file,protocol=4)
+
+    with open(path + "/gs.dat", "wb") as file:
+        pickle.dump(output[1][:, 0], file, protocol=4)
 
 ## To read the ground states themselves, use
-#with open('gs.dat','rb') as file:
+# with open('gs.dat','rb') as file:
 #    st=pickle.load(file)

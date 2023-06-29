@@ -1,7 +1,12 @@
 # HeisenbergVQE
 <img src="https://github.com/barbireau/HVQE/blob/main/images/logo.jpg" width="200"/>
 
-A python package tailored to Variational Quantum Eigensolvers for the Heisenberg model, with optional GPU acceleration. Documentation, with plenty examples, is contained in the docstrings of the files outlined under [Files and folders](##files-and-folders).
+A python package tailored to Variational Quantum Eigensolvers for the Heisenberg model, with optional GPU acceleration. Documentation, with plenty examples, is contained in the docstrings of the files outlined under [Files and folders](##files-and-folders). 
+
+This code and data is used in:<br> 
+Variational quantum eigensolver for the Heisenberg antiferromagnet on the kagome lattice<br>
+Joris Kattemölle and Jasper van Wezel<br>
+[Phys. Rev. B **106**, 214429 (2022)](https://doi.org/10.1103/PhysRevB.106.214429)
 
 Contents:<br>
 [Example](#example)<br>
